@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Meet Dr. Faten Skafi, PhD - Clinical and Educational Psychology, higher education, research, psychological assessment and psychoeducational support.">
+
+    <title>About Dr. Faten | Psycedu Clinic</title>
+
+    <link rel="icon"
+          type="image/jpeg"
+          href="icon.jpeg">
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- ABOUT PAGE CSS -->
+
+    <link rel="stylesheet"
+          href="about.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Psycedu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi Psycedu Clinic">
+
+        </a>
+
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav"
+             id="mainNav">
+
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+
+                Home
+
+            </a>
+
+
+            <a href="about.html"
+               class="nav-link active"
+               data-i18n="navAbout">
+
+                About Dr. Faten
+
+            </a>
+
+
+
+            <!-- SERVICES DROPDOWN -->
+
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+
+                        Psychological Counseling
+
+                    </a>
+
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+
+                        Psychoeducational Assessment
+
+                    </a>
+
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+
+                        Psychoeducational Reports
+
+                    </a>
+
+
+                    <a href="service-learning.html"
+                       data-i18n="service4">
+
+                        Learning Difficulties & ADHD
+
+                    </a>
+
+
+                    <a href="service-family.html"
+                       data-i18n="service5">
+
+                        Family Guidance & Skills Development
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+
+                Resources
+
+            </a>
+
+
+            <a href="contact.html"
+               class="nav-link"
+               data-i18n="navContact">
+
+                Contact
+
+            </a>
+
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">
+                        عربي
+                    </span>
+
+                </button>
+
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+
+                    Book Appointment
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+
+            <!-- LANGUAGE -->
+
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">
+                    عربي
+                </span>
+
+            </button>
+
+
+
+            <!-- SHARE -->
+
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+
+                <div class="share-menu"
+                     id="shareMenu">
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+
+                        Share this page
+
+                    </span>
+
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </button>
+
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </button>
+
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </button>
+
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APPOINTMENT -->
+
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+<!-- =========================================================
+     ABOUT HERO
+========================================================= -->
+
+<section class="about-hero">
+
+    <div class="about-hero-shape about-shape-one"></div>
+
+    <div class="about-hero-shape about-shape-two"></div>
+
+
+    <div class="container about-hero-container">
+
+
+        <!-- TEXT -->
+
+        <div class="about-hero-content">
+
+
+            <div class="about-eyebrow">
+
+                <span></span>
+
+                <p>
+                    Meet the Person Behind Psycedu
+                </p>
+
+            </div>
+
+
+            <h1>
+
+                Dr. Faten
+                <span>Skafi</span>
+
+            </h1>
+
+
+            <h2>
+                PhD in Psychology
+            </h2>
+
+
+            <p class="about-professional-title">
+
+                Clinical & Educational Psychology
+                <span>•</span>
+                Higher Education
+                <span>•</span>
+                Research
+
+            </p>
+
+
+            <p class="about-hero-description">
+
+                Bringing together psychology, education,
+                research and compassionate professional practice
+                to support learning, mental health and human
+                development.
+
+            </p>
+
+
+
+            <div class="about-hero-buttons">
+
+                <a href="appointment.html"
+                   class="primary-btn">
+
+                    <span>
+                        Book an Appointment
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <a href="#journey"
+                   class="about-outline-btn">
+
+                    Explore Her Journey
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="about-mini-details">
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Lebanon · Bekaa / Beirut
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <span>
+                        Psychology · Education · Research
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO -->
+
+        <div class="about-hero-visual">
+
+            <div class="about-photo-frame">
+
+    <img src="dr-faten.jpg"
+         alt="Dr. Faten Skafi">
+
+</div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="about-floating-card experience">
+
+                <strong>
+                    20+
+                </strong>
+
+                <span>
+                    Years of<br>
+                    Experience
+                </span>
+
+            </div>
+
+
+
+            <!-- PHD -->
+
+            <div class="about-floating-card phd">
+
+                <div>
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+                <span>
+
+                    <small>
+                        Academic Degree
+                    </small>
+
+                    <strong>
+                        PhD in Psychology
+                    </strong>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRO / HER STORY
+========================================================= -->
+
+<section class="about-story-section">
+
+    <div class="container about-story-grid">
+
+
+        <div class="about-story-heading">
+
+            <span class="about-section-label">
+                Her Story
+            </span>
+
+            <h2>
+
+                Where Psychology,
+                Education &
+
+                <span>
+                    Human Development
+                </span>
+
+                Meet.
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="about-story-content">
+
+            <p class="story-lead">
+
+                For more than two decades, Dr. Faten Skafi's
+                professional journey has been shaped by one central
+                purpose: helping people learn, grow and experience
+                greater psychological well-being.
+
+            </p>
+
+
+            <p>
+
+                As an Assistant Professor and Educational Psychologist,
+                her work connects clinical psychology, educational
+                psychology, mental health, research, student
+                development and professional training.
+
+            </p>
+
+
+            <p>
+
+                Her experience extends across universities,
+                psychological and psychoeducational practice,
+                school leadership, curriculum development,
+                research supervision, community mental health
+                and work with children, adolescents and families.
+
+            </p>
+
+
+
+            <div class="story-quote">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Understanding the person is the first step
+                    toward meaningful learning, healthier
+                    development and lasting change.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROFILE HIGHLIGHTS
+========================================================= -->
+
+<section class="profile-highlights">
+
+    <div class="container profile-highlights-grid">
+
+
+        <div class="profile-highlight">
+
+            <span class="highlight-number">
+                20+
+            </span>
+
+            <h3>
+                Years
+            </h3>
+
+            <p>
+                Across psychology, education, research and training
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-highlight">
+
+            <span class="highlight-icon">
+
+                <i class="fa-solid fa-building-columns"></i>
+
+            </span>
+
+            <h3>
+                Higher Education
+            </h3>
+
+            <p>
+                Undergraduate and postgraduate university teaching
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-highlight">
+
+            <span class="highlight-icon">
+
+                <i class="fa-solid fa-brain"></i>
+
+            </span>
+
+            <h3>
+                Psychology
+            </h3>
+
+            <p>
+                Clinical, educational and psychoeducational practice
+            </p>
+
+        </div>
+
+
+
+        <div class="profile-highlight">
+
+            <span class="highlight-icon">
+
+                <i class="fa-solid fa-microscope"></i>
+
+            </span>
+
+            <h3>
+                Research
+            </h3>
+
+            <p>
+                Regional, interdisciplinary and applied research
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AREAS OF EXPERTISE
+========================================================= -->
+
+<section class="expertise-section">
+
+    <div class="container">
+
+
+        <div class="about-section-heading centered">
+
+            <span class="about-section-label">
+                Areas of Expertise
+            </span>
+
+
+            <h2>
+
+                Knowledge That Connects
+                <span>People & Learning</span>
+
+            </h2>
+
+
+            <p>
+
+                Dr. Faten's interdisciplinary background brings
+                together psychological science, educational practice,
+                mental health and human development.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="expertise-grid">
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                </div>
+
+                <h3>
+                    Clinical Psychology
+                </h3>
+
+                <p>
+                    Understanding psychological needs,
+                    mental health and applied psychological practice.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-book-open-reader"></i>
+
+                </div>
+
+                <h3>
+                    Educational Psychology
+                </h3>
+
+                <p>
+                    Connecting learning, development, behavior
+                    and psychological well-being.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                </div>
+
+                <h3>
+                    Mental Health
+                </h3>
+
+                <p>
+                    Mental health and psychosocial well-being
+                    in educational and community settings.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                </div>
+
+                <h3>
+                    Psychological Assessment
+                </h3>
+
+                <p>
+                    Cognitive, behavioral, emotional and
+                    educational assessment.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-child-reaching"></i>
+
+                </div>
+
+                <h3>
+                    Child & Adolescent Development
+                </h3>
+
+                <p>
+                    Supporting psychological, educational and
+                    developmental needs throughout growth.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                </div>
+
+                <h3>
+                    Learning & Attention
+                </h3>
+
+                <p>
+                    Individualized support for learning,
+                    behavioral and attention difficulties.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                </div>
+
+                <h3>
+                    Early Childhood Development
+                </h3>
+
+                <p>
+                    Research and practice focused on development,
+                    education and child well-being.
+                </p>
+
+            </article>
+
+
+
+            <article class="expertise-card">
+
+                <div class="expertise-icon">
+
+                    <i class="fa-solid fa-people-roof"></i>
+
+                </div>
+
+                <h3>
+                    Family & Educator Support
+                </h3>
+
+                <p>
+                    Guidance and training that strengthens
+                    supportive environments around children.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROFESSIONAL JOURNEY
+========================================================= -->
+
+<section class="journey-section"
+         id="journey">
+
+    <div class="container">
+
+
+        <div class="about-section-heading">
+
+            <span class="about-section-label">
+                Professional Journey
+            </span>
+
+
+            <h2>
+
+                Experience Across
+                <span>Education & Psychology</span>
+
+            </h2>
+
+
+            <p>
+
+                A career connecting university education,
+                psychological practice, research, school leadership
+                and community mental health.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="journey-layout">
+
+
+            <div class="journey-line"></div>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    2024
+                    <span>Present</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        Higher Education
+                    </span>
+
+                    <h3>
+                        Clinical Psychology Instructor &
+                        Master's Research Supervisor
+                    </h3>
+
+                    <h4>
+                        Lebanese University
+                    </h4>
+
+                    <p>
+
+                        Teaching Clinical Psychology and supervising
+                        Master's-level research and theses, including
+                        research design, methodology, analysis and
+                        academic writing.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-chalkboard-user"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    2023
+                    <span>Present</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        Academic Leadership
+                    </span>
+
+                    <h3>
+                        Assistant Professor
+                    </h3>
+
+                    <h4>
+                        Beirut Arab University
+                    </h4>
+
+                    <p>
+
+                        Teaching undergraduate and postgraduate
+                        courses in psychology, mental health,
+                        social sciences and related areas while
+                        supporting course development and student mentoring.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-microscope"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    2022
+                    <span>Present</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        Research
+                    </span>
+
+                    <h3>
+                        Research Associate
+                    </h3>
+
+                    <h4>
+                        Arab Network for Early Childhood Development
+                    </h4>
+
+                    <p>
+
+                        Contributing to regional and multi-country
+                        research in early childhood development,
+                        education, mental health, gender and
+                        psychosocial well-being.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    2018
+                    <span>Present</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        Psychological Practice
+                    </span>
+
+                    <h3>
+                        Educational Psychologist
+                    </h3>
+
+                    <h4>
+                        Private Psychological Practice · West Bekaa
+                    </h4>
+
+                    <p>
+
+                        Psychological counseling, psychoeducational
+                        interventions, assessments and individualized
+                        support for children, adolescents and families.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-school"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    2015
+                    <span>2018</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        School Leadership
+                    </span>
+
+                    <h3>
+                        Principal & Educational Psychologist
+                    </h3>
+
+                    <h4>
+                        National Brotherhood School
+                    </h4>
+
+                    <p>
+
+                        Led school administration, teacher
+                        development, curriculum improvement
+                        and strategies supporting diverse
+                        learning and behavioral needs.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ITEM -->
+
+            <article class="journey-item">
+
+                <div class="journey-dot">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    1995
+                    <span>2020</span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <span class="journey-category">
+                        Education
+                    </span>
+
+                    <h3>
+                        Teacher, Coordinator & Trainer
+                    </h3>
+
+                    <h4>
+                        Omar El Mokhtar Educational Center
+                    </h4>
+
+                    <p>
+
+                        Teaching, educational coordination,
+                        curriculum development and professional
+                        development programs for educators.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section class="education-section">
+
+    <div class="container education-container">
+
+
+        <div class="education-intro">
+
+            <span class="about-section-label">
+                Academic Foundation
+            </span>
+
+
+            <h2>
+
+                Education Built Around
+                <span>Psychology</span>
+
+            </h2>
+
+
+            <p>
+
+                Dr. Faten's academic path reflects a continuous
+                specialization in psychology and educational psychology.
+
+            </p>
+
+
+            <div class="education-decoration">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="degrees-list">
+
+
+            <article class="degree-card featured">
+
+                <span class="degree-level">
+                    Doctorate
+                </span>
+
+                <div class="degree-icon">
+
+                    <i class="fa-solid fa-award"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        PhD in Psychology
+                    </h3>
+
+                    <p>
+                        Lebanese University
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="degree-card">
+
+                <span class="degree-level">
+                    Master's
+                </span>
+
+                <div class="degree-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Master's in Educational Psychology
+                    </h3>
+
+                    <p>
+                        Lebanese University
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="degree-card">
+
+                <span class="degree-level">
+                    Bachelor's
+                </span>
+
+                <div class="degree-icon">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        BA in Educational Psychology
+                    </h3>
+
+                    <p>
+                        Lebanese University
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RESEARCH
+========================================================= -->
+
+<section class="research-profile-section">
+
+    <div class="container">
+
+
+        <div class="about-section-heading centered">
+
+            <span class="about-section-label">
+                Research & Academic Work
+            </span>
+
+
+            <h2>
+
+                Turning Knowledge Into
+                <span>Meaningful Impact</span>
+
+            </h2>
+
+
+            <p>
+
+                Her research interests sit at the intersection
+                of psychology, education, mental health,
+                development and social context.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="research-content">
+
+
+            <div class="research-feature">
+
+                <div class="research-feature-icon">
+
+                    <i class="fa-solid fa-microscope"></i>
+
+                </div>
+
+
+                <span>
+                    Research Focus
+                </span>
+
+
+                <h3>
+
+                    Psychology and education
+                    viewed through a human,
+                    developmental and cultural lens.
+
+                </h3>
+
+
+                <p>
+
+                    Her work includes qualitative and quantitative
+                    research, regional collaboration, research
+                    supervision, academic writing and evidence-informed
+                    recommendations.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-topics">
+
+
+                <div class="research-topic">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        Clinical & Educational Psychology
+                    </p>
+
+                </div>
+
+
+                <div class="research-topic">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+                        Mental Health & Psychosocial Well-Being
+                    </p>
+
+                </div>
+
+
+                <div class="research-topic">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+                        Early Childhood Development
+                    </p>
+
+                </div>
+
+
+                <div class="research-topic">
+
+                    <span>
+                        04
+                    </span>
+
+                    <p>
+                        Education in Crisis & Displacement
+                    </p>
+
+                </div>
+
+
+                <div class="research-topic">
+
+                    <span>
+                        05
+                    </span>
+
+                    <p>
+                        Inclusive & Trauma-Informed Education
+                    </p>
+
+                </div>
+
+
+                <div class="research-topic">
+
+                    <span>
+                        06
+                    </span>
+
+                    <p>
+                        Cross-Cultural & Arab-Region Perspectives
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     APPROACH
+========================================================= -->
+
+<section class="approach-section">
+
+    <div class="container approach-container">
+
+
+        <div class="approach-content">
+
+            <span class="about-section-label">
+                Her Professional Approach
+            </span>
+
+
+            <h2>
+
+                Understanding the
+                <span>Whole Person</span>
+
+            </h2>
+
+
+            <p class="approach-intro">
+
+                Dr. Faten's work recognizes that psychological
+                well-being, learning, family, development and
+                environment are deeply connected.
+
+            </p>
+
+
+
+            <div class="approach-list">
+
+
+                <div>
+
+                    <span class="approach-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </span>
+
+                    <p>
+
+                        <strong>
+                            Evidence-Informed
+                        </strong>
+
+                        Grounded in psychological research
+                        and professional practice.
+
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span class="approach-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </span>
+
+                    <p>
+
+                        <strong>
+                            Individualized
+                        </strong>
+
+                        Support shaped around each person's
+                        needs, strengths and circumstances.
+
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span class="approach-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </span>
+
+                    <p>
+
+                        <strong>
+                            Inclusive
+                        </strong>
+
+                        Respectful of different educational,
+                        social and cultural backgrounds.
+
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span class="approach-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </span>
+
+                    <p>
+
+                        <strong>
+                            Collaborative
+                        </strong>
+
+                        Working with individuals, families,
+                        educators and multidisciplinary teams.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="approach-visual">
+
+            <div class="approach-main-circle">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <h3>
+                    People First
+                </h3>
+
+                <p>
+                    Psychology with understanding,
+                    education with purpose.
+                </p>
+
+            </div>
+
+
+            <div class="approach-orbit orbit-one">
+                Psychology
+            </div>
+
+            <div class="approach-orbit orbit-two">
+                Education
+            </div>
+
+            <div class="approach-orbit orbit-three">
+                Well-Being
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="footer-logo">
+
+                <span class="footer-logo-symbol">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </span>
+
+
+                <span>
+
+                    <strong>
+                        FATEN SKAFI
+                    </strong>
+
+                    <small>
+                        Psycedu Clinic
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <p data-i18n="footerDescription">
+
+                Psychological and educational support
+                for people, learning, well-being and
+                brighter tomorrows.
+
+            </p>
+
+
+            <div class="footer-socials">
+
+
+                <!-- FACEBOOK -->
+
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">
+                Quick Links
+            </h3>
+
+
+            <a href="index.html"
+               data-i18n="navHome">
+
+                Home
+
+            </a>
+
+
+            <a href="about.html"
+               data-i18n="navAbout">
+
+                About Dr. Faten
+
+            </a>
+
+
+            <a href="services.html"
+               data-i18n="navServices">
+
+                Services
+
+            </a>
+
+            <a href="stories.html"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+
+            <a href="resources.html"
+               data-i18n="navResources">
+
+                Resources
+
+            </a>
+
+
+            <a href="contact.html"
+               data-i18n="navContact">
+
+                Contact
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">
+                Contact Us
+            </h3>
+
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    +961 71 009 259
+                </span>
+
+            </a>
+
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>
+                    fatenskafi@gmail.com
+                </span>
+
+            </a>
+
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+                    Chtoura, Lebanon
+                </span>
+
+            </div>
+
+
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+                    Book Online
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Faten Skafi Psycedu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+
+            </p>
+
+
+            <div>
+
+                <a href="#"
+                   data-i18n="privacy">
+
+                    Privacy Policy
+
+                </a>
+
+
+                <a href="#"
+                   data-i18n="terms">
+
+                    Terms
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- TOAST -->
+
+<div class="toast"
+     id="toast">
+
+    Link copied!
+
+</div>
+
+
+
+<script src="aboutmain.js"></script>
+
+</body>
+
+</html>

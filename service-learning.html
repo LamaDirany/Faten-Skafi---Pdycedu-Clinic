@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Individualized assessment and support for learning difficulties and ADHD at PsycEdu Clinic.">
+
+    <title>Learning Difficulties &amp; ADHD | PsycEdu Clinic</title>
+
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="PsycEdu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi PsycEdu Clinic">
+
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html"
+               class="nav-link"
+               data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <!-- SERVICES DROPDOWN -->
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+                        Psychoeducational Reports
+                    </a>
+
+                    <a href="service-learning.html"
+                       data-i18n="service4"
+                       aria-current="page">
+                        Learning Difficulties &amp; ADHD
+                    </a>
+
+                    <a href="service-family.html"
+                       data-i18n="service5">
+                        Family Guidance &amp; Skills Development
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html"
+               class="nav-link"
+               data-i18n="navContact">
+                Contact
+            </a>
+
+            <!-- MOBILE NAV ACTIONS -->
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">عربي</span>
+
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+                    Book Appointment
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">عربي</span>
+
+            </button>
+
+            <!-- SHARE BUTTON -->
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+                        Share this page
+                    </span>
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+                            <i class="fa-solid fa-link"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="counseling-hero">
+
+        <div class="container counseling-hero-grid">
+
+            <div class="counseling-hero-copy">
+
+                <a href="index.html#services"
+                   class="counseling-back">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    <span data-service-i18n="learningBack">
+                        Back to Services
+                    </span>
+
+                </a>
+
+                <div class="counseling-eyebrow">
+
+                    <i class="fa-solid fa-book-open-reader"></i>
+
+                    <span data-service-i18n="learningEyebrow">
+                        Individualized Learning Support
+                    </span>
+
+                </div>
+
+                <h1 data-service-i18n="learningTitle">
+                    Learning Difficulties <em>&amp; ADHD</em>
+                </h1>
+
+                <p class="counseling-lead"
+                   data-service-i18n="learningSubtitle">
+                    Helping Every Learner Reach Their Potential
+                </p>
+
+                <p data-service-i18n="learningHeroDescription">
+                    Understanding individual learning challenges
+                    and developing practical strategies to support
+                    academic progress, confidence, and well-being.
+                </p>
+
+                <div class="counseling-actions">
+
+                    <a href="appointment.html" class="primary-btn">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+
+                        <span data-service-i18n="learningBook">
+                            Book an Appointment
+                        </span>
+
+                    </a>
+
+                    <a href="#about-learning"
+                       class="counseling-text-link">
+
+                        <span data-service-i18n="learningExplore">
+                            Explore Learning Support
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="counseling-hero-art">
+
+                <div class="counseling-image-wrap">
+
+                    <img src="Learning Difficulties &amp; ADHD.png"
+                         alt="Learning Difficulties and ADHD support">
+
+                    <div class="counseling-image-tag">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span data-service-i18n="learningImageTag">
+                            Every Learner Matters
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT THE SERVICE -->
+    <section class="counseling-intro"
+             id="about-learning">
+
+        <div class="container counseling-intro-grid">
+
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="learningAboutLabel">
+                    About This Service
+                </span>
+
+                <h2 data-service-i18n="learningAboutTitle">
+                    Every learner has a unique path.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p class="counseling-quote"
+                   data-service-i18n="learningQuote">
+                    Understanding differences helps us create
+                    better opportunities for learning.
+                </p>
+
+            </div>
+
+            <div class="counseling-prose">
+
+                <p data-service-i18n="learningParagraph1">
+                    Children and adolescents learn in different ways.
+                    Difficulties with attention, concentration, reading,
+                    writing, mathematics, organization, or classroom
+                    participation may affect academic progress,
+                    confidence, and emotional well-being.
+                </p>
+
+                <p data-service-i18n="learningParagraph2">
+                    At PsycEdu Clinic, I provide individualized
+                    assessment and support for children and adolescents
+                    experiencing learning difficulties and
+                    attention-related challenges, including concerns
+                    associated with Attention-Deficit/Hyperactivity
+                    Disorder (ADHD).
+                </p>
+
+                <p data-service-i18n="learningParagraph3">
+                    The process may include developmental and
+                    educational history, behavioral observations,
+                    appropriate assessment tools, and collaboration
+                    with parents, schools, and other professionals
+                    when needed. The aim is to understand the factors
+                    contributing to the difficulties and identify
+                    practical strategies that support learning
+                    and daily functioning.
+                </p>
+
+                <p data-service-i18n="learningParagraph4">
+                    Depending on individual needs, recommendations
+                    may include targeted interventions, classroom
+                    accommodations, individualized educational
+                    strategies, behavioral support, and guidance
+                    for parents and teachers.
+                </p>
+
+                <p data-service-i18n="learningParagraph5">
+                    Every learner deserves an approach that
+                    recognizes their strengths, respects their
+                    individual differences, and supports their
+                    development with dignity and confidence.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AREAS OF SUPPORT -->
+    <section class="counseling-areas"
+             id="learning-areas">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label"
+                      data-service-i18n="learningAreasLabel">
+                    How We Can Help
+                </span>
+
+                <h2 data-service-i18n="learningAreasTitle">
+                    Areas of Learning Support
+                </h2>
+
+                <p data-service-i18n="learningAreasIntro">
+                    Understanding the different challenges
+                    that may influence learning and daily
+                    functioning.
+                </p>
+
+            </div>
+
+            <div class="counseling-areas-grid">
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h3 data-service-i18n="learningArea1">
+                        Attention &amp; Concentration
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <h3 data-service-i18n="learningArea2">
+                        Reading Difficulties
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    <h3 data-service-i18n="learningArea3">
+                        Writing Difficulties
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    <h3 data-service-i18n="learningArea4">
+                        Mathematics Difficulties
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-list-check"></i>
+
+                    <h3 data-service-i18n="learningArea5">
+                        Organization &amp; Planning
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-school"></i>
+
+                    <h3 data-service-i18n="learningArea6">
+                        Classroom Participation
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3 data-service-i18n="learningArea7">
+                        ADHD-Related Challenges
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONALIZED APPROACH -->
+    <section class="counseling-values">
+
+        <div class="container counseling-values-inner">
+
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="learningApproachLabel">
+                    Our Approach
+                </span>
+
+                <h2 data-service-i18n="learningApproachTitle">
+                    Support built around individual strengths.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p data-service-i18n="learningParagraph5">
+                    Every learner deserves an approach that
+                    recognizes their strengths, respects their
+                    individual differences, and supports their
+                    development with dignity and confidence.
+                </p>
+
+            </div>
+
+            <div class="counseling-values-list">
+
+                <div>
+
+                    <i class="fa-solid fa-clipboard-check"></i>
+
+                    <span data-service-i18n="learningValue1">
+                        Individualized assessment and strategies
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-chalkboard-user"></i>
+
+                    <span data-service-i18n="learningValue2">
+                        Classroom accommodations and educational support
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-people-roof"></i>
+
+                    <span data-service-i18n="learningValue3">
+                        Guidance for parents and teachers
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-hands-holding-child"></i>
+
+                    <span data-service-i18n="learningValue4">
+                        Behavioral and developmental support
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="footer-logo">
+
+                <span class="footer-logo-symbol">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <span>
+                    <strong>FATEN SKAFI</strong>
+                    <small>PsycEdu Clinic</small>
+                </span>
+
+            </a>
+
+            <p data-i18n="footerDescription">
+                Psychological and educational support for people,
+                learning, well-being and brighter tomorrows.
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">
+                Quick Links
+            </h3>
+
+            <a href="index.html" data-i18n="navHome">Home</a>
+
+            <a href="about.html" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <a href="services.html" data-i18n="navServices">
+                Services
+            </a>
+
+            <a href="stories.html"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+            <a href="resources.html" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" data-i18n="navContact">
+                Contact
+            </a>
+
+        </div>
+
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">
+                Contact Us
+            </h3>
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>+961 71 009 259</span>
+
+            </a>
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>fatenskafi@gmail.com</span>
+
+            </a>
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+                    Chtoura, Lebanon
+                </span>
+
+            </div>
+
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+                    Book Online
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                Faten Skafi PsycEdu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+            </p>
+
+            <div>
+
+                <a href="#" data-i18n="privacy">
+                    Privacy Policy
+                </a>
+
+                <a href="#" data-i18n="terms">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    Link copied!
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT (navbar + share + Arabic translation)
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdown = document.querySelector(".nav-dropdown");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const shareButton = document.getElementById("shareButton");
+    const shareMenu = document.getElementById("shareMenu");
+    const languageButtons = document.querySelectorAll(".language-btn");
+    const languageTexts = document.querySelectorAll(".languageText");
+    const toast = document.getElementById("toast");
+
+    const MOBILE_BREAKPOINT = 850;
+
+
+    /* =====================================================
+       CURRENT YEAR
+    ===================================================== */
+
+    function setYear() {
+        const year = document.getElementById("currentYear");
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    function openMenu() {
+        mainNav.classList.add("active");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+
+    function closeMenu() {
+        mainNav.classList.remove("active");
+
+        if (dropdown) {
+            dropdown.classList.remove("active");
+        }
+
+        if (dropdownToggle) {
+            dropdownToggle.setAttribute("aria-expanded", "false");
+        }
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            if (mainNav.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+
+        });
+
+        /* close after tapping a link */
+        mainNav.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    closeMenu();
+                }
+            });
+
+        });
+
+        /* close when tapping outside */
+        document.addEventListener("click", function (event) {
+
+            if (
+                window.innerWidth <= MOBILE_BREAKPOINT &&
+                mainNav.classList.contains("active") &&
+                !mainNav.contains(event.target) &&
+                !menuToggle.contains(event.target)
+            ) {
+                closeMenu();
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       MOBILE SERVICES DROPDOWN
+    ===================================================== */
+
+    if (dropdownToggle && dropdown) {
+
+        dropdownToggle.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                dropdown.classList.toggle("active");
+
+                dropdownToggle.setAttribute(
+                    "aria-expanded",
+                    dropdown.classList.contains("active")
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SHARE MENU
+    ===================================================== */
+
+    if (shareButton && shareMenu) {
+
+        shareButton.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            shareMenu.classList.toggle("active");
+
+            shareButton.setAttribute(
+                "aria-expanded",
+                shareMenu.classList.contains("active")
+            );
+
+        });
+
+        document.addEventListener("click", function (event) {
+
+            if (
+                !shareMenu.contains(event.target) &&
+                !shareButton.contains(event.target)
+            ) {
+                shareMenu.classList.remove("active");
+                shareButton.setAttribute("aria-expanded", "false");
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    function showToast(message) {
+
+        if (!toast) {
+            return;
+        }
+
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(function () {
+            toast.classList.remove("show");
+        }, 2200);
+
+    }
+
+
+    /* =====================================================
+       SHARE OPTIONS
+    ===================================================== */
+
+    document.querySelectorAll("[data-share]").forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const type = button.dataset.share;
+            const pageURL = window.location.href;
+            const pageTitle = document.title;
+
+            let shareURL = "";
+
+            if (type === "whatsapp") {
+                shareURL =
+                    "https://wa.me/?text=" +
+                    encodeURIComponent(pageTitle + " " + pageURL);
+            }
+
+            if (type === "facebook") {
+                shareURL =
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "linkedin") {
+                shareURL =
+                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "copy") {
+
+                try {
+                    await navigator.clipboard.writeText(pageURL);
+                    showToast(
+                        currentLanguage === "ar"
+                            ? "تم نسخ الرابط"
+                            : "Link copied!"
+                    );
+                } catch (error) {
+                    console.error("Unable to copy link.", error);
+                }
+
+                shareMenu.classList.remove("active");
+                return;
+
+            }
+
+            if (shareURL) {
+                window.open(shareURL, "_blank", "noopener,noreferrer");
+            }
+
+            shareMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* =====================================================
+       ARABIC TRANSLATIONS
+       (the English text is read from the HTML itself, so only
+       the Arabic needs to be listed here)
+    ===================================================== */
+
+    /* header + footer  →  data-i18n */
+    const arabicShared = {
+
+        navHome: "الرئيسية",
+        navAbout: "عن د. فاتن",
+        navServices: "الخدمات",
+        navStories: "قصص",
+        navResources: "المصادر",
+        navContact: "تواصل معنا",
+        bookAppointment: "احجز موعداً",
+        shareTitle: "مشاركة الصفحة",
+
+        service1: "الاستشارات النفسية",
+        service2: "التقييم النفسي التربوي",
+        service3: "التقارير النفسية التربوية",
+        service4: "دعم صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+        service5: "الإرشاد الأسري وتنمية المهارات",
+
+        footerDescription:
+            "دعم نفسي وتربوي للإنسان والتعلّم والرفاه النفسي وغدٍ أكثر إشراقاً.",
+        quickLinks: "روابط سريعة",
+        contactUs: "تواصل معنا",
+        location: "شتورة، لبنان",
+        bookOnline: "احجز أونلاين",
+        rights: "جميع الحقوق محفوظة.",
+        privacy: "سياسة الخصوصية",
+        terms: "الشروط"
+
+    };
+
+
+    /* page content  →  data-service-i18n */
+    const arabicPage = {
+
+        learningBack: "العودة إلى الخدمات",
+
+        learningEyebrow: "دعم تعلّم مخصص",
+
+        learningTitle:
+            'صعوبات التعلّم <em>وفرط الحركة وتشتت الانتباه</em>',
+
+        learningSubtitle:
+            "نساعد كل متعلّم على بلوغ إمكاناته",
+
+        learningHeroDescription:
+            "فهم تحديات التعلّم الفردية ووضع استراتيجيات عملية لدعم التقدّم الأكاديمي والثقة بالنفس والرفاه.",
+
+        learningBook: "احجز موعداً",
+
+        learningExplore: "اكتشف دعم التعلّم",
+
+        learningImageTag: "كل متعلّم مهم",
+
+        learningAboutLabel: "عن هذه الخدمة",
+
+        learningAboutTitle: "لكل متعلّم مسار فريد.",
+
+        learningQuote:
+            "فهم الاختلافات يساعدنا على خلق فرص تعلّم أفضل.",
+
+        learningParagraph1:
+            "يتعلّم الأطفال والمراهقون بطرق مختلفة. وقد تؤثر الصعوبات في الانتباه أو التركيز أو القراءة أو الكتابة أو الرياضيات أو التنظيم أو المشاركة الصفية على التقدّم الأكاديمي والثقة بالنفس والرفاه العاطفي.",
+
+        learningParagraph2:
+            "في عيادة PsycEdu أقدّم تقييماً ودعماً فردياً للأطفال والمراهقين الذين يعانون من صعوبات في التعلّم وتحديات مرتبطة بالانتباه، بما في ذلك المخاوف المتعلقة باضطراب فرط الحركة وتشتت الانتباه (ADHD).",
+
+        learningParagraph3:
+            "قد تشمل العملية التاريخ النمائي والتربوي، والملاحظات السلوكية، وأدوات التقييم المناسبة، والتعاون مع الأهل والمدارس وغيرهم من المهنيين عند الحاجة. والهدف هو فهم العوامل المساهمة في الصعوبات وتحديد استراتيجيات عملية تدعم التعلّم والأداء اليومي.",
+
+        learningParagraph4:
+            "بحسب الاحتياجات الفردية، قد تتضمن التوصيات تدخلات موجّهة، وتسهيلات صفية، واستراتيجيات تربوية فردية، ودعماً سلوكياً، وإرشاداً للأهل والمعلمين.",
+
+        learningParagraph5:
+            "يستحق كل متعلّم نهجاً يعترف بنقاط قوته ويحترم اختلافاته الفردية ويدعم نموه بكرامة وثقة.",
+
+        learningAreasLabel: "كيف يمكننا مساعدتك",
+
+        learningAreasTitle: "مجالات دعم التعلّم",
+
+        learningAreasIntro:
+            "فهم التحديات المختلفة التي قد تؤثر في التعلّم والأداء اليومي.",
+
+        learningArea1: "الانتباه والتركيز",
+        learningArea2: "صعوبات القراءة",
+        learningArea3: "صعوبات الكتابة",
+        learningArea4: "صعوبات الرياضيات",
+        learningArea5: "التنظيم والتخطيط",
+        learningArea6: "المشاركة الصفية",
+        learningArea7: "التحديات المرتبطة باضطراب فرط الحركة وتشتت الانتباه",
+
+        learningApproachLabel: "نهجنا",
+
+        learningApproachTitle: "دعم مبني حول نقاط القوة الفردية.",
+
+        learningValue1: "تقييم واستراتيجيات فردية",
+        learningValue2: "تسهيلات صفية ودعم تربوي",
+        learningValue3: "إرشاد للأهل والمعلمين",
+        learningValue4: "دعم سلوكي ونمائي"
+
+    };
+
+
+    /* =====================================================
+       LANGUAGE
+    ===================================================== */
+
+    let currentLanguage =
+        localStorage.getItem("psycedu-language") || "en";
+
+
+    /* translate a group of elements; the original English markup
+       is stored the first time so it can be restored later */
+    function translateGroup(selector, attribute, dictionary, language) {
+
+        document.querySelectorAll(selector).forEach(function (el) {
+
+            const key = el.getAttribute(attribute);
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            if (language === "ar" && dictionary[key] !== undefined) {
+                el.innerHTML = dictionary[key];
+            } else {
+                el.innerHTML = el.dataset.enHtml;
+            }
+
+        });
+
+    }
+
+
+    /* parts of the page that have no data attribute */
+    const extraArabic = [
+
+        [".footer-logo strong", "فاتن سكافي"],
+
+        [".footer-logo small", "عيادة PsycEdu"],
+
+        [
+            ".footer-bottom-container > p",
+            '© <span id="currentYear"></span> عيادة فاتن سكافي PsycEdu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
+        ]
+
+    ];
+
+
+    function translateExtras(language) {
+
+        extraArabic.forEach(function (item) {
+
+            const el = document.querySelector(item[0]);
+
+            if (!el) {
+                return;
+            }
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            el.innerHTML =
+                language === "ar" ? item[1] : el.dataset.enHtml;
+
+        });
+
+    }
+
+
+    function setLanguage(language) {
+
+        currentLanguage = language;
+
+        const html = document.documentElement;
+
+        html.lang = language === "ar" ? "ar" : "en";
+        html.dir = language === "ar" ? "rtl" : "ltr";
+
+        document.body.setAttribute("dir", html.dir);
+
+
+        /* extras first (they may contain data-i18n spans) */
+        translateExtras(language);
+
+        translateGroup("[data-i18n]", "data-i18n", arabicShared, language);
+
+        translateGroup(
+            "[data-service-i18n]",
+            "data-service-i18n",
+            arabicPage,
+            language
+        );
+
+
+        /* arrows should point the right way in RTL */
+        const backIcon = document.querySelector(".counseling-back i");
+        const exploreIcon = document.querySelector(".counseling-text-link i");
+
+        if (backIcon) {
+            backIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-right"
+                    : "fa-solid fa-arrow-left";
+        }
+
+        if (exploreIcon) {
+            exploreIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-left"
+                    : "fa-solid fa-arrow-right";
+        }
+
+
+        /* image alt, title, meta description */
+        const heroImage = document.querySelector(".counseling-image-wrap img");
+
+        if (heroImage) {
+            heroImage.alt =
+                language === "ar"
+                    ? "دعم صعوبات التعلّم واضطراب فرط الحركة وتشتت الانتباه"
+                    : "Learning Difficulties and ADHD support";
+        }
+
+        document.title =
+            language === "ar"
+                ? "صعوبات التعلّم وفرط الحركة وتشتت الانتباه | عيادة PsycEdu"
+                : "Learning Difficulties & ADHD | PsycEdu Clinic";
+
+        const metaDescription =
+            document.querySelector('meta[name="description"]');
+
+        if (metaDescription) {
+            metaDescription.setAttribute(
+                "content",
+                language === "ar"
+                    ? "تقييم ودعم فردي لصعوبات التعلّم واضطراب فرط الحركة وتشتت الانتباه في عيادة PsycEdu."
+                    : "Individualized assessment and support for learning difficulties and ADHD at PsycEdu Clinic."
+            );
+        }
+
+
+        /* toast + language button text */
+        if (toast) {
+            toast.textContent =
+                language === "ar" ? "تم نسخ الرابط" : "Link copied!";
+        }
+
+        languageTexts.forEach(function (text) {
+            text.textContent = language === "en" ? "عربي" : "EN";
+        });
+
+        setYear();
+
+        localStorage.setItem("psycedu-language", language);
+
+    }
+
+
+    languageButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            setLanguage(currentLanguage === "en" ? "ar" : "en");
+
+        });
+
+    });
+
+
+    /* keep phone / email left-to-right in Arabic */
+    const fixStyle = document.createElement("style");
+
+    fixStyle.textContent =
+        '.footer-contact a[href^="tel:"] span,' +
+        '.footer-contact a[href^="mailto:"] span' +
+        '{direction:ltr;unicode-bidi:isolate;}';
+
+    document.head.appendChild(fixStyle);
+
+
+    /* =====================================================
+       LOAD LANGUAGE
+    ===================================================== */
+
+    setLanguage(currentLanguage);
+
+
+    /* =====================================================
+       RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > MOBILE_BREAKPOINT && mainNav && menuToggle) {
+            closeMenu();
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

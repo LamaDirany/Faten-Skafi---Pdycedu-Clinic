@@ -1,0 +1,1439 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Stories of Growth and Progress at Faten Skafi Psycedu Clinic.">
+
+    <title>Stories of Growth & Progress | Psycedu Clinic</title>
+
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stories.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER - SAME STRUCTURE AS HOME PAGE
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+        <a href="index.html"
+           class="logo"
+           aria-label="Psycedu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi Psycedu Clinic">
+
+        </a>
+
+
+        <!-- MOBILE MENU -->
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="mainNav">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html"
+               class="nav-link"
+               data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+
+            <!-- SERVICES DROPDOWN -->
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+                        Psychoeducational Reports
+                    </a>
+
+                    <a href="service-learning.html"
+                       data-i18n="service4">
+                        Learning Difficulties & ADHD
+                    </a>
+
+                    <a href="service-family.html"
+                       data-i18n="service5">
+                        Family Guidance & Skills Development
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- STORIES - ACTIVE -->
+            <a href="stories.html"
+               class="nav-link active"
+               aria-current="page"
+               data-i18n="navStories">
+                Stories
+            </a>
+
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html"
+               class="nav-link"
+               data-i18n="navContact">
+                Contact
+            </a>
+
+
+            <!-- MOBILE ACTIONS -->
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">
+                        عربي
+                    </span>
+
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+
+                    Book Appointment
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- LANGUAGE -->
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">
+                    عربي
+                </span>
+
+            </button>
+
+
+            <!-- SHARE BUTTON -->
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+
+                        Share this page
+
+                    </span>
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPOINTMENT -->
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+    <!-- =========================================
+         STORIES HERO
+    ========================================= -->
+
+    <section class="stories-hero">
+
+        <div class="container stories-hero-container">
+
+            <span class="stories-hero-label"
+                  data-i18n="storiesHeroLabel">
+
+                Every Step Matters
+
+            </span>
+
+            <h1 data-i18n="storiesHeroTitle">
+
+                Stories of
+                <span>Growth & Progress</span>
+
+            </h1>
+
+            <p class="stories-hero-subtitle"
+               data-i18n="storiesHeroSubtitle">
+
+                Every journey is unique, and every step forward matters.
+
+            </p>
+
+            <p class="stories-hero-description"
+               data-i18n="storiesHeroDescription">
+
+                At Dr. Faten Skafi – PsycEdu Clinic, we believe that
+                growth begins with understanding, support, and the
+                right guidance. This section highlights journeys of
+                learning, emotional development, and family growth,
+                reminding us that meaningful progress often starts
+                with small steps.
+
+            </p>
+
+            <div class="stories-hero-note">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <span data-i18n="storiesHeroPrivacy">
+
+                    The stories shared here are presented anonymously
+                    and with respect for privacy and confidentiality.
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         STORIES INTRODUCTION
+    ========================================= -->
+
+    <section class="stories-intro">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label"
+                      data-i18n="storiesSectionLabel">
+
+                    Stories That Inspire
+
+                </span>
+
+                <h2 data-i18n="storiesSectionTitle">
+
+                    Small Steps.
+                    <span>Meaningful Growth.</span>
+
+                </h2>
+
+                <p data-i18n="storiesSectionDescription">
+
+                    Explore illustrative journeys that highlight
+                    the importance of understanding, encouragement,
+                    emotional well-being, and family support.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         THREE STORIES
+    ========================================= -->
+
+    <section class="stories-section">
+
+        <div class="container">
+
+            <div class="stories-grid">
+
+
+                <!-- ==========================
+                     STORY 1
+                ========================== -->
+
+                <article class="story-card">
+
+                    <div class="story-visual learning-visual">
+
+                        <div class="story-illustration">
+
+                            <i class="fa-solid fa-book-open-reader"></i>
+
+                        </div>
+
+                        <span class="story-number">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category"
+                              data-i18n="story1Category">
+
+                            Learning & Confidence
+
+                        </span>
+
+                        <h3 data-i18n="story1Title">
+
+                            Finding Confidence in Learning
+
+                        </h3>
+
+                        <p data-i18n="story1Paragraph1">
+
+                            Sometimes, learning challenges can affect
+                            a child's confidence and motivation.
+                            With appropriate educational support,
+                            encouragement, and strategies tailored
+                            to individual needs, learning can become
+                            a more positive experience.
+
+                        </p>
+
+                        <p data-i18n="story1Paragraph2">
+
+                            Small achievements can make a meaningful
+                            difference, helping children recognize
+                            their strengths, develop confidence,
+                            and approach new challenges with
+                            greater independence.
+
+                        </p>
+
+
+                        <div class="story-key-message">
+
+                            <div class="key-icon">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong data-i18n="keyMessage">
+                                    Key Message
+                                </strong>
+
+                                <p data-i18n="story1Key">
+
+                                    Every child learns differently,
+                                    and every child deserves the
+                                    opportunity to grow.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ==========================
+                     STORY 2
+                ========================== -->
+
+                <article class="story-card">
+
+                    <div class="story-visual emotional-visual">
+
+                        <div class="story-illustration">
+
+                            <i class="fa-solid fa-heart-pulse"></i>
+
+                        </div>
+
+                        <span class="story-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category"
+                              data-i18n="story2Category">
+
+                            Emotional Well-Being
+
+                        </span>
+
+                        <h3 data-i18n="story2Title">
+
+                            Small Steps Toward Emotional Well-Being
+
+                        </h3>
+
+                        <p data-i18n="story2Paragraph1">
+
+                            Emotional challenges can sometimes make
+                            everyday situations feel overwhelming.
+                            With appropriate support, individuals
+                            can gradually develop a better understanding
+                            of their emotions and learn practical ways
+                            to cope with difficult moments.
+
+                        </p>
+
+                        <p data-i18n="story2Paragraph2">
+
+                            Progress may take time, but patience,
+                            understanding, and consistent support
+                            can help create opportunities for greater
+                            emotional awareness, resilience,
+                            and well-being.
+
+                        </p>
+
+
+                        <div class="story-key-message">
+
+                            <div class="key-icon">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong data-i18n="keyMessage">
+                                    Key Message
+                                </strong>
+
+                                <p data-i18n="story2Key">
+
+                                    Every small step toward emotional
+                                    well-being matters.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ==========================
+                     STORY 3
+                ========================== -->
+
+                <article class="story-card">
+
+                    <div class="story-visual family-visual">
+
+                        <div class="story-illustration">
+
+                            <i class="fa-solid fa-people-roof"></i>
+
+                        </div>
+
+                        <span class="story-number">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="story-content">
+
+                        <span class="story-category"
+                              data-i18n="story3Category">
+
+                            Family Growth
+
+                        </span>
+
+                        <h3 data-i18n="story3Title">
+
+                            Growing Together as a Family
+
+                        </h3>
+
+                        <p data-i18n="story3Paragraph1">
+
+                            Families sometimes face challenges in
+                            communication, understanding, and managing
+                            everyday situations. Guidance and practical
+                            strategies can help family members
+                            communicate more effectively, understand
+                            one another's needs, and build healthier
+                            ways of responding to difficulties.
+
+                        </p>
+
+                        <p data-i18n="story3Paragraph2">
+
+                            When families work together with patience
+                            and understanding, they can create a more
+                            supportive environment for growth
+                            and development.
+
+                        </p>
+
+
+                        <div class="story-key-message">
+
+                            <div class="key-icon">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong data-i18n="keyMessage">
+                                    Key Message
+                                </strong>
+
+                                <p data-i18n="story3Key">
+
+                                    Growth becomes more meaningful
+                                    when understanding and support
+                                    begin at home.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PRIVACY & CONFIDENTIALITY
+    ========================================= -->
+
+    <section class="stories-privacy-section">
+
+        <div class="container">
+
+            <div class="stories-privacy-box">
+
+                <div class="privacy-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <div class="privacy-content">
+
+                    <span class="section-label"
+                          data-i18n="privacyLabel">
+
+                        Your Privacy Matters
+
+                    </span>
+
+                    <h2 data-i18n="privacyTitle">
+
+                        Privacy & Confidentiality
+
+                    </h2>
+
+                    <p data-i18n="privacyDescription">
+
+                        Every individual's experience is unique.
+                        Any real client stories published in this
+                        section must be based on genuine experiences
+                        and shared only with appropriate informed
+                        consent and safeguards for confidentiality.
+                        Names and identifying details must be removed,
+                        and anonymity must be carefully assessed,
+                        particularly for children. These stories
+                        are illustrative website copy and should
+                        not be presented as actual client testimonials
+                        or verified clinical outcomes.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    
+
+<!-- =====================================================
+     FOOTER - SAME AS HOME PAGE
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="footer-logo">
+
+                <span class="footer-logo-symbol">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </span>
+
+                <span>
+
+                    <strong>
+                        FATEN SKAFI
+                    </strong>
+
+                    <small>
+                        Psycedu Clinic
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <p data-i18n="footerDescription">
+
+                Psychological and educational support
+                for people, learning, well-being and
+                brighter tomorrows.
+
+            </p>
+
+
+            <div class="footer-socials">
+
+                <!-- FACEBOOK -->
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">
+                Quick Links
+            </h3>
+
+            <a href="index.html"
+               data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html"
+               data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <a href="services.html"
+               data-i18n="navServices">
+                Services
+            </a>
+
+            <a href="stories.html"
+               data-i18n="navStories">
+                Stories
+            </a>
+
+            <a href="resources.html"
+               data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html"
+               data-i18n="navContact">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">
+                Contact Us
+            </h3>
+
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    +961 71 009 259
+                </span>
+
+            </a>
+
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>
+                    fatenskafi@gmail.com
+                </span>
+
+            </a>
+
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+                    Chtoura, Lebanon
+                </span>
+
+            </div>
+
+
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+                    Book Online
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Faten Skafi Psycedu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+
+            </p>
+
+
+            <div>
+
+                <a href="#"
+                   data-i18n="privacy">
+                    Privacy Policy
+                </a>
+
+                <a href="#"
+                   data-i18n="terms">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    Link copied!
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     PAGE TRANSLATIONS + HEADER INTERACTIONS
+===================================================== -->
+
+<script>
+
+/* ==========================
+   TRANSLATIONS
+========================== */
+
+const translations = {
+
+    en: {
+
+        navHome: "Home",
+        navAbout: "About Dr. Faten",
+        navServices: "Services",
+        navStories: "Stories",
+        navResources: "Resources",
+        navContact: "Contact",
+        bookAppointment: "Book Appointment",
+
+        service1: "Psychological Counseling",
+        service2: "Psychoeducational Assessment",
+        service3: "Psychoeducational Reports",
+        service4: "Learning Difficulties & ADHD",
+        service5: "Family Guidance & Skills Development",
+
+        shareTitle: "Share this page",
+
+        storiesHeroLabel: "Every Step Matters",
+        storiesHeroTitle: "Stories of <span>Growth & Progress</span>",
+        storiesHeroSubtitle: "Every journey is unique, and every step forward matters.",
+
+        storiesHeroDescription:
+            "At Dr. Faten Skafi – PsycEdu Clinic, we believe that growth begins with understanding, support, and the right guidance. This section highlights journeys of learning, emotional development, and family growth, reminding us that meaningful progress often starts with small steps.",
+
+        storiesHeroPrivacy:
+            "The stories shared here are presented anonymously and with respect for privacy and confidentiality.",
+
+        storiesSectionLabel: "Stories That Inspire",
+        storiesSectionTitle: "Small Steps. <span>Meaningful Growth.</span>",
+
+        storiesSectionDescription:
+            "Explore illustrative journeys that highlight the importance of understanding, encouragement, emotional well-being, and family support.",
+
+        story1Category: "Learning & Confidence",
+        story1Title: "Finding Confidence in Learning",
+
+        story1Paragraph1:
+            "Sometimes, learning challenges can affect a child's confidence and motivation. With appropriate educational support, encouragement, and strategies tailored to individual needs, learning can become a more positive experience.",
+
+        story1Paragraph2:
+            "Small achievements can make a meaningful difference, helping children recognize their strengths, develop confidence, and approach new challenges with greater independence.",
+
+        story1Key:
+            "Every child learns differently, and every child deserves the opportunity to grow.",
+
+        story2Category: "Emotional Well-Being",
+        story2Title: "Small Steps Toward Emotional Well-Being",
+
+        story2Paragraph1:
+            "Emotional challenges can sometimes make everyday situations feel overwhelming. With appropriate support, individuals can gradually develop a better understanding of their emotions and learn practical ways to cope with difficult moments.",
+
+        story2Paragraph2:
+            "Progress may take time, but patience, understanding, and consistent support can help create opportunities for greater emotional awareness, resilience, and well-being.",
+
+        story2Key:
+            "Every small step toward emotional well-being matters.",
+
+        story3Category: "Family Growth",
+        story3Title: "Growing Together as a Family",
+
+        story3Paragraph1:
+            "Families sometimes face challenges in communication, understanding, and managing everyday situations. Guidance and practical strategies can help family members communicate more effectively, understand one another's needs, and build healthier ways of responding to difficulties.",
+
+        story3Paragraph2:
+            "When families work together with patience and understanding, they can create a more supportive environment for growth and development.",
+
+        story3Key:
+            "Growth becomes more meaningful when understanding and support begin at home.",
+
+        keyMessage: "Key Message",
+
+        privacyLabel: "Your Privacy Matters",
+        privacyTitle: "Privacy & Confidentiality",
+
+        privacyDescription:
+            "Every individual's experience is unique. Any real client stories published in this section must be based on genuine experiences and shared only with appropriate informed consent and safeguards for confidentiality. Names and identifying details must be removed, and anonymity must be carefully assessed, particularly for children. These stories are illustrative website copy and should not be presented as actual client testimonials or verified clinical outcomes.",
+
+        storiesCtaSmall: "We're Here for You",
+        storiesCtaTitle: "Every Journey Deserves Support",
+
+        storiesCtaDescription:
+            "Understanding and guidance can help create opportunities for meaningful growth.",
+
+        footerDescription:
+            "Psychological and educational support for people, learning, well-being and brighter tomorrows.",
+
+        quickLinks: "Quick Links",
+        contactUs: "Contact Us",
+        location: "Chtoura, Lebanon",
+        bookOnline: "Book Online",
+        rights: "All Rights Reserved.",
+        privacy: "Privacy Policy",
+        terms: "Terms"
+    },
+
+
+    ar: {
+
+        navHome: "الرئيسية",
+        navAbout: "عن الدكتورة فاتن",
+        navServices: "الخدمات",
+        navStories: "قصص",
+        navResources: "الموارد",
+        navContact: "تواصل معنا",
+        bookAppointment: "احجز موعدًا",
+
+        service1: "الإرشاد النفسي",
+        service2: "التقييم النفسي التربوي",
+        service3: "التقارير النفسية التربوية",
+        service4: "صعوبات التعلم وفرط الحركة وتشتت الانتباه",
+        service5: "الإرشاد الأسري وتنمية المهارات",
+
+        shareTitle: "شارك هذه الصفحة",
+
+        storiesHeroLabel: "كل خطوة مهمة",
+        storiesHeroTitle: "قصص <span>النمو والتقدم</span>",
+        storiesHeroSubtitle: "لكل رحلة خصوصيتها، ولكل خطوة إلى الأمام قيمتها.",
+
+        storiesHeroDescription:
+            "في عيادة الدكتورة فاتن سكافي – PsycEdu، نؤمن بأن النمو يبدأ بالفهم والدعم والتوجيه المناسب. يسلّط هذا القسم الضوء على رحلات في التعلم والنمو العاطفي والتطور الأسري، ويذكّرنا بأن التقدم الهادف يبدأ غالبًا بخطوات صغيرة.",
+
+        storiesHeroPrivacy:
+            "تُعرض القصص هنا بصورة مجهولة الهوية مع احترام الخصوصية والسرية.",
+
+        storiesSectionLabel: "قصص ملهمة",
+        storiesSectionTitle: "خطوات صغيرة. <span>نمو ذو معنى.</span>",
+
+        storiesSectionDescription:
+            "اكتشف قصصًا توضيحية تبرز أهمية الفهم والتشجيع والرفاه النفسي والدعم الأسري.",
+
+        story1Category: "التعلم والثقة بالنفس",
+        story1Title: "اكتساب الثقة في التعلم",
+
+        story1Paragraph1:
+            "قد تؤثر صعوبات التعلم أحيانًا في ثقة الطفل بنفسه ودافعيته. ومع الدعم التربوي المناسب والتشجيع والاستراتيجيات المصممة وفق الاحتياجات الفردية، يمكن أن يصبح التعلم تجربة أكثر إيجابية.",
+
+        story1Paragraph2:
+            "يمكن للإنجازات الصغيرة أن تُحدث فرقًا مهمًا، فتساعد الأطفال على اكتشاف نقاط قوتهم وبناء ثقتهم بأنفسهم ومواجهة التحديات الجديدة باستقلالية أكبر.",
+
+        story1Key:
+            "يتعلم كل طفل بطريقة مختلفة، ويستحق كل طفل فرصة للنمو.",
+
+        story2Category: "الرفاه النفسي",
+        story2Title: "خطوات صغيرة نحو الرفاه النفسي",
+
+        story2Paragraph1:
+            "قد تجعل التحديات العاطفية المواقف اليومية مرهقة أحيانًا. ومع الدعم المناسب، يمكن للأفراد أن يطوروا تدريجيًا فهمًا أفضل لمشاعرهم ويتعلموا طرقًا عملية للتعامل مع اللحظات الصعبة.",
+
+        story2Paragraph2:
+            "قد يستغرق التقدم وقتًا، لكن الصبر والفهم والدعم المستمر يمكن أن يتيح فرصًا لتعزيز الوعي العاطفي والمرونة النفسية والرفاه.",
+
+        story2Key:
+            "كل خطوة صغيرة نحو الرفاه النفسي مهمة.",
+
+        story3Category: "النمو الأسري",
+        story3Title: "النمو معًا كأسرة",
+
+        story3Paragraph1:
+            "تواجه الأسر أحيانًا تحديات في التواصل والتفاهم وإدارة المواقف اليومية. ويمكن للإرشاد والاستراتيجيات العملية أن تساعد أفراد الأسرة على التواصل بفاعلية أكبر وفهم احتياجات بعضهم البعض وتطوير أساليب صحية للتعامل مع الصعوبات.",
+
+        story3Paragraph2:
+            "عندما يعمل أفراد الأسرة معًا بصبر وتفاهم، يمكنهم توفير بيئة أكثر دعمًا للنمو والتطور.",
+
+        story3Key:
+            "يصبح النمو أكثر معنى عندما يبدأ الفهم والدعم من المنزل.",
+
+        keyMessage: "الرسالة الأساسية",
+
+        privacyLabel: "خصوصيتك مهمة",
+        privacyTitle: "الخصوصية والسرية",
+
+        privacyDescription:
+            "تجربة كل فرد فريدة. يجب أن تستند أي قصص حقيقية للعملاء تُنشر في هذا القسم إلى تجارب فعلية، وألّا تُشارك إلا بعد الحصول على موافقة مستنيرة مناسبة واتخاذ تدابير لحماية السرية. يجب إزالة الأسماء والتفاصيل التي قد تكشف الهوية، وتقييم إمكانية التعرف على الأشخاص بعناية، ولا سيما الأطفال. هذه القصص نصوص توضيحية للموقع ولا ينبغي تقديمها كشهادات حقيقية للعملاء أو نتائج علاجية موثقة.",
+
+        storiesCtaSmall: "نحن هنا لدعمك",
+        storiesCtaTitle: "كل رحلة تستحق الدعم",
+
+        storiesCtaDescription:
+            "يمكن للفهم والتوجيه أن يساعدا في توفير فرص للنمو والتقدم.",
+
+        footerDescription:
+            "دعم نفسي وتربوي يعزز التعلم والرفاه وآفاق المستقبل.",
+
+        quickLinks: "روابط سريعة",
+        contactUs: "تواصل معنا",
+        location: "شتورا، لبنان",
+        bookOnline: "احجز عبر الإنترنت",
+        rights: "جميع الحقوق محفوظة.",
+        privacy: "سياسة الخصوصية",
+        terms: "الشروط"
+    }
+
+};
+
+
+/* ==========================
+   LANGUAGE SWITCH
+========================== */
+
+let currentLanguage = "en";
+
+try {
+    currentLanguage =
+        localStorage.getItem("language") === "ar"
+            ? "ar"
+            : "en";
+} catch (error) {}
+
+
+function changeLanguage(lang) {
+
+    currentLanguage = lang;
+
+    document.documentElement.lang = lang;
+
+    document.documentElement.dir =
+        lang === "ar" ? "rtl" : "ltr";
+
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+
+        const key = element.getAttribute("data-i18n");
+
+        if (!Object.prototype.hasOwnProperty.call(translations[lang], key)) {
+            return;
+        }
+
+        const value = translations[lang][key];
+
+        if (
+            key === "storiesHeroTitle" ||
+            key === "storiesSectionTitle"
+        ) {
+            element.innerHTML = value;
+        } else {
+            element.textContent = value;
+        }
+
+    });
+
+    document.querySelectorAll(".languageText").forEach(element => {
+
+        element.textContent =
+            lang === "ar" ? "EN" : "عربي";
+
+    });
+
+    try {
+        localStorage.setItem("language", lang);
+    } catch (error) {}
+
+}
+
+
+document.querySelectorAll(".language-btn").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        changeLanguage(
+            currentLanguage === "en" ? "ar" : "en"
+        );
+
+    });
+
+});
+
+changeLanguage(currentLanguage);
+
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+menuToggle.addEventListener("click", () => {
+
+    const isOpen = mainNav.classList.toggle("is-open");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+    menuToggle.querySelector("i").className =
+        isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+
+});
+
+
+/* ==========================
+   SERVICES DROPDOWN
+========================== */
+
+const dropdown = document.querySelector(".nav-dropdown");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+dropdownToggle.addEventListener("click", () => {
+
+    const isOpen = dropdown.classList.toggle("is-open");
+
+    dropdownToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+});
+
+document.addEventListener("click", event => {
+
+    if (!dropdown.contains(event.target)) {
+
+        dropdown.classList.remove("is-open");
+
+        dropdownToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+});
+
+
+/* ==========================
+   SHARE BUTTON
+========================== */
+
+const shareButton = document.getElementById("shareButton");
+const shareMenu = document.getElementById("shareMenu");
+const toast = document.getElementById("toast");
+
+shareButton.addEventListener("click", event => {
+
+    event.stopPropagation();
+
+    const isOpen = shareMenu.classList.toggle("active");
+
+    shareButton.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+    );
+
+});
+
+document.addEventListener("click", event => {
+
+    if (!event.target.closest(".share-wrapper")) {
+
+        shareMenu.classList.remove("active");
+
+        shareButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+});
+
+document.querySelectorAll("[data-share]").forEach(button => {
+
+    button.addEventListener("click", async () => {
+
+        const platform = button.dataset.share;
+
+        const url = window.location.href;
+        const encodedUrl = encodeURIComponent(url);
+
+        const title = encodeURIComponent(
+            "Stories of Growth & Progress - Psycedu Clinic"
+        );
+
+        let shareUrl = "";
+
+        if (platform === "whatsapp") {
+
+            shareUrl =
+                "https://wa.me/?text=" + title + "%20" + encodedUrl;
+
+        } else if (platform === "facebook") {
+
+            shareUrl =
+                "https://www.facebook.com/sharer/sharer.php?u=" + encodedUrl;
+
+        } else if (platform === "linkedin") {
+
+            shareUrl =
+                "https://www.linkedin.com/sharing/share-offsite/?url=" + encodedUrl;
+
+        } else if (platform === "copy") {
+
+            try {
+
+                await navigator.clipboard.writeText(url);
+
+                toast.textContent =
+                    currentLanguage === "ar"
+                        ? "تم نسخ الرابط!"
+                        : "Link copied!";
+
+                toast.classList.add("show");
+
+                setTimeout(() => {
+                    toast.classList.remove("show");
+                }, 2500);
+
+            } catch (error) {
+
+                window.prompt("Copy this link:", url);
+
+            }
+
+        }
+
+        if (shareUrl) {
+
+            window.open(
+                shareUrl,
+                "_blank",
+                "noopener,noreferrer"
+            );
+
+        }
+
+        shareMenu.classList.remove("active");
+
+        shareButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+});
+
+
+/* ==========================
+   FOOTER YEAR
+========================== */
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+
+    
+/* CLOSE MOBILE MENU AFTER NAVIGATION */
+
+document.querySelectorAll(
+    ".main-nav > .nav-link, .nav-dropdown .dropdown-menu a"
+).forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mainNav.classList.remove("is-open");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.querySelector("i").className =
+            "fa-solid fa-bars";
+
+    });
+
+});
+
+
+</script>
+
+</body>
+</html>
+

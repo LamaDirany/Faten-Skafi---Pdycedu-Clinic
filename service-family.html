@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Family guidance and skills development at PsycEdu Clinic, supporting positive parenting, communication and children's well-being.">
+
+    <title>Family Guidance &amp; Skills Development | PsycEdu Clinic</title>
+
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- SHARED CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="PsycEdu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi PsycEdu Clinic">
+
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html"
+               class="nav-link"
+               data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <!-- SERVICES DROPDOWN -->
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+                        Psychoeducational Reports
+                    </a>
+
+                    <a href="service-learning.html"
+                       data-i18n="service4">
+                        Learning Difficulties &amp; ADHD
+                    </a>
+
+                    <a href="service-family.html"
+                       data-i18n="service5"
+                       aria-current="page">
+                        Family Guidance &amp; Skills Development
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html"
+               class="nav-link"
+               data-i18n="navContact">
+                Contact
+            </a>
+
+            <!-- MOBILE NAV ACTIONS -->
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">عربي</span>
+
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+                    Book Appointment
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">عربي</span>
+
+            </button>
+
+            <!-- SHARE BUTTON -->
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+                        Share this page
+                    </span>
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+                            <i class="fa-solid fa-link"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="counseling-hero">
+
+        <div class="container counseling-hero-grid">
+
+            <div class="counseling-hero-copy">
+
+                <a href="index.html#services"
+                   class="counseling-back">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    <span data-service-i18n="familyBack">
+                        Back to Services
+                    </span>
+
+                </a>
+
+                <div class="counseling-eyebrow">
+
+                    <i class="fa-solid fa-people-roof"></i>
+
+                    <span data-service-i18n="familyEyebrow">
+                        Supporting Families Together
+                    </span>
+
+                </div>
+
+                <h1 data-service-i18n="familyTitle">
+                    Family Guidance <em>&amp; Skills Development</em>
+                </h1>
+
+                <p class="counseling-lead"
+                   data-service-i18n="familySubtitle">
+                    Empowering Families. Strengthening Relationships.
+                    Building Skills for Life.
+                </p>
+
+                <p data-service-i18n="familyHeroDescription">
+                    Helping parents and caregivers understand children's
+                    needs, build stronger relationships, and create
+                    supportive home environments.
+                </p>
+
+                <div class="counseling-actions">
+
+                    <a href="appointment.html" class="primary-btn">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+
+                        <span data-service-i18n="familyBook">
+                            Book an Appointment
+                        </span>
+
+                    </a>
+
+                    <a href="#about-family"
+                       class="counseling-text-link">
+
+                        <span data-service-i18n="familyExplore">
+                            Explore Family Guidance
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="counseling-hero-art">
+
+                <div class="counseling-image-wrap">
+
+                    <img src="Family Guidance &amp; Skills Development.png"
+                         alt="Family Guidance and Skills Development">
+
+                    <div class="counseling-image-tag">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span data-service-i18n="familyImageTag">
+                            Growing Stronger Together
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT THE SERVICE -->
+    <section class="counseling-intro"
+             id="about-family">
+
+        <div class="container counseling-intro-grid">
+
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="familyAboutLabel">
+                    About This Service
+                </span>
+
+                <h2 data-service-i18n="familyAboutTitle">
+                    Stronger families begin with understanding.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p class="counseling-quote"
+                   data-service-i18n="familyQuote">
+                    Supporting parents and caregivers helps
+                    children grow with confidence and care.
+                </p>
+
+            </div>
+
+            <div class="counseling-prose">
+
+                <p data-service-i18n="familyParagraph1">
+                    Families play a central role in children's emotional,
+                    behavioral, and educational development. PsycEdu Clinic
+                    offers family guidance and skills development to help
+                    parents and caregivers better understand children's
+                    needs, respond constructively to challenges, and
+                    create supportive home environments.
+                </p>
+
+                <p data-service-i18n="familyParagraph2">
+                    Guidance may address positive parenting, communication,
+                    emotional and behavioral regulation, managing
+                    challenging behaviors, setting appropriate boundaries,
+                    strengthening parent-child relationships, and
+                    supporting children through developmental or
+                    family transitions.
+                </p>
+
+                <p data-service-i18n="familyParagraph3">
+                    Sessions are tailored to each family's circumstances
+                    and may include practical strategies, problem-solving
+                    approaches, and guidance on reinforcing positive
+                    behaviors and developing age-appropriate life skills.
+                </p>
+
+                <p data-service-i18n="familyParagraph4">
+                    Drawing on my experience in psychology, education,
+                    and psychosocial support, I aim to empower families
+                    with practical knowledge and skills that promote
+                    healthier relationships, greater confidence,
+                    and children's overall well-being.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AREAS OF FAMILY GUIDANCE -->
+    <section class="counseling-areas"
+             id="family-areas">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label"
+                      data-service-i18n="familyAreasLabel">
+                    How We Can Help
+                </span>
+
+                <h2 data-service-i18n="familyAreasTitle">
+                    Areas of Family Guidance
+                </h2>
+
+                <p data-service-i18n="familyAreasIntro">
+                    Practical guidance for everyday parenting,
+                    communication, emotional development,
+                    and stronger family relationships.
+                </p>
+
+            </div>
+
+            <div class="counseling-areas-grid">
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-hands-holding-child"></i>
+
+                    <h3 data-service-i18n="familyArea1">
+                        Positive Parenting
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-comments"></i>
+
+                    <h3 data-service-i18n="familyArea2">
+                        Family Communication
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <h3 data-service-i18n="familyArea3">
+                        Emotional &amp; Behavioral Regulation
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-puzzle-piece"></i>
+
+                    <h3 data-service-i18n="familyArea4">
+                        Managing Challenging Behaviors
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                    <h3 data-service-i18n="familyArea5">
+                        Healthy Boundaries
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-people-roof"></i>
+
+                    <h3 data-service-i18n="familyArea6">
+                        Parent-Child Relationships
+                    </h3>
+
+                </article>
+
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <h3 data-service-i18n="familyArea7">
+                        Life Skills &amp; Family Transitions
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONALIZED APPROACH -->
+    <section class="counseling-values">
+
+        <div class="container counseling-values-inner">
+
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="familyApproachLabel">
+                    Our Approach
+                </span>
+
+                <h2 data-service-i18n="familyApproachTitle">
+                    Practical support for everyday family life.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p data-service-i18n="familyParagraph3">
+                    Sessions are tailored to each family's circumstances
+                    and may include practical strategies, problem-solving
+                    approaches, and guidance on reinforcing positive
+                    behaviors and developing age-appropriate life skills.
+                </p>
+
+            </div>
+
+            <div class="counseling-values-list">
+
+                <div>
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <span data-service-i18n="familyValue1">
+                        Guidance tailored to each family
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <span data-service-i18n="familyValue2">
+                        Practical strategies and problem-solving
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span data-service-i18n="familyValue3">
+                        Encouraging positive behaviors
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <span data-service-i18n="familyValue4">
+                        Building age-appropriate life skills
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="footer-logo">
+
+                <span class="footer-logo-symbol">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <span>
+                    <strong>FATEN SKAFI</strong>
+                    <small>PsycEdu Clinic</small>
+                </span>
+
+            </a>
+
+            <p data-i18n="footerDescription">
+                Psychological and educational support for people,
+                learning, well-being and brighter tomorrows.
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">
+                Quick Links
+            </h3>
+
+            <a href="index.html" data-i18n="navHome">Home</a>
+
+            <a href="about.html" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <a href="services.html" data-i18n="navServices">
+                Services
+            </a>
+
+            <a href="stories.html"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+            <a href="resources.html" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" data-i18n="navContact">
+                Contact
+            </a>
+
+        </div>
+
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">
+                Contact Us
+            </h3>
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>+961 71 009 259</span>
+
+            </a>
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>fatenskafi@gmail.com</span>
+
+            </a>
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+                    Chtoura, Lebanon
+                </span>
+
+            </div>
+
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+                    Book Online
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                Faten Skafi PsycEdu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+            </p>
+
+            <div>
+
+                <a href="#" data-i18n="privacy">
+                    Privacy Policy
+                </a>
+
+                <a href="#" data-i18n="terms">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    Link copied!
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT (navbar + share + Arabic translation)
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdown = document.querySelector(".nav-dropdown");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const shareButton = document.getElementById("shareButton");
+    const shareMenu = document.getElementById("shareMenu");
+    const languageButtons = document.querySelectorAll(".language-btn");
+    const languageTexts = document.querySelectorAll(".languageText");
+    const toast = document.getElementById("toast");
+
+    const MOBILE_BREAKPOINT = 850;
+
+
+    /* =====================================================
+       CURRENT YEAR
+    ===================================================== */
+
+    function setYear() {
+        const year = document.getElementById("currentYear");
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    function openMenu() {
+        mainNav.classList.add("active");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+
+    function closeMenu() {
+        mainNav.classList.remove("active");
+
+        if (dropdown) {
+            dropdown.classList.remove("active");
+        }
+
+        if (dropdownToggle) {
+            dropdownToggle.setAttribute("aria-expanded", "false");
+        }
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            if (mainNav.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+
+        });
+
+        /* close after tapping a link */
+        mainNav.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    closeMenu();
+                }
+            });
+
+        });
+
+        /* close when tapping outside */
+        document.addEventListener("click", function (event) {
+
+            if (
+                window.innerWidth <= MOBILE_BREAKPOINT &&
+                mainNav.classList.contains("active") &&
+                !mainNav.contains(event.target) &&
+                !menuToggle.contains(event.target)
+            ) {
+                closeMenu();
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       MOBILE SERVICES DROPDOWN
+    ===================================================== */
+
+    if (dropdownToggle && dropdown) {
+
+        dropdownToggle.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                dropdown.classList.toggle("active");
+
+                dropdownToggle.setAttribute(
+                    "aria-expanded",
+                    dropdown.classList.contains("active")
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SHARE MENU
+    ===================================================== */
+
+    if (shareButton && shareMenu) {
+
+        shareButton.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            shareMenu.classList.toggle("active");
+
+            shareButton.setAttribute(
+                "aria-expanded",
+                shareMenu.classList.contains("active")
+            );
+
+        });
+
+        document.addEventListener("click", function (event) {
+
+            if (
+                !shareMenu.contains(event.target) &&
+                !shareButton.contains(event.target)
+            ) {
+                shareMenu.classList.remove("active");
+                shareButton.setAttribute("aria-expanded", "false");
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    function showToast(message) {
+
+        if (!toast) {
+            return;
+        }
+
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(function () {
+            toast.classList.remove("show");
+        }, 2200);
+
+    }
+
+
+    /* =====================================================
+       SHARE OPTIONS
+    ===================================================== */
+
+    document.querySelectorAll("[data-share]").forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const type = button.dataset.share;
+            const pageURL = window.location.href;
+            const pageTitle = document.title;
+
+            let shareURL = "";
+
+            if (type === "whatsapp") {
+                shareURL =
+                    "https://wa.me/?text=" +
+                    encodeURIComponent(pageTitle + " " + pageURL);
+            }
+
+            if (type === "facebook") {
+                shareURL =
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "linkedin") {
+                shareURL =
+                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "copy") {
+
+                try {
+                    await navigator.clipboard.writeText(pageURL);
+                    showToast(
+                        currentLanguage === "ar"
+                            ? "تم نسخ الرابط"
+                            : "Link copied!"
+                    );
+                } catch (error) {
+                    console.error("Unable to copy link.", error);
+                }
+
+                shareMenu.classList.remove("active");
+                return;
+
+            }
+
+            if (shareURL) {
+                window.open(shareURL, "_blank", "noopener,noreferrer");
+            }
+
+            shareMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* =====================================================
+       ARABIC TRANSLATIONS
+       (the English text is read from the HTML itself, so only
+       the Arabic needs to be listed here)
+    ===================================================== */
+
+    /* header + footer  →  data-i18n */
+    const arabicShared = {
+
+        navHome: "الرئيسية",
+        navAbout: "عن د. فاتن",
+        navServices: "الخدمات",
+        navStories: "قصص",
+        navResources: "المصادر",
+        navContact: "تواصل معنا",
+        bookAppointment: "احجز موعداً",
+        shareTitle: "مشاركة الصفحة",
+
+        service1: "الاستشارات النفسية",
+        service2: "التقييم النفسي التربوي",
+        service3: "التقارير النفسية التربوية",
+        service4: "دعم صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+        service5: "الإرشاد الأسري وتنمية المهارات",
+
+        footerDescription:
+            "دعم نفسي وتربوي للإنسان والتعلّم والرفاه النفسي وغدٍ أكثر إشراقاً.",
+        quickLinks: "روابط سريعة",
+        contactUs: "تواصل معنا",
+        location: "شتورة، لبنان",
+        bookOnline: "احجز أونلاين",
+        rights: "جميع الحقوق محفوظة.",
+        privacy: "سياسة الخصوصية",
+        terms: "الشروط"
+
+    };
+
+
+    /* page content  →  data-service-i18n */
+    const arabicPage = {
+
+        familyBack: "العودة إلى الخدمات",
+
+        familyEyebrow: "ندعم الأسر معاً",
+
+        familyTitle: 'الإرشاد الأسري <em>وتنمية المهارات</em>',
+
+        familySubtitle:
+            "تمكين الأسر. تعزيز العلاقات. بناء مهارات للحياة.",
+
+        familyHeroDescription:
+            "مساعدة الوالدين ومقدّمي الرعاية على فهم احتياجات الأطفال وبناء علاقات أقوى وتهيئة بيئات منزلية داعمة.",
+
+        familyBook: "احجز موعداً",
+
+        familyExplore: "اكتشف الإرشاد الأسري",
+
+        familyImageTag: "ننمو أقوى معاً",
+
+        familyAboutLabel: "عن هذه الخدمة",
+
+        familyAboutTitle: "الأسر الأقوى تبدأ بالفهم.",
+
+        familyQuote:
+            "دعم الوالدين ومقدّمي الرعاية يساعد الأطفال على النمو بثقة ورعاية.",
+
+        familyParagraph1:
+            "تؤدي الأسرة دوراً محورياً في النمو العاطفي والسلوكي والتربوي للأطفال. وتقدّم عيادة PsycEdu الإرشاد الأسري وتنمية المهارات لمساعدة الوالدين ومقدّمي الرعاية على فهم احتياجات الأطفال بشكل أفضل، والاستجابة للتحديات بطريقة بنّاءة، وتهيئة بيئات منزلية داعمة.",
+
+        familyParagraph2:
+            "قد يتناول الإرشاد التربية الإيجابية، والتواصل، وتنظيم الانفعالات والسلوك، والتعامل مع السلوكيات الصعبة، ووضع الحدود المناسبة، وتعزيز العلاقة بين الوالدين والأطفال، ودعم الأطفال خلال التحولات النمائية أو الأسرية.",
+
+        familyParagraph3:
+            "تُصمَّم الجلسات بما يناسب ظروف كل أسرة، وقد تتضمن استراتيجيات عملية وأساليب لحل المشكلات وإرشاداً حول تعزيز السلوكيات الإيجابية وتنمية المهارات الحياتية المناسبة للعمر.",
+
+        familyParagraph4:
+            "استناداً إلى خبرتي في علم النفس والتربية والدعم النفسي الاجتماعي، أسعى إلى تمكين الأسر بمعارف ومهارات عملية تعزز العلاقات الصحية وتزيد الثقة وترفع من رفاه الأطفال بشكل عام.",
+
+        familyAreasLabel: "كيف يمكننا مساعدتك",
+
+        familyAreasTitle: "مجالات الإرشاد الأسري",
+
+        familyAreasIntro:
+            "إرشاد عملي للتربية اليومية والتواصل والنمو العاطفي وعلاقات أسرية أقوى.",
+
+        familyArea1: "التربية الإيجابية",
+        familyArea2: "التواصل الأسري",
+        familyArea3: "تنظيم الانفعالات والسلوك",
+        familyArea4: "التعامل مع السلوكيات الصعبة",
+        familyArea5: "الحدود الصحية",
+        familyArea6: "العلاقة بين الوالدين والأطفال",
+        familyArea7: "المهارات الحياتية والتحولات الأسرية",
+
+        familyApproachLabel: "نهجنا",
+
+        familyApproachTitle: "دعم عملي للحياة الأسرية اليومية.",
+
+        familyValue1: "إرشاد مخصص لكل أسرة",
+        familyValue2: "استراتيجيات عملية وحل المشكلات",
+        familyValue3: "تشجيع السلوكيات الإيجابية",
+        familyValue4: "بناء مهارات حياتية مناسبة للعمر"
+
+    };
+
+
+    /* =====================================================
+       LANGUAGE
+    ===================================================== */
+
+    let currentLanguage =
+        localStorage.getItem("psycedu-language") || "en";
+
+
+    /* translate a group of elements; the original English markup
+       is stored the first time so it can be restored later */
+    function translateGroup(selector, attribute, dictionary, language) {
+
+        document.querySelectorAll(selector).forEach(function (el) {
+
+            const key = el.getAttribute(attribute);
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            if (language === "ar" && dictionary[key] !== undefined) {
+                el.innerHTML = dictionary[key];
+            } else {
+                el.innerHTML = el.dataset.enHtml;
+            }
+
+        });
+
+    }
+
+
+    /* parts of the page that have no data attribute */
+    const extraArabic = [
+
+        [".footer-logo strong", "فاتن سكافي"],
+
+        [".footer-logo small", "عيادة PsycEdu"],
+
+        [
+            ".footer-bottom-container > p",
+            '© <span id="currentYear"></span> عيادة فاتن سكافي PsycEdu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
+        ]
+
+    ];
+
+
+    function translateExtras(language) {
+
+        extraArabic.forEach(function (item) {
+
+            const el = document.querySelector(item[0]);
+
+            if (!el) {
+                return;
+            }
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            el.innerHTML =
+                language === "ar" ? item[1] : el.dataset.enHtml;
+
+        });
+
+    }
+
+
+    function setLanguage(language) {
+
+        currentLanguage = language;
+
+        const html = document.documentElement;
+
+        html.lang = language === "ar" ? "ar" : "en";
+        html.dir = language === "ar" ? "rtl" : "ltr";
+
+        document.body.setAttribute("dir", html.dir);
+
+
+        /* extras first (they may contain data-i18n spans) */
+        translateExtras(language);
+
+        translateGroup("[data-i18n]", "data-i18n", arabicShared, language);
+
+        translateGroup(
+            "[data-service-i18n]",
+            "data-service-i18n",
+            arabicPage,
+            language
+        );
+
+
+        /* arrows should point the right way in RTL */
+        const backIcon = document.querySelector(".counseling-back i");
+        const exploreIcon = document.querySelector(".counseling-text-link i");
+
+        if (backIcon) {
+            backIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-right"
+                    : "fa-solid fa-arrow-left";
+        }
+
+        if (exploreIcon) {
+            exploreIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-left"
+                    : "fa-solid fa-arrow-right";
+        }
+
+
+        /* image alt, title, meta description */
+        const heroImage = document.querySelector(".counseling-image-wrap img");
+
+        if (heroImage) {
+            heroImage.alt =
+                language === "ar"
+                    ? "الإرشاد الأسري وتنمية المهارات"
+                    : "Family Guidance and Skills Development";
+        }
+
+        document.title =
+            language === "ar"
+                ? "الإرشاد الأسري وتنمية المهارات | عيادة PsycEdu"
+                : "Family Guidance & Skills Development | PsycEdu Clinic";
+
+        const metaDescription =
+            document.querySelector('meta[name="description"]');
+
+        if (metaDescription) {
+            metaDescription.setAttribute(
+                "content",
+                language === "ar"
+                    ? "الإرشاد الأسري وتنمية المهارات في عيادة PsycEdu، لدعم التربية الإيجابية والتواصل ورفاه الأطفال."
+                    : "Family guidance and skills development at PsycEdu Clinic, supporting positive parenting, communication and children's well-being."
+            );
+        }
+
+
+        /* toast + language button text */
+        if (toast) {
+            toast.textContent =
+                language === "ar" ? "تم نسخ الرابط" : "Link copied!";
+        }
+
+        languageTexts.forEach(function (text) {
+            text.textContent = language === "en" ? "عربي" : "EN";
+        });
+
+        setYear();
+
+        localStorage.setItem("psycedu-language", language);
+
+    }
+
+
+    languageButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            setLanguage(currentLanguage === "en" ? "ar" : "en");
+
+        });
+
+    });
+
+
+    /* keep phone / email left-to-right in Arabic */
+    const fixStyle = document.createElement("style");
+
+    fixStyle.textContent =
+        '.footer-contact a[href^="tel:"] span,' +
+        '.footer-contact a[href^="mailto:"] span' +
+        '{direction:ltr;unicode-bidi:isolate;}';
+
+    document.head.appendChild(fixStyle);
+
+
+    /* =====================================================
+       LOAD LANGUAGE
+    ===================================================== */
+
+    setLanguage(currentLanguage);
+
+
+    /* =====================================================
+       RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > MOBILE_BREAKPOINT && mainNav && menuToggle) {
+            closeMenu();
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

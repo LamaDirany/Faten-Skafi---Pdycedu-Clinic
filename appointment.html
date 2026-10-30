@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Request an online psychological or educational appointment with Dr. Faten Skafi at PsycEdu Clinic.">
+<title>Online Appointments | PsycEdu Clinic</title>
+<link rel="icon" href="icon.jpeg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="logo" aria-label="Psycedu Clinic Home">
+<img src="logo.jpeg" alt="Faten Skafi Psycedu Clinic">
+</a>
+
+<button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+<i class="fa-solid fa-bars"></i>
+</button>
+<nav class="main-nav" id="mainNav">
+<a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+<a href="about.html" class="nav-link" data-i18n="navAbout">About Dr. Faten</a>
+
+<div class="nav-dropdown">
+<button class="dropdown-toggle" type="button" aria-expanded="false">
+<span data-i18n="navServices">Services</span>
+<i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="dropdown-menu">
+<a href="service-counseling.html" data-i18n="service1">Psychological Counseling</a>
+<a href="service-assessment.html" data-i18n="service2">Psychoeducational Assessment</a>
+<a href="service-reports.html" data-i18n="service3">Psychoeducational Reports</a>
+<a href="service-learning.html" data-i18n="service4">Learning Difficulties &amp; ADHD</a>
+<a href="service-family.html" data-i18n="service5">Family Guidance &amp; Skills Development</a>
+</div>
+</div>
+
+<a href="stories.html" class="nav-link" data-i18n="navStories">Stories</a>
+<a href="resources.html" class="nav-link" data-i18n="navResources">Resources</a>
+<a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+
+<div class="mobile-nav-actions">
+<button class="language-btn mobile-language" type="button">
+<i class="fa-solid fa-globe"></i>
+<span class="languageText">عربي</span>
+</button>
+<a href="appointment.html" class="appointment-btn mobile-appointment" data-i18n="bookAppointment">Book Appointment</a>
+</div>
+</nav>
+
+<div class="header-actions">
+<button class="language-btn" id="languageButton" type="button" aria-label="Switch language">
+<i class="fa-solid fa-globe"></i>
+<span class="languageText">عربي</span>
+</button>
+
+<div class="share-wrapper">
+<button class="share-btn" id="shareButton" type="button" aria-label="Share this page" aria-expanded="false">
+<i class="fa-solid fa-share-nodes"></i>
+</button>
+<div class="share-menu" id="shareMenu">
+<span class="share-title" data-i18n="shareTitle">Share this page</span>
+<div class="share-options">
+<button type="button" data-share="whatsapp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+<button type="button" data-share="facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></button>
+<button type="button" data-share="linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+<button type="button" data-share="copy" aria-label="Copy page link"><i class="fa-solid fa-link"></i></button>
+</div>
+</div>
+</div>
+
+<a href="appointment.html" class="appointment-btn" data-i18n="bookAppointment">Book Appointment</a>
+</div>
+</div>
+</header>
+
+<main>
+
+<section class="appointment-hero">
+<div class="container appointment-hero-inner">
+<span class="appointment-kicker" data-appt="heroTag">ONLINE APPOINTMENTS</span>
+<h1 data-appt="heroTitle">Support starts with <span>one small step.</span></h1>
+<p data-appt="heroText">Request psychological or educational support from wherever you are. Share your preferred date and the clinic will contact you to discuss availability and confirm the details.</p>
+<a href="#appointment-form" class="appointment-hero-button">
+<span data-appt="heroButton">Request an Appointment</span>
+<i class="fa-solid fa-arrow-down"></i>
+</a>
+</div>
+</section>
+
+<section class="appointment-steps">
+<div class="container">
+<div class="appointment-section-heading">
+<span class="appointment-kicker" data-appt="stepsLabel">ONLINE APPOINTMENTS</span>
+<h2 data-appt="stepsTitle">Getting Support Is <span>Simple</span></h2>
+<p data-appt="stepsText">Begin your journey from wherever you are through a simple online appointment process.</p>
+</div>
+
+<div class="appointment-steps-grid">
+<article class="appointment-step">
+<span class="appointment-step-number">01</span>
+<div class="appointment-step-icon"><i class="fa-solid fa-hand-pointer"></i></div>
+<h3 data-appt="step1Title">Choose a Service</h3>
+<p data-appt="step1Text">Select the type of psychological or educational support you need.</p>
+</article>
+
+<article class="appointment-step">
+<span class="appointment-step-number">02</span>
+<div class="appointment-step-icon"><i class="fa-regular fa-calendar-check"></i></div>
+<h3 data-appt="step2Title">Request an Appointment</h3>
+<p data-appt="step2Text">Choose your preferred date and provide your contact information.</p>
+</article>
+
+<article class="appointment-step">
+<span class="appointment-step-number">03</span>
+<div class="appointment-step-icon"><i class="fa-solid fa-circle-check"></i></div>
+<h3 data-appt="step3Title">Receive Confirmation</h3>
+<p data-appt="step3Text">The clinic will contact you to confirm the session details.</p>
+</article>
+
+<article class="appointment-step">
+<span class="appointment-step-number">04</span>
+<div class="appointment-step-icon"><i class="fa-solid fa-laptop"></i></div>
+<h3 data-appt="step4Title">Attend Online</h3>
+<p data-appt="step4Text">Connect online for your scheduled confidential session.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="appointment-request-section" id="appointment-form">
+<div class="container appointment-request-layout">
+
+<aside class="appointment-request-aside">
+<span class="appointment-kicker" data-appt="formKicker">TAKE THE FIRST STEP</span>
+<h2 data-appt="formHeading">Request your <span>online appointment</span></h2>
+<p data-appt="formIntro">Complete this short form to prepare a WhatsApp appointment request to the clinic. Your preferred date is a request, not a confirmed booking.</p>
+
+<div class="appointment-contact-line">
+<i class="fa-solid fa-phone"></i>
+<a href="tel:+96171009259">+961 71 009 259</a>
+</div>
+
+<div class="appointment-contact-line">
+<i class="fa-brands fa-whatsapp"></i>
+<a href="https://wa.me/96171009259" target="_blank" rel="noopener noreferrer">WhatsApp the clinic</a>
+</div>
+
+<div class="appointment-contact-line">
+<i class="fa-regular fa-envelope"></i>
+<a href="mailto:fatenskafi@gmail.com">fatenskafi@gmail.com</a>
+</div>
+
+<div class="appointment-aside-note">
+<i class="fa-solid fa-lock"></i>
+<p data-appt="sensitiveNote">Please do not include sensitive health details in this request. You can discuss them privately with the clinic.</p>
+</div>
+</aside>
+
+<form id="appointmentRequestForm" class="appointment-form-card">
+<div class="appointment-form-head">
+<h3 data-appt="formTitle">Appointment Request</h3>
+<p data-appt="formSubtitle">Fields marked * are required.</p>
+</div>
+
+<div class="appointment-form-grid">
+
+<div class="appointment-field">
+<label for="apptName" data-appt="name">Full name *</label>
+<input id="apptName" name="name" type="text" autocomplete="name" maxlength="100" required placeholder="Your full name">
+</div>
+
+<div class="appointment-field">
+<label for="apptPhone" data-appt="phone">Phone number *</label>
+<input id="apptPhone" name="phone" type="tel" autocomplete="tel" maxlength="35" required placeholder="+961 ...">
+</div>
+
+<div class="appointment-field">
+<label for="apptEmail" data-appt="emailOptional">Email address (optional)</label>
+<input id="apptEmail" name="email" type="email" autocomplete="email" maxlength="150" placeholder="you@example.com">
+</div>
+
+<div class="appointment-field">
+<label for="apptService" data-appt="service">Choose a service *</label>
+<select id="apptService" name="service" required>
+<option value="" data-appt="chooseService">Select a service</option>
+<option value="Psychological Counseling" data-appt="svc1">Psychological Counseling</option>
+<option value="Psychoeducational Assessment" data-appt="svc2">Psychoeducational Assessment</option>
+<option value="Psychoeducational Reports" data-appt="svc3">Psychoeducational Reports</option>
+<option value="Learning Difficulties & ADHD" data-appt="svc4">Learning Difficulties &amp; ADHD</option>
+<option value="Family Guidance & Skills Development" data-appt="svc5">Family Guidance &amp; Skills Development</option>
+</select>
+</div>
+
+<div class="appointment-field">
+<label for="apptDate" data-appt="date">Preferred date *</label>
+<input id="apptDate" name="date" type="date" required>
+</div>
+
+<div class="appointment-field">
+<label for="apptTime" data-appt="time">Preferred time</label>
+<select id="apptTime" name="time">
+<option value="Flexible" data-appt="flexible">Flexible</option>
+<option value="Morning" data-appt="morning">Morning</option>
+<option value="Afternoon" data-appt="afternoon">Afternoon</option>
+<option value="Evening" data-appt="evening">Evening</option>
+</select>
+</div>
+
+<div class="appointment-field appointment-field-full">
+<label for="apptMessage" data-appt="message">Additional note (optional)</label>
+<textarea id="apptMessage" name="message" rows="4" maxlength="400" placeholder="Scheduling preferences only; please avoid sensitive personal details."></textarea>
+</div>
+
+</div>
+
+<p class="appointment-form-notice" data-appt="formNotice">Submitting opens WhatsApp with a prepared appointment request. Press Send in WhatsApp to complete your request. This is not an instant booking confirmation.</p>
+
+<button class="appointment-submit" type="submit">
+<span data-appt="submit">Send Appointment Request</span>
+<i class="fa-brands fa-whatsapp"></i>
+</button>
+
+<p class="appointment-form-status" id="apptStatus" role="status" aria-live="polite"></p>
+</form>
+
+</div>
+</section>
+
+<section class="appointment-faq">
+<div class="container">
+<div class="appointment-section-heading">
+<span class="appointment-kicker" data-appt="faqLabel">GOOD TO KNOW</span>
+<h2 data-appt="faqTitle">Before your session</h2>
+</div>
+
+<div class="appointment-faq-grid">
+<article>
+<i class="fa-regular fa-calendar"></i>
+<h3 data-appt="faq1Title">Is my date confirmed?</h3>
+<p data-appt="faq1Text">No. The clinic will contact you to confirm availability and the appointment details.</p>
+</article>
+
+<article>
+<i class="fa-solid fa-laptop"></i>
+<h3 data-appt="faq2Title">How do online sessions work?</h3>
+<p data-appt="faq2Text">After confirmation, the clinic will share instructions for joining your online session.</p>
+</article>
+
+<article>
+<i class="fa-solid fa-shield-heart"></i>
+<h3 data-appt="faq3Title">What should I share?</h3>
+<p data-appt="faq3Text">Only contact information and scheduling preferences are needed for the initial request.</p>
+</article>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+
+<div class="footer-brand">
+<a href="index.html" class="footer-logo">
+<span class="footer-logo-symbol"><i class="fa-solid fa-heart"></i></span>
+<span><strong>FATEN SKAFI</strong><small>Psycedu Clinic</small></span>
+</a>
+
+<p data-i18n="footerDescription">Psychological and educational support for people, learning, well-being and brighter tomorrows.</p>
+
+<div class="footer-socials">
+<a href="https://www.facebook.com/share/19TW65atwE/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+</div>
+</div>
+
+<div class="footer-column">
+<h3 data-i18n="quickLinks">Quick Links</h3>
+<a href="index.html" data-i18n="navHome">Home</a>
+<a href="about.html" data-i18n="navAbout">About Dr. Faten</a>
+<a href="services.html" data-i18n="navServices">Services</a>
+<a href="storiess.html" data-i18n="navStories">Stories</a>
+<a href="resources.html" data-i18n="navResources">Resources</a>
+<a href="contact.html" data-i18n="navContact">Contact</a>
+</div>
+
+<div class="footer-column footer-contact">
+<h3 data-i18n="contactUs">Contact Us</h3>
+
+<a href="tel:+96171009259">
+<i class="fa-solid fa-phone"></i>
+<span>+961 71 009 259</span>
+</a>
+
+<a href="mailto:fatenskafi@gmail.com">
+<i class="fa-regular fa-envelope"></i>
+<span>fatenskafi@gmail.com</span>
+</a>
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+<span data-i18n="location">Chtoura, Lebanon</span>
+</div>
+
+<a href="appointment.html" class="footer-appointment">
+<i class="fa-regular fa-calendar-check"></i>
+<span data-i18n="bookOnline">Book Online</span>
+</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="container footer-bottom-container">
+<p>© <span id="currentYear"></span> Faten Skafi Psycedu Clinic. <span data-i18n="rights">All Rights Reserved.</span></p>
+<div>
+<a href="#" data-i18n="privacy">Privacy Policy</a>
+<a href="#" data-i18n="terms">Terms</a>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="toast" id="toast">Link copied!</div>
+
+<script>
+const apptCopy = {
+en: {
+heroTag:"ONLINE APPOINTMENTS",
+heroTitle:"Support starts with <span>one small step.</span>",
+heroText:"Request psychological or educational support from wherever you are. Share your preferred date and the clinic will contact you to discuss availability and confirm the details.",
+heroButton:"Request an Appointment",
+stepsLabel:"ONLINE APPOINTMENTS",
+stepsTitle:"Getting Support Is <span>Simple</span>",
+stepsText:"Begin your journey from wherever you are through a simple online appointment process.",
+step1Title:"Choose a Service",
+step1Text:"Select the type of psychological or educational support you need.",
+step2Title:"Request an Appointment",
+step2Text:"Choose your preferred date and provide your contact information.",
+step3Title:"Receive Confirmation",
+step3Text:"The clinic will contact you to confirm the session details.",
+step4Title:"Attend Online",
+step4Text:"Connect online for your scheduled confidential session.",
+formKicker:"TAKE THE FIRST STEP",
+formHeading:"Request your <span>online appointment</span>",
+formIntro:"Complete this short form to prepare a WhatsApp appointment request to the clinic. Your preferred date is a request, not a confirmed booking.",
+sensitiveNote:"Please do not include sensitive health details in this request. You can discuss them privately with the clinic.",
+formTitle:"Appointment Request",
+formSubtitle:"Fields marked * are required.",
+name:"Full name *",
+phone:"Phone number *",
+emailOptional:"Email address (optional)",
+service:"Choose a service *",
+chooseService:"Select a service",
+date:"Preferred date *",
+time:"Preferred time",
+flexible:"Flexible",
+morning:"Morning",
+afternoon:"Afternoon",
+evening:"Evening",
+message:"Additional note (optional)",
+formNotice:"Submitting opens WhatsApp with a prepared appointment request. Press Send in WhatsApp to complete your request. This is not an instant booking confirmation.",
+submit:"Send Appointment Request",
+faqLabel:"GOOD TO KNOW",
+faqTitle:"Before your session",
+faq1Title:"Is my date confirmed?",
+faq1Text:"No. The clinic will contact you to confirm availability and the appointment details.",
+faq2Title:"How do online sessions work?",
+faq2Text:"After confirmation, the clinic will share instructions for joining your online session.",
+faq3Title:"What should I share?",
+faq3Text:"Only contact information and scheduling preferences are needed for the initial request.",
+svc1:"Psychological Counseling",
+svc2:"Psychoeducational Assessment",
+svc3:"Psychoeducational Reports",
+svc4:"Learning Difficulties & ADHD",
+svc5:"Family Guidance & Skills Development"
+},
+ar: {
+heroTag:"المواعيد عبر الإنترنت",
+heroTitle:"يبدأ الدعم <span>بخطوة صغيرة.</span>",
+heroText:"اطلب الدعم النفسي أو التربوي من أي مكان. اختر التاريخ المناسب لك وستتواصل العيادة معك لمناقشة التوافر وتأكيد التفاصيل.",
+heroButton:"طلب موعد",
+stepsLabel:"المواعيد عبر الإنترنت",
+stepsTitle:"الحصول على الدعم <span>بسيط</span>",
+stepsText:"ابدأ رحلتك من أي مكان من خلال خطوات سهلة لطلب موعد عبر الإنترنت.",
+step1Title:"اختر الخدمة",
+step1Text:"حدد نوع الدعم النفسي أو التربوي الذي تحتاج إليه.",
+step2Title:"اطلب موعدًا",
+step2Text:"اختر التاريخ المفضل وأدخل معلومات التواصل.",
+step3Title:"تلقَّ التأكيد",
+step3Text:"ستتواصل معك العيادة لتأكيد تفاصيل الجلسة.",
+step4Title:"احضر عبر الإنترنت",
+step4Text:"انضم إلى جلستك السرية عبر الإنترنت في الموعد المحدد.",
+formKicker:"ابدأ الخطوة الأولى",
+formHeading:"اطلب <span>موعدًا عبر الإنترنت</span>",
+formIntro:"املأ هذا النموذج القصير لإعداد طلب موعد عبر واتساب. التاريخ المفضل هو طلب وليس حجزًا مؤكدًا.",
+sensitiveNote:"يرجى عدم إدخال تفاصيل صحية حساسة في الطلب. يمكنك مناقشتها بشكل خاص مع العيادة.",
+formTitle:"طلب موعد",
+formSubtitle:"الحقول المميزة بنجمة * إلزامية.",
+name:"الاسم الكامل *",
+phone:"رقم الهاتف *",
+emailOptional:"البريد الإلكتروني (اختياري)",
+service:"اختر الخدمة *",
+chooseService:"اختر خدمة",
+date:"التاريخ المفضل *",
+time:"الوقت المفضل",
+flexible:"مرن",
+morning:"صباحًا",
+afternoon:"بعد الظهر",
+evening:"مساءً",
+message:"ملاحظة إضافية (اختياري)",
+formNotice:"عند الضغط على الزر، سيفتح واتساب برسالة جاهزة لطلب الموعد. اضغط على إرسال في واتساب لإكمال الطلب. هذا ليس تأكيدًا فوريًا للحجز.",
+submit:"إرسال طلب الموعد",
+faqLabel:"معلومات مهمة",
+faqTitle:"قبل جلستك",
+faq1Title:"هل تم تأكيد التاريخ؟",
+faq1Text:"لا. ستتواصل معك العيادة لتأكيد التوافر وتفاصيل الموعد.",
+faq2Title:"كيف تتم الجلسات عبر الإنترنت؟",
+faq2Text:"بعد التأكيد، ستشارك العيادة معك تعليمات الانضمام إلى الجلسة.",
+faq3Title:"ما المعلومات التي يجب مشاركتها؟",
+faq3Text:"تكفي معلومات التواصل وتفضيلات الموعد عند إرسال الطلب الأولي.",
+svc1:"الإرشاد النفسي",
+svc2:"التقييم النفسي التربوي",
+svc3:"التقارير النفسية التربوية",
+svc4:"صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+svc5:"الإرشاد الأسري وتنمية المهارات"
+}
+};
+
+const navCopy = {
+en: {
+navHome:"Home",
+navAbout:"About Dr. Faten",
+navServices:"Services",
+navStories:"Stories",
+navResources:"Resources",
+navContact:"Contact",
+bookAppointment:"Book Appointment",
+service1:"Psychological Counseling",
+service2:"Psychoeducational Assessment",
+service3:"Psychoeducational Reports",
+service4:"Learning Difficulties & ADHD",
+service5:"Family Guidance & Skills Development",
+quickLinks:"Quick Links",
+contactUs:"Contact Us",
+location:"Chtoura, Lebanon",
+bookOnline:"Book Online",
+rights:"All Rights Reserved.",
+privacy:"Privacy Policy",
+terms:"Terms",
+footerDescription:"Psychological and educational support for people, learning, well-being and brighter tomorrows."
+},
+ar: {
+navHome:"الرئيسية",
+navAbout:"عن الدكتورة فاتن",
+navServices:"الخدمات",
+navStories:"قصص",
+navResources:"الموارد",
+navContact:"تواصل معنا",
+bookAppointment:"احجز موعدًا",
+service1:"الإرشاد النفسي",
+service2:"التقييم النفسي التربوي",
+service3:"التقارير النفسية التربوية",
+service4:"صعوبات التعلم وفرط الحركة وتشتت الانتباه",
+service5:"الإرشاد الأسري وتنمية المهارات",
+quickLinks:"روابط سريعة",
+contactUs:"تواصل معنا",
+location:"شتورا، لبنان",
+bookOnline:"احجز عبر الإنترنت",
+rights:"جميع الحقوق محفوظة.",
+privacy:"سياسة الخصوصية",
+terms:"الشروط",
+footerDescription:"دعم نفسي وتربوي يعزز التعلم والرفاه وآفاق المستقبل."
+}
+};
+
+let lang = "en";
+
+try {
+    lang = localStorage.getItem("language") === "ar" ? "ar" : "en";
+} catch (e) {}
+
+function applyLang(next) {
+    lang = next;
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+    document.querySelectorAll("[data-appt]").forEach(el => {
+        const key = el.dataset.appt;
+        const value = apptCopy[lang][key];
+
+        if (value === undefined) return;
+
+        if (["heroTitle", "stepsTitle", "formHeading"].includes(key)) {
+            el.innerHTML = value;
+        } else {
+            el.textContent = value;
+        }
+    });
+
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const value = navCopy[lang][el.dataset.i18n];
+        if (value !== undefined) el.textContent = value;
+    });
+
+    document.querySelectorAll(".languageText").forEach(el => {
+        el.textContent = lang === "ar" ? "EN" : "عربي";
+    });
+
+    try {
+        localStorage.setItem("language", lang);
+    } catch (e) {}
+}
+
+applyLang(lang);
+
+document.querySelectorAll(".language-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        applyLang(lang === "en" ? "ar" : "en");
+    });
+});
+
+// Mobile menu
+const mobile = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+
+if (mobile && nav) {
+    mobile.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+
+        mobile.setAttribute("aria-expanded", String(open));
+        mobile.querySelector("i").className = open
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+    });
+}
+
+// Navigation dropdown
+document.querySelectorAll(".nav-dropdown").forEach(drop => {
+    const btn = drop.querySelector(".dropdown-toggle");
+
+    if (btn) {
+        btn.addEventListener("click", e => {
+            e.stopPropagation();
+
+            const open = drop.classList.toggle("is-open");
+            btn.setAttribute("aria-expanded", String(open));
+        });
+    }
+});
+
+document.addEventListener("click", e => {
+    document.querySelectorAll(".nav-dropdown").forEach(drop => {
+        if (!drop.contains(e.target)) {
+            drop.classList.remove("is-open");
+            drop.querySelector(".dropdown-toggle")
+                ?.setAttribute("aria-expanded", "false");
+        }
+    });
+});
+
+// Share menu
+const shareBtn = document.getElementById("shareButton");
+const shareMenu = document.getElementById("shareMenu");
+const toast = document.getElementById("toast");
+
+if (shareBtn && shareMenu) {
+    shareBtn.addEventListener("click", e => {
+        e.stopPropagation();
+
+        const open = shareMenu.classList.toggle("active");
+        shareBtn.setAttribute("aria-expanded", String(open));
+    });
+
+    document.addEventListener("click", e => {
+        if (!e.target.closest(".share-wrapper")) {
+            shareMenu.classList.remove("active");
+            shareBtn.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    document.querySelectorAll("[data-share]").forEach(btn => {
+        btn.addEventListener("click", async () => {
+            const url = encodeURIComponent(location.href);
+            let target = "";
+
+            switch (btn.dataset.share) {
+                case "whatsapp":
+                    target = "https://wa.me/?text=" +
+                        encodeURIComponent("PsycEdu Clinic Appointment ") + url;
+                    break;
+
+                case "facebook":
+                    target = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+                    break;
+
+                case "linkedin":
+                    target = "https://www.linkedin.com/sharing/share-offsite/?url=" + url;
+                    break;
+
+                case "copy":
+                    try {
+                        await navigator.clipboard.writeText(location.href);
+
+                        if (toast) {
+                            toast.textContent = lang === "ar"
+                                ? "تم نسخ الرابط!"
+                                : "Link copied!";
+
+                            toast.classList.add("show");
+
+                            setTimeout(() => {
+                                toast.classList.remove("show");
+                            }, 2200);
+                        }
+                    } catch (e) {
+                        prompt("Copy link:", location.href);
+                    }
+                    break;
+            }
+
+            if (target) {
+                window.open(target, "_blank", "noopener,noreferrer");
+            }
+
+            shareMenu.classList.remove("active");
+            shareBtn.setAttribute("aria-expanded", "false");
+        });
+    });
+}
+
+// Prevent past dates
+const dateField = document.getElementById("apptDate");
+
+if (dateField) {
+    const today = new Date();
+
+    const localToday = new Date(
+        today.getTime() - today.getTimezoneOffset() * 60000
+    ).toISOString().slice(0, 10);
+
+    dateField.min = localToday;
+}
+
+// Appointment submission through WhatsApp
+const appointmentForm = document.getElementById("appointmentRequestForm");
+
+if (appointmentForm) {
+    appointmentForm.addEventListener("submit", e => {
+        e.preventDefault();
+
+        const form = e.currentTarget;
+
+        if (!form.reportValidity()) return;
+
+        const data = new FormData(form);
+        const service = data.get("service");
+        const time = data.get("time");
+
+        const serviceArabic = {
+            "Psychological Counseling": "الإرشاد النفسي",
+            "Psychoeducational Assessment": "التقييم النفسي التربوي",
+            "Psychoeducational Reports": "التقارير النفسية التربوية",
+            "Learning Difficulties & ADHD": "صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+            "Family Guidance & Skills Development": "الإرشاد الأسري وتنمية المهارات"
+        };
+
+        const timeArabic = {
+            "Flexible": "مرن",
+            "Morning": "صباحًا",
+            "Afternoon": "بعد الظهر",
+            "Evening": "مساءً"
+        };
+
+        const fields = lang === "ar"
+            ? [
+                ["الاسم الكامل", data.get("name")],
+                ["رقم الهاتف", data.get("phone")],
+                ["البريد الإلكتروني", data.get("email") || "لم يُذكر"],
+                ["الخدمة المطلوبة", serviceArabic[service] || service],
+                ["التاريخ المفضل", data.get("date")],
+                ["الوقت المفضل", timeArabic[time] || time],
+                ["ملاحظة تتعلق بالموعد", data.get("message") || "لا توجد"]
+            ]
+            : [
+                ["Full name", data.get("name")],
+                ["Phone", data.get("phone")],
+                ["Email", data.get("email") || "Not provided"],
+                ["Service", service],
+                ["Preferred date", data.get("date")],
+                ["Preferred time", time],
+                ["Scheduling note", data.get("message") || "None"]
+            ];
+
+        const greeting = lang === "ar"
+            ? "مرحبًا عيادة PsycEdu، أود طلب موعد."
+            : "Hello PsycEdu Clinic, I would like to request an online appointment.";
+
+        const closing = lang === "ar"
+            ? "يرجى التواصل معي لتأكيد التوافر وتفاصيل الموعد. شكرًا لكم."
+            : "Please contact me to confirm availability and appointment details. Thank you.";
+
+        const message =
+            greeting + "\n\n" +
+            fields.map(([label, value]) => label + ": " + value).join("\n") +
+            "\n\n" + closing;
+
+        // Lebanon WhatsApp number in international format
+        // without the leading zero.
+        const clinicWhatsAppNumber = "96171009259";
+
+        const whatsappURL =
+            "https://wa.me/" + clinicWhatsAppNumber +
+            "?text=" + encodeURIComponent(message);
+
+        const status = document.getElementById("apptStatus");
+
+        if (status) {
+            status.textContent = lang === "ar"
+                ? "سيُفتح واتساب برسالة جاهزة. اضغط على إرسال لإكمال الطلب."
+                : "WhatsApp will open with your prepared request. Press Send to complete it.";
+        }
+
+        window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+}
+
+// Footer year
+const year = document.getElementById("currentYear");
+
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
+</script>
+
+</body>
+</html>

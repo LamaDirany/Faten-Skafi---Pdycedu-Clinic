@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore psychological and educational services at Faten Skafi Psycedu Clinic, including counseling, assessments, reports, learning support, and family guidance.">
+
+    <title>Our Services | Faten Skafi Psycedu Clinic</title>
+
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Shared site design: header and footer -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Services page design -->
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER — SAME DESIGN AS INDEX.HTML
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Psycedu Clinic Home">
+
+            <img src="logo.jpeg" alt="Faten Skafi Psycedu Clinic">
+
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html" class="nav-link" data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html" class="nav-link" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle" type="button">
+
+                    <span data-i18n="navServices">Services</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html" data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+
+                    <a href="service-assessment.html" data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+
+                    <a href="service-reports.html" data-i18n="service3">
+                        Psychoeducational Reports
+                    </a>
+
+                    <a href="service-learning.html" data-i18n="service4">
+                        Learning Difficulties & ADHD
+                    </a>
+
+                    <a href="service-family.html" data-i18n="service5">
+                        Family Guidance & Skills Development
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="stories.html" class="nav-link" data-i18n="navStories">
+                Stories
+            </a>
+
+            <a href="resources.html" class="nav-link" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" class="nav-link" data-i18n="navContact">
+                Contact
+            </a>
+
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language" type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">عربي</span>
+
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+
+                    Book Appointment
+
+                </a>
+
+            </div>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">عربي</span>
+
+            </button>
+
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+
+                    <span class="share-title" data-i18n="shareTitle">
+                        Share this page
+                    </span>
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+                            <i class="fa-solid fa-link"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main class="services-page">
+
+    <!-- COMPACT INTRODUCTION -->
+
+    <section class="services-intro">
+
+        <div class="container">
+
+            <div class="services-intro-content">
+
+                <div class="services-eyebrow">
+
+                    <span class="eyebrow-line"></span>
+
+                    <span data-i18n="servicesLabel">
+                        HOW WE CAN HELP
+                    </span>
+
+                </div>
+
+                <h1 data-i18n="servicesPageTitle">
+                    Support for Every
+                    <span>Journey.</span>
+                </h1>
+
+                <p data-i18n="servicesPageDescription">
+                    Every person has a unique story, and every journey
+                    deserves thoughtful support. Discover our psychological
+                    and educational services designed to nurture well-being,
+                    learning, confidence and growth.
+                </p>
+
+                <div class="services-intro-bottom">
+
+                    <a href="#all-services" class="intro-link">
+
+                        <span data-i18n="exploreAllServices">
+                            Explore Our Services
+                        </span>
+
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </a>
+
+                    <span class="intro-note">
+                        <i class="fa-solid fa-heart"></i>
+                        <span data-i18n="personalizedSupport">
+                            Personalized care. Meaningful progress.
+                        </span>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="intro-decoration intro-decoration-one"></div>
+            <div class="intro-decoration intro-decoration-two"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES COLLECTION -->
+
+    <section class="all-services-section" id="all-services">
+
+        <div class="container">
+
+            <div class="services-section-heading">
+
+                <div>
+
+                    <span class="services-small-label"
+                          data-i18n="ourExpertise">
+                        OUR EXPERTISE
+                    </span>
+
+                    <h2 data-i18n="servicesCollectionTitle">
+                        Find the Support
+                        <span>That Fits You.</span>
+                    </h2>
+
+                </div>
+
+                <p data-i18n="servicesCollectionDescription">
+                    Explore our five areas of support and discover
+                    the approach that best meets your needs.
+                </p>
+
+            </div>
+
+
+            <div class="services-showcase">
+
+
+                <!-- SERVICE 1 -->
+
+                <article class="service-feature service-feature-one counseling-card">
+
+                    <div class="feature-image"
+                         role="img"
+                         aria-label="Psychological counseling">
+
+                        <span class="feature-number">01</span>
+
+                        <span class="feature-image-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <span class="feature-image-label">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="supportiveCare">
+                                Supportive Care
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-category"
+                              data-i18n="psychologicalWellbeing">
+                            PSYCHOLOGICAL WELL-BEING
+                        </span>
+
+                        <h3 data-i18n="service1">
+                            Psychological Counseling
+                        </h3>
+
+                        <p data-i18n="service1Description">
+                            Emotional and psychological support for
+                            individuals of all ages in a safe and
+                            understanding environment.
+                        </p>
+
+                        <div class="feature-footer">
+
+                            <a href="service-counseling.html" class="service-discover">
+
+                                <span data-i18n="discoverService">
+                                    Discover this service
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 2 -->
+
+                <article class="service-feature service-feature-two assessment-card">
+
+                    <div class="feature-image"
+                         role="img"
+                         aria-label="Psychoeducational assessment">
+
+                        <span class="feature-number">02</span>
+
+                        <span class="feature-image-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </span>
+
+                        <span class="feature-image-label">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <span data-i18n="individualUnderstanding">
+                                Individual Understanding
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-category"
+                              data-i18n="assessmentCategory">
+                            ASSESSMENT & UNDERSTANDING
+                        </span>
+
+                        <h3 data-i18n="service2">
+                            Psychoeducational Assessment
+                        </h3>
+
+                        <p data-i18n="service2Description">
+                            Comprehensive evaluation of cognitive,
+                            academic, emotional and behavioral needs.
+                        </p>
+
+                        <div class="feature-footer">
+
+                            <a href="service-assessment.html" class="service-discover">
+
+                                <span data-i18n="discoverService">
+                                    Discover this service
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 3 -->
+
+                <article class="service-feature service-feature-three reports-card">
+
+                    <div class="feature-image"
+                         role="img"
+                         aria-label="Psychoeducational reports">
+
+                        <span class="feature-number">03</span>
+
+                        <span class="feature-image-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </span>
+
+                        <span class="feature-image-label">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span data-i18n="professionalDocumentation">
+                                Professional Documentation
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-category"
+                              data-i18n="educationalDocumentation">
+                            EDUCATIONAL DOCUMENTATION
+                        </span>
+
+                        <h3 data-i18n="service3">
+                            Psychoeducational Reports
+                        </h3>
+
+                        <p data-i18n="service3Description">
+                            Professional reports prepared for school,
+                            educational and academic purposes.
+                        </p>
+
+                        <div class="feature-footer">
+
+                            <a href="service-reports.html" class="service-discover">
+
+                                <span data-i18n="discoverService">
+                                    Discover this service
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 4 -->
+
+                <article class="service-feature service-feature-four learning-card">
+
+                    <div class="feature-image"
+                         role="img"
+                         aria-label="Learning difficulties and ADHD support">
+
+                        <span class="feature-number">04</span>
+
+                        <span class="feature-image-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </span>
+
+                        <span class="feature-image-label">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            <span data-i18n="learningSupport">
+                                Learning Support
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-category"
+                              data-i18n="learningDevelopment">
+                            LEARNING & DEVELOPMENT
+                        </span>
+
+                        <h3 data-i18n="service4">
+                            Learning Difficulties & ADHD
+                        </h3>
+
+                        <p data-i18n="service4Description">
+                            Assessment and targeted interventions for
+                            learning difficulties, ADHD and behavioral
+                            challenges.
+                        </p>
+
+                        <div class="feature-footer">
+
+                            <a href="service-learning.html" class="service-discover">
+
+                                <span data-i18n="discoverService">
+                                    Discover this service
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 5 -->
+
+                <article class="service-feature service-feature-five family-card">
+
+                    <div class="feature-image"
+                         role="img"
+                         aria-label="Family guidance and skills development">
+
+                        <span class="feature-number">05</span>
+
+                        <span class="feature-image-icon">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </span>
+
+                        <span class="feature-image-label">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span data-i18n="growthTogether">
+                                Growing Together
+                            </span>
+                        </span>
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <span class="feature-category"
+                              data-i18n="familyDevelopment">
+                            FAMILY & PERSONAL DEVELOPMENT
+                        </span>
+
+                        <h3 data-i18n="service5">
+                            Family Guidance & Skills Development
+                        </h3>
+
+                        <p data-i18n="service5Description">
+                            Parental support, stronger family relationships,
+                            and development of life and social skills.
+                        </p>
+
+                        <div class="feature-footer">
+
+                            <a href="service-family.html" class="service-discover">
+
+                                <span data-i18n="discoverService">
+                                    Discover this service
+                                </span>
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUPPORT PROCESS -->
+
+    <section class="support-approach">
+
+        <div class="container approach-container">
+
+            <div class="approach-copy">
+
+                <span class="services-small-label"
+                      data-i18n="ourApproach">
+                    OUR APPROACH
+                </span>
+
+                <h2 data-i18n="approachTitle">
+                    Your Needs.
+                    <span>Your Journey.</span>
+                </h2>
+
+                <p data-i18n="approachDescription">
+                    The right support starts with understanding you.
+                    We focus on individual needs, thoughtful guidance
+                    and practical steps toward meaningful progress.
+                </p>
+
+                <a href="about.html" class="approach-link">
+
+                    <span data-i18n="meetDrFaten">
+                        Meet Dr. Faten Skafi
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="approach-steps">
+
+                <div class="approach-step">
+
+                    <span class="approach-step-icon">
+                        <i class="fa-regular fa-comments"></i>
+                    </span>
+
+                    <div>
+
+                        <span class="approach-step-number">01</span>
+
+                        <h3 data-i18n="approachStep1Title">
+                            Understand
+                        </h3>
+
+                        <p data-i18n="approachStep1Text">
+                            Explore your needs, concerns and goals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="approach-step">
+
+                    <span class="approach-step-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </span>
+
+                    <div>
+
+                        <span class="approach-step-number">02</span>
+
+                        <h3 data-i18n="approachStep2Title">
+                            Find Direction
+                        </h3>
+
+                        <p data-i18n="approachStep2Text">
+                            Identify suitable guidance and next steps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="approach-step">
+
+                    <span class="approach-step-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </span>
+
+                    <div>
+
+                        <span class="approach-step-number">03</span>
+
+                        <h3 data-i18n="approachStep3Title">
+                            Grow
+                        </h3>
+
+                        <p data-i18n="approachStep3Text">
+                            Build skills and move forward at your own pace.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+<!-- =========================================================
+     FOOTER — SAME DESIGN AS INDEX.HTML
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="footer-logo">
+
+                <span class="footer-logo-symbol">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <span>
+                    <strong>FATEN SKAFI</strong>
+                    <small>Psycedu Clinic</small>
+                </span>
+
+            </a>
+
+            <p data-i18n="footerDescription">
+                Psychological and educational support for people,
+                learning, well-being and brighter tomorrows.
+            </p>
+
+            <div class="footer-socials">
+
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">Quick Links</h3>
+
+            <a href="index.html" data-i18n="navHome">Home</a>
+
+            <a href="about.html" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <a href="services.html" data-i18n="navServices">
+                Services
+            </a>
+
+            <a href="stories.html" data-i18n="navStories">
+                Stories
+            </a>
+
+            <a href="resources.html" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" data-i18n="navContact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">Contact Us</h3>
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>+961 71 009 259</span>
+
+            </a>
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>fatenskafi@gmail.com</span>
+
+            </a>
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">Chtoura, Lebanon</span>
+
+            </div>
+
+            <a href="appointment.html" class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">Book Online</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © <span id="currentYear"></span>
+                Faten Skafi Psycedu Clinic.
+                <span data-i18n="rights">All Rights Reserved.</span>
+            </p>
+
+            <div>
+
+                <a href="#" data-i18n="privacy">Privacy Policy</a>
+
+                <a href="#" data-i18n="terms">Terms</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- SHARE / COPY TOAST -->
+
+<div class="toast" id="toast">Link copied!</div>
+
+
+<script src="servicesmain.js"></script>
+
+</body>
+</html>

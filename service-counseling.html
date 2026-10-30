@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Psychological counseling at PsycEdu Clinic. Individualized support for children, adolescents, adults and families.">
+
+    <title>Psychological Counseling | PsycEdu Clinic</title>
+
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+        <a href="index.html"
+           class="logo"
+           aria-label="PsycEdu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi PsycEdu Clinic">
+
+        </a>
+
+        <!-- MOBILE MENU -->
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html"
+               class="nav-link"
+               data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <!-- SERVICES DROPDOWN -->
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button"
+                        aria-expanded="false">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="dropdown-menu">
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+                        Psychoeducational Reports
+                    </a>
+
+                    <a href="service-learning.html"
+                       data-i18n="service4">
+                        Learning Difficulties & ADHD
+                    </a>
+
+                    <a href="service-family.html"
+                       data-i18n="service5">
+                        Family Guidance & Skills Development
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+                Stories
+            </a>
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html"
+               class="nav-link"
+               data-i18n="navContact">
+                Contact
+            </a>
+
+            <!-- MOBILE ACTIONS -->
+            <div class="mobile-nav-actions">
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">
+                        عربي
+                    </span>
+
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+                    Book Appointment
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <!-- LANGUAGE SWITCH -->
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">
+                    عربي
+                </span>
+
+            </button>
+
+            <!-- SHARE BUTTON -->
+            <div class="share-wrapper">
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+                        Share this page
+                    </span>
+
+                    <div class="share-options">
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </button>
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- APPOINTMENT -->
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+                Book Appointment
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main>
+
+    <!-- =====================================================
+         HERO SECTION
+    ===================================================== -->
+
+    <section class="counseling-hero">
+
+        <div class="container counseling-hero-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="counseling-hero-copy">
+
+                <a href="index.html#services"
+                   class="counseling-back">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    <span data-service-i18n="back">
+                        Back to Services
+                    </span>
+
+                </a>
+
+                <div class="counseling-eyebrow">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <span data-service-i18n="eyebrow">
+                        Personalized Psychological Support
+                    </span>
+
+                </div>
+
+                <h1 data-service-i18n="title">
+                    Psychological <em>Counseling</em>
+                </h1>
+
+                <p class="counseling-lead"
+                   data-service-i18n="subtitle">
+                    Supporting Emotional Well-Being and Personal Growth
+                </p>
+
+                <p data-service-i18n="heroDescription">
+                    A supportive, confidential, and non-judgmental
+                    space to explore challenges, build resilience,
+                    and move forward with confidence.
+                </p>
+
+                <div class="counseling-actions">
+
+                    <a href="appointment.html"
+                       class="primary-btn">
+
+                        <i class="fa-regular fa-calendar-check"></i>
+
+                        <span data-service-i18n="book">
+                            Book an Appointment
+                        </span>
+
+                    </a>
+
+                    <a href="#about-counseling"
+                       class="counseling-text-link">
+
+                        <span data-service-i18n="explore">
+                            Explore Counseling
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="counseling-hero-art">
+
+                <div class="counseling-image-wrap">
+
+                    <img src="Psychological Counseling.png"
+                         alt="Psychological Counseling at PsycEdu Clinic">
+
+                    <div class="counseling-image-tag">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <span data-service-i18n="safe">
+                            A space to feel heard
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT COUNSELING
+    ===================================================== -->
+
+    <section class="counseling-intro"
+             id="about-counseling">
+
+        <div class="container counseling-intro-grid">
+
+            <!-- SECTION HEADING -->
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="aboutLabel">
+                    About This Service
+                </span>
+
+                <h2 data-service-i18n="aboutTitle">
+                    Support that starts with understanding.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p class="counseling-quote"
+                   data-service-i18n="quote">
+                    Every journey is different.
+                    Your support should be, too.
+                </p>
+
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="counseling-prose">
+
+                <p data-service-i18n="paragraph1">
+                    PsycEdu Clinic provides individualized
+                    psychological counseling to support children,
+                    adolescents, adults, and families in managing
+                    emotional, behavioral, and interpersonal challenges.
+
+                    Drawing on my academic background in psychology
+                    and extensive professional experience, I offer
+                    a supportive, confidential, and non-judgmental
+                    environment where individuals can explore their
+                    concerns, develop coping strategies, and strengthen
+                    their psychological well-being.
+                </p>
+
+                <p data-service-i18n="paragraph3">
+                    Each intervention is tailored to the individual's
+                    needs, developmental stage, personal circumstances,
+                    and cultural context, with the aim of promoting
+                    resilience, emotional balance, and healthier
+                    ways of coping.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AREAS OF PSYCHOLOGICAL SUPPORT
+    ===================================================== -->
+
+    <section class="counseling-areas"
+             id="counseling-areas">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label"
+                      data-service-i18n="areasLabel">
+                    How We Can Help
+                </span>
+
+                <h2 data-service-i18n="areasTitle">
+                    Areas of Psychological Support
+                </h2>
+
+                <p data-service-i18n="areasIntro">
+                    Areas of support may include stress and anxiety,
+                    emotional regulation, self-esteem, life transitions,
+                    relationship difficulties, adjustment challenges,
+                    and the psychological impact of stressful or
+                    traumatic experiences.
+                </p>
+
+            </div>
+
+            <div class="counseling-areas-grid">
+
+                <!-- AREA 1 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-cloud-sun"></i>
+
+                    <h3 data-service-i18n="area1">
+                        Stress & Anxiety
+                    </h3>
+
+                </article>
+
+                <!-- AREA 2 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <h3 data-service-i18n="area2">
+                        Emotional Regulation
+                    </h3>
+
+                </article>
+
+                <!-- AREA 3 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3 data-service-i18n="area3">
+                        Self-Esteem
+                    </h3>
+
+                </article>
+
+                <!-- AREA 4 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-road"></i>
+
+                    <h3 data-service-i18n="area4">
+                        Life Transitions
+                    </h3>
+
+                </article>
+
+                <!-- AREA 5 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-people-arrows"></i>
+
+                    <h3 data-service-i18n="area5">
+                        Relationship Difficulties
+                    </h3>
+
+                </article>
+
+                <!-- AREA 6 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-compass"></i>
+
+                    <h3 data-service-i18n="area6">
+                        Adjustment Challenges
+                    </h3>
+
+                </article>
+
+                <!-- AREA 7 -->
+                <article class="counseling-area">
+
+                    <i class="fa-solid fa-hands-holding-circle"></i>
+
+                    <h3 data-service-i18n="area7">
+                        Stressful or Traumatic Experiences
+                    </h3>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PERSONALIZED APPROACH
+    ===================================================== -->
+
+    <section class="counseling-values">
+
+        <div class="container counseling-values-inner">
+
+            <!-- LEFT CONTENT -->
+            <div>
+
+                <span class="section-label"
+                      data-service-i18n="approachLabel">
+                    Our Approach
+                </span>
+
+                <h2 data-service-i18n="approachTitle">
+                    Care centered around you.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p data-service-i18n="paragraph3">
+                    Each intervention is tailored to the individual's
+                    needs, developmental stage, personal circumstances,
+                    and cultural context, with the aim of promoting
+                    resilience, emotional balance, and healthier
+                    ways of coping.
+                </p>
+
+            </div>
+
+            <!-- RIGHT VALUES -->
+            <div class="counseling-values-list">
+
+                <div>
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <span data-service-i18n="value1">
+                        Individualized to your needs
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span data-service-i18n="value2">
+                        Supportive and non-judgmental
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-earth-asia"></i>
+
+                    <span data-service-i18n="value3">
+                        Mindful of age and cultural context
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <a href="index.html" class="footer-logo">
+
+                <span class="footer-logo-symbol">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <span>
+                    <strong>FATEN SKAFI</strong>
+                    <small>PsycEdu Clinic</small>
+                </span>
+
+            </a>
+
+            <p data-i18n="footerDescription">
+                Psychological and educational support for people,
+                learning, well-being and brighter tomorrows.
+            </p>
+
+            <div class="footer-socials">
+
+                <!-- FACEBOOK -->
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <!-- LINKEDIN -->
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-column">
+
+            <h3 data-i18n="quickLinks">
+                Quick Links
+            </h3>
+
+            <a href="index.html" data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="about.html" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <a href="services.html" data-i18n="navServices">
+                Services
+            </a>
+
+            <a href="stories.html" data-i18n="navStories">
+                Stories
+            </a>
+
+            <a href="resources.html" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" data-i18n="navContact">
+                Contact
+            </a>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-column footer-contact">
+
+            <h3 data-i18n="contactUs">
+                Contact Us
+            </h3>
+
+            <!-- PHONE -->
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    +961 71 009 259
+                </span>
+
+            </a>
+
+            <!-- EMAIL -->
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>
+                    fatenskafi@gmail.com
+                </span>
+
+            </a>
+
+            <!-- LOCATION -->
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+                    Chtoura, Lebanon
+                </span>
+
+            </div>
+
+            <!-- BOOK ONLINE -->
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+                    Book Online
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                Faten Skafi PsycEdu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+            </p>
+
+            <div>
+
+                <a href="#" data-i18n="privacy">
+                    Privacy Policy
+                </a>
+
+                <a href="#" data-i18n="terms">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST MESSAGE -->
+<div class="toast" id="toast">
+    Link copied!
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT (navbar + share + Arabic translation)
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdown = document.querySelector(".nav-dropdown");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const shareButton = document.getElementById("shareButton");
+    const shareMenu = document.getElementById("shareMenu");
+    const languageButtons = document.querySelectorAll(".language-btn");
+    const languageTexts = document.querySelectorAll(".languageText");
+    const toast = document.getElementById("toast");
+
+    const MOBILE_BREAKPOINT = 850;
+
+
+    /* =====================================================
+       CURRENT YEAR
+    ===================================================== */
+
+    function setYear() {
+        const year = document.getElementById("currentYear");
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    function openMenu() {
+        mainNav.classList.add("active");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+
+    function closeMenu() {
+        mainNav.classList.remove("active");
+
+        if (dropdown) {
+            dropdown.classList.remove("active");
+        }
+
+        if (dropdownToggle) {
+            dropdownToggle.setAttribute("aria-expanded", "false");
+        }
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            if (mainNav.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+
+        });
+
+        /* close after tapping a link */
+        mainNav.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    closeMenu();
+                }
+            });
+
+        });
+
+        /* close when tapping outside */
+        document.addEventListener("click", function (event) {
+
+            if (
+                window.innerWidth <= MOBILE_BREAKPOINT &&
+                mainNav.classList.contains("active") &&
+                !mainNav.contains(event.target) &&
+                !menuToggle.contains(event.target)
+            ) {
+                closeMenu();
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       MOBILE SERVICES DROPDOWN
+    ===================================================== */
+
+    if (dropdownToggle && dropdown) {
+
+        dropdownToggle.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                dropdown.classList.toggle("active");
+
+                dropdownToggle.setAttribute(
+                    "aria-expanded",
+                    dropdown.classList.contains("active")
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SHARE MENU
+    ===================================================== */
+
+    if (shareButton && shareMenu) {
+
+        shareButton.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            shareMenu.classList.toggle("active");
+
+            shareButton.setAttribute(
+                "aria-expanded",
+                shareMenu.classList.contains("active")
+            );
+
+        });
+
+        document.addEventListener("click", function (event) {
+
+            if (
+                !shareMenu.contains(event.target) &&
+                !shareButton.contains(event.target)
+            ) {
+                shareMenu.classList.remove("active");
+                shareButton.setAttribute("aria-expanded", "false");
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    function showToast(message) {
+
+        if (!toast) {
+            return;
+        }
+
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(function () {
+            toast.classList.remove("show");
+        }, 2200);
+
+    }
+
+
+    /* =====================================================
+       SHARE OPTIONS
+    ===================================================== */
+
+    document.querySelectorAll("[data-share]").forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const type = button.dataset.share;
+            const pageURL = window.location.href;
+            const pageTitle = document.title;
+
+            let shareURL = "";
+
+            if (type === "whatsapp") {
+                shareURL =
+                    "https://wa.me/?text=" +
+                    encodeURIComponent(pageTitle + " " + pageURL);
+            }
+
+            if (type === "facebook") {
+                shareURL =
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "linkedin") {
+                shareURL =
+                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "copy") {
+
+                try {
+                    await navigator.clipboard.writeText(pageURL);
+                    showToast(
+                        currentLanguage === "ar"
+                            ? "تم نسخ الرابط"
+                            : "Link copied!"
+                    );
+                } catch (error) {
+                    console.error("Unable to copy link.", error);
+                }
+
+                shareMenu.classList.remove("active");
+                return;
+
+            }
+
+            if (shareURL) {
+                window.open(shareURL, "_blank", "noopener,noreferrer");
+            }
+
+            shareMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* =====================================================
+       ARABIC TRANSLATIONS
+       (the English text is read from the HTML itself, so only
+       the Arabic needs to be listed here)
+    ===================================================== */
+
+    /* header + footer  →  data-i18n */
+    const arabicShared = {
+
+        navHome: "الرئيسية",
+        navAbout: "عن د. فاتن",
+        navServices: "الخدمات",
+        navStories: "قصص",
+        navResources: "المصادر",
+        navContact: "تواصل معنا",
+        bookAppointment: "احجز موعداً",
+        shareTitle: "مشاركة الصفحة",
+
+        service1: "الاستشارات النفسية",
+        service2: "التقييم النفسي التربوي",
+        service3: "التقارير النفسية التربوية",
+        service4: "دعم صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+        service5: "الإرشاد الأسري وتنمية المهارات",
+
+        footerDescription:
+            "دعم نفسي وتربوي للإنسان والتعلّم والرفاه النفسي وغدٍ أكثر إشراقاً.",
+        quickLinks: "روابط سريعة",
+        contactUs: "تواصل معنا",
+        location: "شتورة، لبنان",
+        bookOnline: "احجز أونلاين",
+        rights: "جميع الحقوق محفوظة.",
+        privacy: "سياسة الخصوصية",
+        terms: "الشروط"
+
+    };
+
+
+    /* page content  →  data-service-i18n */
+    const arabicPage = {
+
+        back: "العودة إلى الخدمات",
+
+        eyebrow: "دعم نفسي مخصص",
+
+        title: 'الاستشارات <em>النفسية</em>',
+
+        subtitle: "دعم الرفاه العاطفي والنمو الشخصي",
+
+        heroDescription:
+            "مساحة داعمة وسرية وخالية من الأحكام لاستكشاف التحديات وبناء المرونة النفسية والمضي قدماً بثقة.",
+
+        book: "احجز موعداً",
+
+        explore: "اكتشف الاستشارات",
+
+        safe: "مساحة تشعر فيها بأنك مسموع",
+
+        aboutLabel: "عن هذه الخدمة",
+
+        aboutTitle: "دعم يبدأ بالفهم.",
+
+        quote: "كل رحلة مختلفة. ويجب أن يكون دعمك كذلك.",
+
+        paragraph1:
+            "تقدّم عيادة PsycEdu استشارات نفسية فردية لدعم الأطفال والمراهقين والبالغين والأسر في التعامل مع التحديات العاطفية والسلوكية والعلاقات بين الأشخاص. واستناداً إلى خلفيتي الأكاديمية في علم النفس وخبرتي المهنية الواسعة، أوفّر بيئة داعمة وسرية وخالية من الأحكام يستطيع فيها الأفراد استكشاف ما يقلقهم، وتطوير استراتيجيات للتكيّف، وتعزيز رفاههم النفسي.",
+
+        paragraph3:
+            "يُصمَّم كل تدخّل بما يناسب احتياجات الفرد ومرحلته النمائية وظروفه الشخصية وسياقه الثقافي، بهدف تعزيز المرونة النفسية والتوازن العاطفي وطرق أكثر صحة للتأقلم.",
+
+        areasLabel: "كيف يمكننا مساعدتك",
+
+        areasTitle: "مجالات الدعم النفسي",
+
+        areasIntro:
+            "قد تشمل مجالات الدعم التوتر والقلق، وتنظيم الانفعالات، وتقدير الذات، والتحولات الحياتية، والصعوبات في العلاقات، وتحديات التكيّف، والأثر النفسي للتجارب الضاغطة أو الصادمة.",
+
+        area1: "التوتر والقلق",
+        area2: "تنظيم الانفعالات",
+        area3: "تقدير الذات",
+        area4: "التحولات الحياتية",
+        area5: "صعوبات العلاقات",
+        area6: "تحديات التكيّف",
+        area7: "التجارب الضاغطة أو الصادمة",
+
+        approachLabel: "نهجنا",
+
+        approachTitle: "رعاية تتمحور حولك.",
+
+        value1: "مخصص لاحتياجاتك",
+        value2: "داعم وخالٍ من الأحكام",
+        value3: "يراعي العمر والسياق الثقافي"
+
+    };
+
+
+    /* =====================================================
+       LANGUAGE
+    ===================================================== */
+
+    let currentLanguage =
+        localStorage.getItem("psycedu-language") || "en";
+
+
+    /* translate a group of elements; the original English markup
+       is stored the first time so it can be restored later */
+    function translateGroup(selector, attribute, dictionary, language) {
+
+        document.querySelectorAll(selector).forEach(function (el) {
+
+            const key = el.getAttribute(attribute);
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            if (language === "ar" && dictionary[key] !== undefined) {
+                el.innerHTML = dictionary[key];
+            } else {
+                el.innerHTML = el.dataset.enHtml;
+            }
+
+        });
+
+    }
+
+
+    /* parts of the page that have no data attribute */
+    const extraArabic = [
+
+        [".footer-logo strong", "فاتن سكافي"],
+
+        [".footer-logo small", "عيادة PsycEdu"],
+
+        [
+            ".footer-bottom-container > p",
+            '© <span id="currentYear"></span> عيادة فاتن سكافي PsycEdu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
+        ]
+
+    ];
+
+
+    function translateExtras(language) {
+
+        extraArabic.forEach(function (item) {
+
+            const el = document.querySelector(item[0]);
+
+            if (!el) {
+                return;
+            }
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            el.innerHTML =
+                language === "ar" ? item[1] : el.dataset.enHtml;
+
+        });
+
+    }
+
+
+    function setLanguage(language) {
+
+        currentLanguage = language;
+
+        const html = document.documentElement;
+
+        html.lang = language === "ar" ? "ar" : "en";
+        html.dir = language === "ar" ? "rtl" : "ltr";
+
+        document.body.setAttribute("dir", html.dir);
+
+
+        /* extras first (they may contain data-i18n spans) */
+        translateExtras(language);
+
+        translateGroup("[data-i18n]", "data-i18n", arabicShared, language);
+
+        translateGroup(
+            "[data-service-i18n]",
+            "data-service-i18n",
+            arabicPage,
+            language
+        );
+
+
+        /* arrows should point the right way in RTL */
+        const backIcon = document.querySelector(".counseling-back i");
+        const exploreIcon = document.querySelector(".counseling-text-link i");
+
+        if (backIcon) {
+            backIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-right"
+                    : "fa-solid fa-arrow-left";
+        }
+
+        if (exploreIcon) {
+            exploreIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-left"
+                    : "fa-solid fa-arrow-right";
+        }
+
+
+        /* image alt, title, meta description */
+        const heroImage = document.querySelector(".counseling-image-wrap img");
+
+        if (heroImage) {
+            heroImage.alt =
+                language === "ar"
+                    ? "الاستشارات النفسية في عيادة PsycEdu"
+                    : "Psychological Counseling at PsycEdu Clinic";
+        }
+
+        document.title =
+            language === "ar"
+                ? "الاستشارات النفسية | عيادة PsycEdu"
+                : "Psychological Counseling | PsycEdu Clinic";
+
+        const metaDescription =
+            document.querySelector('meta[name="description"]');
+
+        if (metaDescription) {
+            metaDescription.setAttribute(
+                "content",
+                language === "ar"
+                    ? "الاستشارات النفسية في عيادة PsycEdu. دعم فردي للأطفال والمراهقين والبالغين والأسر."
+                    : "Psychological counseling at PsycEdu Clinic. Individualized support for children, adolescents, adults and families."
+            );
+        }
+
+
+        /* toast + language button text */
+        if (toast) {
+            toast.textContent =
+                language === "ar" ? "تم نسخ الرابط" : "Link copied!";
+        }
+
+        languageTexts.forEach(function (text) {
+            text.textContent = language === "en" ? "عربي" : "EN";
+        });
+
+        setYear();
+
+        localStorage.setItem("psycedu-language", language);
+
+    }
+
+
+    languageButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            setLanguage(currentLanguage === "en" ? "ar" : "en");
+
+        });
+
+    });
+
+
+    /* keep phone / email left-to-right in Arabic */
+    const fixStyle = document.createElement("style");
+
+    fixStyle.textContent =
+        '.footer-contact a[href^="tel:"] span,' +
+        '.footer-contact a[href^="mailto:"] span' +
+        '{direction:ltr;unicode-bidi:isolate;}';
+
+    document.head.appendChild(fixStyle);
+
+
+    /* =====================================================
+       LOAD LANGUAGE
+    ===================================================== */
+
+    setLanguage(currentLanguage);
+
+
+    /* =====================================================
+       RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > MOBILE_BREAKPOINT && mainNav && menuToggle) {
+            closeMenu();
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

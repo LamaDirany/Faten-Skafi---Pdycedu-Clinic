@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional psychoeducational reports at PsycEdu Clinic, providing clear assessment findings and individualized recommendations.">
+    <title>Psychoeducational Reports | PsycEdu Clinic</title>
+    <link rel="icon" type="image/jpeg" href="icon.jpeg">
+
+    <!-- FONTS AND ICONS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- SHARED STYLES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+<header class="site-header">
+    <div class="header-container">
+
+        <a href="index.html" class="logo" aria-label="PsycEdu Clinic Home">
+            <img src="logo.jpeg" alt="Faten Skafi PsycEdu Clinic">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="Open navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+
+            <a href="about.html" class="nav-link" data-i18n="navAbout">
+                About Dr. Faten
+            </a>
+
+            <div class="nav-dropdown">
+                <button class="dropdown-toggle" type="button" aria-expanded="false">
+                    <span data-i18n="navServices">Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="service-counseling.html" data-i18n="service1">
+                        Psychological Counseling
+                    </a>
+                    <a href="service-assessment.html" data-i18n="service2">
+                        Psychoeducational Assessment
+                    </a>
+                    <a href="service-reports.html" data-i18n="service3" aria-current="page">
+                        Psychoeducational Reports
+                    </a>
+                    <a href="service-learning.html" data-i18n="service4">
+                        Learning Difficulties &amp; ADHD
+                    </a>
+                    <a href="service-family.html" data-i18n="service5">
+                        Family Guidance &amp; Skills Development
+                    </a>
+                </div>
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+            <a href="resources.html" class="nav-link" data-i18n="navResources">
+                Resources
+            </a>
+
+            <a href="contact.html" class="nav-link" data-i18n="navContact">
+                Contact
+            </a>
+
+            <div class="mobile-nav-actions">
+                <button class="language-btn mobile-language" type="button">
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="languageText">عربي</span>
+                </button>
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+                    Book Appointment
+                </a>
+            </div>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="language-btn" id="languageButton"
+                    type="button" aria-label="Switch language">
+                <i class="fa-solid fa-globe"></i>
+                <span class="languageText">عربي</span>
+            </button>
+
+            <div class="share-wrapper">
+                <button class="share-btn" id="shareButton" type="button"
+                        aria-label="Share this page" aria-expanded="false">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+
+                <div class="share-menu" id="shareMenu">
+                    <span class="share-title" data-i18n="shareTitle">
+                        Share this page
+                    </span>
+
+                    <div class="share-options">
+                        <button type="button" data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                        <button type="button" data-share="facebook"
+                                aria-label="Share on Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+                        <button type="button" data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </button>
+                        <button type="button" data-share="copy"
+                                aria-label="Copy page link">
+                            <i class="fa-solid fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="appointment.html" class="appointment-btn"
+               data-i18n="bookAppointment">
+                Book Appointment
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+<main>
+
+    <!-- HERO -->
+    <section class="counseling-hero">
+        <div class="container counseling-hero-grid">
+
+            <div class="counseling-hero-copy">
+
+                <a href="index.html#services" class="counseling-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span data-service-i18n="reportsBack">
+                        Back to Services
+                    </span>
+                </a>
+
+                <div class="counseling-eyebrow">
+                    <i class="fa-regular fa-file-lines"></i>
+                    <span data-service-i18n="reportsEyebrow">
+                        Clear Insights &amp; Individualized Guidance
+                    </span>
+                </div>
+
+                <h1 data-service-i18n="reportsTitle">
+                    Psychoeducational <em>Reports</em>
+                </h1>
+
+                <p class="counseling-lead"
+                   data-service-i18n="reportsSubtitle">
+                    Clear Assessments. Practical Recommendations.
+                    Meaningful Support.
+                </p>
+
+                <p data-service-i18n="reportsHeroDescription">
+                    Turning assessment findings into accessible,
+                    meaningful guidance for learning and development.
+                </p>
+
+                <div class="counseling-actions">
+                    <a href="appointment.html" class="primary-btn">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span data-service-i18n="reportsBook">
+                            Book an Appointment
+                        </span>
+                    </a>
+
+                    <a href="#about-reports" class="counseling-text-link">
+                        <span data-service-i18n="reportsExplore">
+                            Explore Reports
+                        </span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="counseling-hero-art">
+                <div class="counseling-image-wrap">
+
+                    <img src="Psychoeducational Reports.png"
+                         alt="Illustration representing psychoeducational reports">
+
+                    <div class="counseling-image-tag">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <span data-service-i18n="reportsImageTag">
+                            Insights Into Action
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT REPORTS -->
+    <section class="counseling-intro" id="about-reports">
+        <div class="container counseling-intro-grid">
+
+            <div>
+                <span class="section-label" data-service-i18n="reportsAboutLabel">
+                    About This Service
+                </span>
+
+                <h2 data-service-i18n="reportsAboutTitle">
+                    Turning findings into meaningful understanding.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p class="counseling-quote" data-service-i18n="reportsQuote">
+                    A clear report can help turn understanding
+                    into practical support.
+                </p>
+            </div>
+
+            <div class="counseling-prose">
+
+                <p data-service-i18n="reportsParagraph1">
+                    A psychoeducational report translates assessment
+                    findings into a clear understanding of an individual's
+                    strengths, difficulties, and support needs.
+                </p>
+
+                <p data-service-i18n="reportsParagraph2">
+                    Drawing on my expertise in educational psychology,
+                    psychometric assessment, and academic teaching,
+                    I prepare structured reports that may include
+                    assessment findings, interpretation of relevant
+                    cognitive and learning profiles, identified areas
+                    of difficulty, and individualized recommendations.
+                </p>
+
+                <p data-service-i18n="reportsParagraph3">
+                    Reports can help parents, educators, and other
+                    professionals understand learning needs and plan
+                    appropriate support at home, in school, or through
+                    further assessment and intervention when indicated.
+                </p>
+
+                <p data-service-i18n="reportsParagraph4">
+                    Each report is prepared with professional care and
+                    attention to confidentiality, using accessible
+                    language to communicate findings and practical
+                    next steps. Recommendations are tailored to the
+                    assessment results and the individual's circumstances.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHAT REPORTS MAY INCLUDE -->
+    <section class="counseling-areas" id="reports-areas">
+        <div class="container">
+
+            <div class="section-heading centered">
+                <span class="section-label" data-service-i18n="reportsAreasLabel">
+                    Inside the Report
+                </span>
+
+                <h2 data-service-i18n="reportsAreasTitle">
+                    What a Psychoeducational Report May Include
+                </h2>
+
+                <p data-service-i18n="reportsAreasIntro">
+                    Report content reflects the assessment findings
+                    and the individual's needs, with an emphasis
+                    on clarity and useful next steps.
+                </p>
+            </div>
+
+            <div class="counseling-areas-grid">
+
+                <article class="counseling-area">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h3 data-service-i18n="reportsArea1">
+                        Assessment Findings
+                    </h3>
+                </article>
+
+                <article class="counseling-area">
+                    <i class="fa-solid fa-brain"></i>
+                    <h3 data-service-i18n="reportsArea2">
+                        Cognitive &amp; Learning Profiles
+                    </h3>
+                </article>
+
+                <article class="counseling-area">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3 data-service-i18n="reportsArea3">
+                        Identified Areas of Difficulty
+                    </h3>
+                </article>
+
+                <article class="counseling-area">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3 data-service-i18n="reportsArea4">
+                        Individualized Recommendations
+                    </h3>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HOW REPORTS SUPPORT DECISIONS -->
+    <section class="counseling-values">
+        <div class="container counseling-values-inner">
+
+            <div>
+                <span class="section-label"
+                      data-service-i18n="reportsApproachLabel">
+                    Thoughtful Reporting
+                </span>
+
+                <h2 data-service-i18n="reportsApproachTitle">
+                    Clear communication. Practical next steps.
+                </h2>
+
+                <div class="counseling-rule"></div>
+
+                <p data-service-i18n="reportsParagraph4">
+                    Each report is prepared with professional care and
+                    attention to confidentiality, using accessible
+                    language to communicate findings and practical
+                    next steps. Recommendations are tailored to the
+                    assessment results and the individual's circumstances.
+                </p>
+            </div>
+
+            <div class="counseling-values-list">
+
+                <div>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <span data-service-i18n="reportsValue1">
+                        Guidance for parents and families
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <span data-service-i18n="reportsValue2">
+                        Support planning in educational settings
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span data-service-i18n="reportsValue3">
+                        Communication with relevant professionals
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <span data-service-i18n="reportsValue4">
+                        Confidential and accessible reporting
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+                <span class="footer-logo-symbol">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <span>
+                    <strong>FATEN SKAFI</strong>
+                    <small>PsycEdu Clinic</small>
+                </span>
+            </a>
+
+            <p data-i18n="footerDescription">
+                Psychological and educational support for people,
+                learning, well-being and brighter tomorrows.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3 data-i18n="quickLinks">Quick Links</h3>
+
+            <a href="index.html" data-i18n="navHome">Home</a>
+            <a href="about.html" data-i18n="navAbout">About Dr. Faten</a>
+            <a href="services.html" data-i18n="navServices">Services</a>
+            <a href="stories.html" data-i18n="navStories">Stories</a>
+            <a href="resources.html" data-i18n="navResources">Resources</a>
+            <a href="contact.html" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="footer-column footer-contact">
+            <h3 data-i18n="contactUs">Contact Us</h3>
+
+            <a href="tel:+96171009259">
+                <i class="fa-solid fa-phone"></i>
+                <span>+961 71 009 259</span>
+            </a>
+
+            <a href="mailto:fatenskafi@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+                <span>fatenskafi@gmail.com</span>
+            </a>
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span data-i18n="location">Chtoura, Lebanon</span>
+            </div>
+
+            <a href="appointment.html" class="footer-appointment">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span data-i18n="bookOnline">Book Online</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+
+            <p>
+                © <span id="currentYear">2026</span>
+                Faten Skafi PsycEdu Clinic.
+                <span data-i18n="rights">All Rights Reserved.</span>
+            </p>
+
+            <div>
+                <a href="#" data-i18n="privacy">Privacy Policy</a>
+                <a href="#" data-i18n="terms">Terms</a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="toast" id="toast">Link copied!</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT (navbar + share + Arabic translation)
+========================================================= -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdown = document.querySelector(".nav-dropdown");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const shareButton = document.getElementById("shareButton");
+    const shareMenu = document.getElementById("shareMenu");
+    const languageButtons = document.querySelectorAll(".language-btn");
+    const languageTexts = document.querySelectorAll(".languageText");
+    const toast = document.getElementById("toast");
+
+    const MOBILE_BREAKPOINT = 850;
+
+
+    /* =====================================================
+       CURRENT YEAR
+    ===================================================== */
+
+    function setYear() {
+        const year = document.getElementById("currentYear");
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+    }
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    function openMenu() {
+        mainNav.classList.add("active");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+
+    function closeMenu() {
+        mainNav.classList.remove("active");
+
+        if (dropdown) {
+            dropdown.classList.remove("active");
+        }
+
+        if (dropdownToggle) {
+            dropdownToggle.setAttribute("aria-expanded", "false");
+        }
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            if (mainNav.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+
+        });
+
+        /* close after tapping a link */
+        mainNav.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= MOBILE_BREAKPOINT) {
+                    closeMenu();
+                }
+            });
+
+        });
+
+        /* close when tapping outside */
+        document.addEventListener("click", function (event) {
+
+            if (
+                window.innerWidth <= MOBILE_BREAKPOINT &&
+                mainNav.classList.contains("active") &&
+                !mainNav.contains(event.target) &&
+                !menuToggle.contains(event.target)
+            ) {
+                closeMenu();
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       MOBILE SERVICES DROPDOWN
+    ===================================================== */
+
+    if (dropdownToggle && dropdown) {
+
+        dropdownToggle.addEventListener("click", function (event) {
+
+            if (window.innerWidth <= MOBILE_BREAKPOINT) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                dropdown.classList.toggle("active");
+
+                dropdownToggle.setAttribute(
+                    "aria-expanded",
+                    dropdown.classList.contains("active")
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SHARE MENU
+    ===================================================== */
+
+    if (shareButton && shareMenu) {
+
+        shareButton.addEventListener("click", function (event) {
+
+            event.stopPropagation();
+
+            shareMenu.classList.toggle("active");
+
+            shareButton.setAttribute(
+                "aria-expanded",
+                shareMenu.classList.contains("active")
+            );
+
+        });
+
+        document.addEventListener("click", function (event) {
+
+            if (
+                !shareMenu.contains(event.target) &&
+                !shareButton.contains(event.target)
+            ) {
+                shareMenu.classList.remove("active");
+                shareButton.setAttribute("aria-expanded", "false");
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       TOAST
+    ===================================================== */
+
+    function showToast(message) {
+
+        if (!toast) {
+            return;
+        }
+
+        toast.textContent = message;
+        toast.classList.add("show");
+
+        setTimeout(function () {
+            toast.classList.remove("show");
+        }, 2200);
+
+    }
+
+
+    /* =====================================================
+       SHARE OPTIONS
+    ===================================================== */
+
+    document.querySelectorAll("[data-share]").forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const type = button.dataset.share;
+            const pageURL = window.location.href;
+            const pageTitle = document.title;
+
+            let shareURL = "";
+
+            if (type === "whatsapp") {
+                shareURL =
+                    "https://wa.me/?text=" +
+                    encodeURIComponent(pageTitle + " " + pageURL);
+            }
+
+            if (type === "facebook") {
+                shareURL =
+                    "https://www.facebook.com/sharer/sharer.php?u=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "linkedin") {
+                shareURL =
+                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                    encodeURIComponent(pageURL);
+            }
+
+            if (type === "copy") {
+
+                try {
+                    await navigator.clipboard.writeText(pageURL);
+                    showToast(
+                        currentLanguage === "ar"
+                            ? "تم نسخ الرابط"
+                            : "Link copied!"
+                    );
+                } catch (error) {
+                    console.error("Unable to copy link.", error);
+                }
+
+                shareMenu.classList.remove("active");
+                return;
+
+            }
+
+            if (shareURL) {
+                window.open(shareURL, "_blank", "noopener,noreferrer");
+            }
+
+            shareMenu.classList.remove("active");
+
+        });
+
+    });
+
+
+    /* =====================================================
+       ARABIC TRANSLATIONS
+       (the English text is read from the HTML itself, so only
+       the Arabic needs to be listed here)
+    ===================================================== */
+
+    /* header + footer  →  data-i18n */
+    const arabicShared = {
+
+        navHome: "الرئيسية",
+        navAbout: "عن د. فاتن",
+        navServices: "الخدمات",
+        navStories: "قصص",
+        navResources: "المصادر",
+        navContact: "تواصل معنا",
+        bookAppointment: "احجز موعداً",
+        shareTitle: "مشاركة الصفحة",
+
+        service1: "الاستشارات النفسية",
+        service2: "التقييم النفسي التربوي",
+        service3: "التقارير النفسية التربوية",
+        service4: "دعم صعوبات التعلم واضطراب فرط الحركة وتشتت الانتباه",
+        service5: "الإرشاد الأسري وتنمية المهارات",
+
+        footerDescription:
+            "دعم نفسي وتربوي للإنسان والتعلّم والرفاه النفسي وغدٍ أكثر إشراقاً.",
+        quickLinks: "روابط سريعة",
+        contactUs: "تواصل معنا",
+        location: "شتورة، لبنان",
+        bookOnline: "احجز أونلاين",
+        rights: "جميع الحقوق محفوظة.",
+        privacy: "سياسة الخصوصية",
+        terms: "الشروط"
+
+    };
+
+
+    /* page content  →  data-service-i18n */
+    const arabicPage = {
+
+        reportsBack: "العودة إلى الخدمات",
+
+        reportsEyebrow: "رؤى واضحة وإرشاد مخصص",
+
+        reportsTitle: 'التقارير النفسية <em>التربوية</em>',
+
+        reportsSubtitle:
+            "تقييمات واضحة. توصيات عملية. دعم هادف.",
+
+        reportsHeroDescription:
+            "تحويل نتائج التقييم إلى إرشاد سهل الفهم وهادف للتعلّم والنمو.",
+
+        reportsBook: "احجز موعداً",
+
+        reportsExplore: "اكتشف التقارير",
+
+        reportsImageTag: "من الفهم إلى العمل",
+
+        reportsAboutLabel: "عن هذه الخدمة",
+
+        reportsAboutTitle: "تحويل النتائج إلى فهم هادف.",
+
+        reportsQuote:
+            "التقرير الواضح يساعد على تحويل الفهم إلى دعم عملي.",
+
+        reportsParagraph1:
+            "يترجم التقرير النفسي التربوي نتائج التقييم إلى فهم واضح لنقاط قوة الفرد وصعوباته واحتياجاته إلى الدعم.",
+
+        reportsParagraph2:
+            "استناداً إلى خبرتي في علم النفس التربوي والتقييم السيكومتري والتدريس الأكاديمي، أُعدّ تقارير منظّمة قد تتضمن نتائج التقييم، وتفسير الملفات المعرفية وملفات التعلّم ذات الصلة، ومجالات الصعوبة التي تم تحديدها، وتوصيات مخصصة لكل حالة.",
+
+        reportsParagraph3:
+            "يمكن للتقارير أن تساعد الأهل والمربّين وغيرهم من المهنيين على فهم احتياجات التعلّم والتخطيط للدعم المناسب في المنزل أو المدرسة، أو من خلال تقييم أو تدخّل إضافي عند الحاجة.",
+
+        reportsParagraph4:
+            "يُعدّ كل تقرير بعناية مهنية وحرص على السرية، وبلغة واضحة وسهلة لنقل النتائج والخطوات العملية التالية. وتُصاغ التوصيات بما يتناسب مع نتائج التقييم وظروف الفرد.",
+
+        reportsAreasLabel: "داخل التقرير",
+
+        reportsAreasTitle: "ما قد يتضمنه التقرير النفسي التربوي",
+
+        reportsAreasIntro:
+            "يعكس محتوى التقرير نتائج التقييم واحتياجات الفرد، مع التركيز على الوضوح والخطوات التالية المفيدة.",
+
+        reportsArea1: "نتائج التقييم",
+        reportsArea2: "الملفات المعرفية وملفات التعلّم",
+        reportsArea3: "مجالات الصعوبة المحددة",
+        reportsArea4: "توصيات مخصصة",
+
+        reportsApproachLabel: "إعداد تقارير مدروس",
+
+        reportsApproachTitle: "تواصل واضح. خطوات عملية تالية.",
+
+        reportsValue1: "إرشاد للأهل والأسر",
+        reportsValue2: "تخطيط الدعم في البيئات التربوية",
+        reportsValue3: "التواصل مع المهنيين المعنيين",
+        reportsValue4: "تقارير سرية وسهلة الفهم"
+
+    };
+
+
+    /* =====================================================
+       LANGUAGE
+    ===================================================== */
+
+    let currentLanguage =
+        localStorage.getItem("psycedu-language") || "en";
+
+
+    /* translate a group of elements; the original English markup
+       is stored the first time so it can be restored later */
+    function translateGroup(selector, attribute, dictionary, language) {
+
+        document.querySelectorAll(selector).forEach(function (el) {
+
+            const key = el.getAttribute(attribute);
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            if (language === "ar" && dictionary[key] !== undefined) {
+                el.innerHTML = dictionary[key];
+            } else {
+                el.innerHTML = el.dataset.enHtml;
+            }
+
+        });
+
+    }
+
+
+    /* parts of the page that have no data attribute */
+    const extraArabic = [
+
+        [".footer-logo strong", "فاتن سكافي"],
+
+        [".footer-logo small", "عيادة PsycEdu"],
+
+        [
+            ".footer-bottom-container > p",
+            '© <span id="currentYear"></span> عيادة فاتن سكافي PsycEdu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
+        ]
+
+    ];
+
+
+    function translateExtras(language) {
+
+        extraArabic.forEach(function (item) {
+
+            const el = document.querySelector(item[0]);
+
+            if (!el) {
+                return;
+            }
+
+            if (el.dataset.enHtml === undefined) {
+                el.dataset.enHtml = el.innerHTML;
+            }
+
+            el.innerHTML =
+                language === "ar" ? item[1] : el.dataset.enHtml;
+
+        });
+
+    }
+
+
+    function setLanguage(language) {
+
+        currentLanguage = language;
+
+        const html = document.documentElement;
+
+        html.lang = language === "ar" ? "ar" : "en";
+        html.dir = language === "ar" ? "rtl" : "ltr";
+
+        document.body.setAttribute("dir", html.dir);
+
+
+        /* extras first (they may contain data-i18n spans) */
+        translateExtras(language);
+
+        translateGroup("[data-i18n]", "data-i18n", arabicShared, language);
+
+        translateGroup(
+            "[data-service-i18n]",
+            "data-service-i18n",
+            arabicPage,
+            language
+        );
+
+
+        /* arrows should point the right way in RTL */
+        const backIcon = document.querySelector(".counseling-back i");
+        const exploreIcon = document.querySelector(".counseling-text-link i");
+
+        if (backIcon) {
+            backIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-right"
+                    : "fa-solid fa-arrow-left";
+        }
+
+        if (exploreIcon) {
+            exploreIcon.className =
+                language === "ar"
+                    ? "fa-solid fa-arrow-left"
+                    : "fa-solid fa-arrow-right";
+        }
+
+
+        /* image alt, title, meta description */
+        const heroImage = document.querySelector(".counseling-image-wrap img");
+
+        if (heroImage) {
+            heroImage.alt =
+                language === "ar"
+                    ? "رسم توضيحي يمثل التقارير النفسية التربوية"
+                    : "Illustration representing psychoeducational reports";
+        }
+
+        document.title =
+            language === "ar"
+                ? "التقارير النفسية التربوية | عيادة PsycEdu"
+                : "Psychoeducational Reports | PsycEdu Clinic";
+
+        const metaDescription =
+            document.querySelector('meta[name="description"]');
+
+        if (metaDescription) {
+            metaDescription.setAttribute(
+                "content",
+                language === "ar"
+                    ? "تقارير نفسية تربوية مهنية في عيادة PsycEdu، تقدّم نتائج تقييم واضحة وتوصيات مخصصة لكل حالة."
+                    : "Professional psychoeducational reports at PsycEdu Clinic, providing clear assessment findings and individualized recommendations."
+            );
+        }
+
+
+        /* toast + language button text */
+        if (toast) {
+            toast.textContent =
+                language === "ar" ? "تم نسخ الرابط" : "Link copied!";
+        }
+
+        languageTexts.forEach(function (text) {
+            text.textContent = language === "en" ? "عربي" : "EN";
+        });
+
+        setYear();
+
+        localStorage.setItem("psycedu-language", language);
+
+    }
+
+
+    languageButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            setLanguage(currentLanguage === "en" ? "ar" : "en");
+
+        });
+
+    });
+
+
+    /* keep phone / email left-to-right in Arabic */
+    const fixStyle = document.createElement("style");
+
+    fixStyle.textContent =
+        '.footer-contact a[href^="tel:"] span,' +
+        '.footer-contact a[href^="mailto:"] span' +
+        '{direction:ltr;unicode-bidi:isolate;}';
+
+    document.head.appendChild(fixStyle);
+
+
+    /* =====================================================
+       LOAD LANGUAGE
+    ===================================================== */
+
+    setLanguage(currentLanguage);
+
+
+    /* =====================================================
+       RESIZE
+    ===================================================== */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > MOBILE_BREAKPOINT && mainNav && menuToggle) {
+            closeMenu();
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

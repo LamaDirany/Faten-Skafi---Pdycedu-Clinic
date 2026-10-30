@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Dr. Faten Skafi at Psycedu Clinic for psychological and educational support, consultations and online appointments.">
+
+    <title>Contact | Dr. Faten Skafi - Psycedu Clinic</title>
+
+    <!-- WEBSITE ICON -->
+    <link rel="icon"
+          type="image/jpeg"
+          href="icon.jpeg">
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet"
+          href="contact.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Psycedu Clinic Home">
+
+            <img src="logo.jpeg"
+                 alt="Faten Skafi Psycedu Clinic">
+
+        </a>
+
+
+
+        <!-- MOBILE MENU -->
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav"
+             id="mainNav">
+
+
+            <a href="index.html"
+               class="nav-link"
+               data-i18n="navHome">
+
+                Home
+
+            </a>
+
+
+            <a href="about.html"
+               class="nav-link"
+               data-i18n="navAbout">
+
+                About Dr. Faten
+
+            </a>
+
+
+
+            <!-- SERVICES DROPDOWN -->
+
+            <div class="nav-dropdown">
+
+                <button class="dropdown-toggle"
+                        type="button">
+
+                    <span data-i18n="navServices">
+                        Services
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="dropdown-menu">
+
+
+                    <a href="service-counseling.html"
+                       data-i18n="service1">
+
+                        Psychological Counseling
+
+                    </a>
+
+
+                    <a href="service-assessment.html"
+                       data-i18n="service2">
+
+                        Psychoeducational Assessment
+
+                    </a>
+
+
+                    <a href="service-reports.html"
+                       data-i18n="service3">
+
+                        Psychoeducational Reports
+
+                    </a>
+
+
+                    <a href="service-learning.html"
+                       data-i18n="service4">
+
+                        Learning Difficulties & ADHD
+
+                    </a>
+
+
+                    <a href="service-family.html"
+                       data-i18n="service5">
+
+                        Family Guidance & Skills Development
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+            <a href="stories.html"
+               class="nav-link"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+
+
+            <a href="resources.html"
+               class="nav-link"
+               data-i18n="navResources">
+
+                Resources
+
+            </a>
+
+
+            <!-- CONTACT ACTIVE -->
+
+            <a href="contact.html"
+               class="nav-link active"
+               data-i18n="navContact">
+
+                Contact
+
+            </a>
+
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+
+                <button class="language-btn mobile-language"
+                        type="button">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <span class="languageText">
+                        عربي
+                    </span>
+
+                </button>
+
+
+                <a href="appointment.html"
+                   class="appointment-btn mobile-appointment"
+                   data-i18n="bookAppointment">
+
+                    Book Appointment
+
+                </a>
+
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+
+            <!-- LANGUAGE -->
+
+            <button class="language-btn"
+                    id="languageButton"
+                    type="button"
+                    aria-label="Switch language">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <span class="languageText">
+                    عربي
+                </span>
+
+            </button>
+
+
+
+            <!-- SHARE -->
+
+            <div class="share-wrapper">
+
+
+                <button class="share-btn"
+                        id="shareButton"
+                        type="button"
+                        aria-label="Share this page"
+                        aria-expanded="false">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                </button>
+
+
+
+                <div class="share-menu"
+                     id="shareMenu">
+
+
+                    <span class="share-title"
+                          data-i18n="shareTitle">
+
+                        Share this page
+
+                    </span>
+
+
+                    <div class="share-options">
+
+
+                        <!-- WHATSAPP -->
+
+                        <button type="button"
+                                data-share="whatsapp"
+                                aria-label="Share on WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </button>
+
+
+                        <!-- FACEBOOK -->
+
+                        <button type="button"
+                                data-share="facebook"
+                                aria-label="Share on Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </button>
+
+
+                        <!-- LINKEDIN -->
+
+                        <button type="button"
+                                data-share="linkedin"
+                                aria-label="Share on LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </button>
+
+
+                        <!-- COPY -->
+
+                        <button type="button"
+                                data-share="copy"
+                                aria-label="Copy page link">
+
+                            <i class="fa-solid fa-link"></i>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APPOINTMENT -->
+
+            <a href="appointment.html"
+               class="appointment-btn"
+               data-i18n="bookAppointment">
+
+                Book Appointment
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main>
+
+
+
+<!-- =========================================================
+     CONTACT HERO
+========================================================= -->
+
+<section class="contact-page-hero">
+
+    <div class="container contact-page-hero-container">
+
+        <span class="section-label"
+              data-i18n="contactHeroLabel">
+
+            Contact Psycedu Clinic
+
+        </span>
+
+
+        <h1 data-i18n="contactHeroTitle">
+
+            We're Here to
+            <span>Listen & Support</span>
+
+        </h1>
+
+
+        <p data-i18n="contactHeroDescription">
+
+            Whether you are looking for psychological support,
+            educational guidance or would like to request an
+            online appointment, feel free to get in touch.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT INFORMATION
+========================================================= -->
+
+<section class="contact-page-section">
+
+    <div class="container contact-page-grid">
+
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-information">
+
+
+            <span class="section-label"
+                  data-i18n="getInTouch">
+
+                Get in Touch
+
+            </span>
+
+
+            <h2 data-i18n="contactHeading">
+
+                Connect With
+                <span>Dr. Faten</span>
+
+            </h2>
+
+
+            <p class="contact-intro"
+               data-i18n="contactIntro">
+
+                Contact Psycedu Clinic for psychological and
+                educational support, general inquiries or
+                appointment requests.
+
+            </p>
+
+
+
+            <!-- PHONE -->
+
+            <a href="tel:+96171009259"
+               class="contact-info-card">
+
+                <div class="contact-info-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+
+                <div>
+
+                    <small data-i18n="phoneLabel">
+                        Phone
+                    </small>
+
+                    <strong>
+                        +961 71 009 259
+                    </strong>
+
+                    <span data-i18n="callClinic">
+                        Call Psycedu Clinic
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:fatenskafi@gmail.com"
+               class="contact-info-card">
+
+                <div class="contact-info-icon">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                </div>
+
+
+                <div>
+
+                    <small data-i18n="emailLabel">
+                        Email
+                    </small>
+
+                    <strong>
+                        fatenskafi@gmail.com
+                    </strong>
+
+                    <span data-i18n="emailClinic">
+                        Send us an email
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-info-card">
+
+                <div class="contact-info-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+
+                <div>
+
+                    <small data-i18n="locationLabel">
+                        Location
+                    </small>
+
+                    <strong data-i18n="location">
+                        Chtoura, Lebanon
+                    </strong>
+
+                    <span data-i18n="onlineAvailable">
+                        Online appointments available
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================================
+     SOCIAL MEDIA
+========================================================= -->
+
+<div class="contact-social-section">
+
+    <h3 data-i18n="followDoctor">
+        Follow Dr. Faten
+    </h3>
+
+
+    <!-- FACEBOOK -->
+
+    <a href="https://www.facebook.com/share/19TW65atwE/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-info-card social-info-card"
+       aria-label="Follow Dr. Faten on Facebook">
+
+        <div class="contact-info-icon">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </div>
+
+
+        <div>
+
+            <small>
+                Social Media
+            </small>
+
+            <strong>
+                Facebook
+            </strong>
+
+            <span>
+                Follow Dr. Faten on Facebook
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <!-- INSTAGRAM -->
+
+    <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-info-card social-info-card"
+       aria-label="Follow Dr. Faten on Instagram">
+
+        <div class="contact-info-icon">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </div>
+
+
+        <div>
+
+            <small>
+                Social Media
+            </small>
+
+            <strong>
+                Instagram
+            </strong>
+
+            <span>
+                Follow Dr. Faten on Instagram
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <!-- LINKEDIN -->
+
+    <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-info-card social-info-card"
+       aria-label="Connect with Dr. Faten on LinkedIn">
+
+        <div class="contact-info-icon">
+
+            <i class="fa-brands fa-linkedin-in"></i>
+
+        </div>
+
+
+        <div>
+
+            <small>
+                Professional Profile
+            </small>
+
+            <strong>
+                LinkedIn
+            </strong>
+
+            <span>
+                Connect with Dr. Faten on LinkedIn
+            </span>
+
+        </div>
+
+    </a>
+    </div>
+
+</div>
+
+
+
+        <!-- =====================================================
+             RIGHT SIDE - CONTACT FORM
+        ====================================================== -->
+
+        <div class="contact-form-card">
+
+
+            <div class="contact-form-heading">
+
+
+                <span class="section-label"
+                      data-i18n="sendMessage">
+
+                    Send a Message
+
+                </span>
+
+
+                <h2 data-i18n="formTitle">
+
+                    How Can We Help?
+
+                </h2>
+
+
+                <p data-i18n="formDescription">
+
+                    Fill in the form below and Psycedu Clinic
+                    will get back to you as soon as possible.
+
+                </p>
+
+
+            </div>
+
+
+
+            <form class="contact-form"
+                  id="contactForm">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="fullName"
+                           data-i18n="fullName">
+
+                        Full Name
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input type="text"
+                               id="fullName"
+                               name="fullName"
+                               placeholder="Your full name"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email"
+                           data-i18n="emailLabel">
+
+                        Email
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Your email address"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone"
+                           data-i18n="phoneLabel">
+
+                        Phone Number
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="+961">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-group">
+
+                    <label for="subject"
+                           data-i18n="contactRegarding">
+
+                        I'm contacting regarding
+
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-message"></i>
+
+
+                        <select id="subject"
+                                name="subject"
+                                required>
+
+                            <option value=""
+                                    data-i18n="chooseOption">
+
+                                Choose an option
+
+                            </option>
+
+
+                            <option value="psychological-counseling"
+                                    data-i18n="service1">
+
+                                Psychological Counseling
+
+                            </option>
+
+
+                            <option value="psychoeducational-assessment"
+                                    data-i18n="service2">
+
+                                Psychoeducational Assessment
+
+                            </option>
+
+
+                            <option value="psychoeducational-reports"
+                                    data-i18n="service3">
+
+                                Psychoeducational Reports
+
+                            </option>
+
+
+                            <option value="learning-difficulties"
+                                    data-i18n="service4">
+
+                                Learning Difficulties & ADHD
+
+                            </option>
+
+
+                            <option value="family-guidance"
+                                    data-i18n="service5">
+
+                                Family Guidance & Skills Development
+
+                            </option>
+
+
+                            <option value="appointment"
+                                    data-i18n="appointmentInquiry">
+
+                                Appointment Inquiry
+
+                            </option>
+
+
+                            <option value="other"
+                                    data-i18n="otherInquiry">
+
+                                Other Inquiry
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message"
+                           data-i18n="messageLabel">
+
+                        Message
+
+                    </label>
+
+
+                    <div class="input-wrapper textarea-wrapper">
+
+                        <i class="fa-regular fa-comment-dots"></i>
+
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="6"
+                                  placeholder="How can we help you?"
+                                  required></textarea>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit"
+                        class="contact-submit-btn">
+
+                    <span data-i18n="sendButton">
+                        Send Message
+                    </span>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+
+                <p class="form-note">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <span data-i18n="privacyMessage">
+
+                        Your information will be treated
+                        with care and confidentiality.
+
+                    </span>
+
+                </p>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ONLINE APPOINTMENT CTA
+========================================================= -->
+
+<section class="contact-appointment-section">
+
+    <div class="container contact-appointment-card">
+
+
+        <div class="contact-appointment-icon">
+
+            <i class="fa-solid fa-video"></i>
+
+        </div>
+
+
+        <div class="contact-appointment-content">
+
+
+            <span data-i18n="onlineAppointments">
+                Online Appointments
+            </span>
+
+
+            <h2 data-i18n="appointmentContactTitle">
+
+                Prefer to Meet Online?
+
+            </h2>
+
+
+            <p data-i18n="appointmentContactText">
+
+                Request an online appointment with Dr. Faten
+                from wherever you are.
+
+            </p>
+
+        </div>
+
+
+        <a href="appointment.html"
+           class="primary-btn">
+
+            <span data-i18n="bookAppointment">
+
+                Book Appointment
+
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <a href="index.html"
+               class="footer-logo">
+
+
+                <span class="footer-logo-symbol">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </span>
+
+
+                <span>
+
+                    <strong>
+                        FATEN SKAFI
+                    </strong>
+
+                    <small>
+                        Psycedu Clinic
+                    </small>
+
+                </span>
+
+
+            </a>
+
+
+
+            <p data-i18n="footerDescription">
+
+                Psychological and educational support
+                for people, learning, well-being and
+                brighter tomorrows.
+
+            </p>
+
+
+
+            <div class="footer-socials">
+
+
+                <!-- FACEBOOK -->
+
+                <a href="https://www.facebook.com/share/19TW65atwE/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+
+                <!-- INSTAGRAM -->
+
+                <a href="https://www.instagram.com/dr.faten_skafi?stkn=dXpkZ2U0Z2pqOWF1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+
+                <!-- LINKEDIN -->
+
+                <a href="https://www.linkedin.com/in/dr-faten-skafi-13892ab7"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+
+            <h3 data-i18n="quickLinks">
+
+                Quick Links
+
+            </h3>
+
+
+            <a href="index.html"
+               data-i18n="navHome">
+
+                Home
+
+            </a>
+
+
+            <a href="about.html"
+               data-i18n="navAbout">
+
+                About Dr. Faten
+
+            </a>
+
+
+            <a href="services.html"
+               data-i18n="navServices">
+
+                Services
+
+            </a>
+
+            <a href="stories.html"
+               data-i18n="navStories">
+
+                Stories
+
+            </a>
+
+
+            <a href="resources.html"
+               data-i18n="navResources">
+
+                Resources
+
+            </a>
+
+
+            <a href="contact.html"
+               data-i18n="navContact">
+
+                Contact
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column footer-contact">
+
+
+            <h3 data-i18n="contactUs">
+
+                Contact Us
+
+            </h3>
+
+
+
+            <!-- PHONE -->
+
+            <a href="tel:+96171009259">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>
+                    +961 71 009 259
+                </span>
+
+            </a>
+
+
+
+            <!-- EMAIL -->
+
+            <a href="mailto:fatenskafi@gmail.com">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <span>
+                    fatenskafi@gmail.com
+                </span>
+
+            </a>
+
+
+
+            <!-- LOCATION -->
+
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span data-i18n="location">
+
+                    Chtoura, Lebanon
+
+                </span>
+
+            </div>
+
+
+
+            <!-- BOOK ONLINE -->
+
+            <a href="appointment.html"
+               class="footer-appointment">
+
+                <i class="fa-regular fa-calendar-check"></i>
+
+                <span data-i18n="bookOnline">
+
+                    Book Online
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-container">
+
+
+            <p>
+
+                © <span id="currentYear"></span>
+                Faten Skafi Psycedu Clinic.
+
+                <span data-i18n="rights">
+                    All Rights Reserved.
+                </span>
+
+            </p>
+
+
+
+            <div>
+
+
+                <a href="#"
+                   data-i18n="privacy">
+
+                    Privacy Policy
+
+                </a>
+
+
+                <a href="#"
+                   data-i18n="terms">
+
+                    Terms
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div class="toast"
+     id="toast">
+
+    Link copied!
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="contactmain.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1334 @@
+
+/* =========================================================
+   STORIES PAGE - PSYCEDU CLINIC
+   Uses existing style.css for header and footer
+========================================================= */
+
+
+/* =========================================================
+   STORIES HERO
+========================================================= */
+
+
+/* STORIES HERO BACKGROUND IMAGE */
+.stories-hero {
+    position: relative;
+    padding: 110px 0 105px;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.55)
+        ),
+        url("stories.png") center center / cover no-repeat;
+}
+
+/* Keep the content above the background */
+.stories-hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: 950px;
+    margin: auto;
+}
+
+
+
+.stories-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -130px;
+    right: -100px;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(169, 213, 237, 0.18);
+
+    pointer-events: none;
+
+}
+
+
+.stories-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: -180px;
+    left: -110px;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    border: 60px solid rgba(79, 159, 208, 0.08);
+
+    pointer-events: none;
+
+}
+
+
+.stories-hero-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 950px;
+
+    margin: auto;
+
+}
+
+
+.stories-hero-label {
+
+    display: inline-block;
+
+    padding: 9px 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    color: var(--blue-dark);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.stories-hero h1 {
+
+    max-width: 850px;
+
+    margin: 0 auto 24px;
+
+    color: var(--navy);
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -2px;
+
+}
+
+
+.stories-hero h1 span {
+
+    display: block;
+
+    color: var(--blue);
+
+}
+
+
+.stories-hero-subtitle {
+
+    margin: 0 auto 22px;
+
+    color: var(--navy);
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+}
+
+
+.stories-hero-description {
+
+    max-width: 790px;
+
+    margin: auto;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 2;
+
+}
+
+
+.stories-hero-note {
+
+    display: inline-flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    max-width: 730px;
+
+    margin-top: 30px;
+
+    padding: 16px 22px;
+
+    background: rgba(255,255,255,0.8);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    text-align: start;
+
+}
+
+
+.stories-hero-note i {
+
+    color: var(--blue-dark);
+
+    font-size: 19px;
+
+    margin-top: 3px;
+
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.stories-intro {
+
+    padding: 95px 0 45px;
+
+    background: var(--white);
+
+}
+
+
+.stories-intro .section-heading {
+
+    max-width: 750px;
+
+}
+
+
+.stories-intro .section-heading h2 {
+
+    line-height: 1.3;
+
+}
+
+
+.stories-intro .section-heading p {
+
+    max-width: 650px;
+
+    margin: 18px auto 0;
+
+    line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   STORIES SECTION
+========================================================= */
+
+.stories-section {
+
+    padding: 30px 0 110px;
+
+    background: var(--white);
+
+}
+
+
+.stories-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    align-items: stretch;
+
+}
+
+
+/* =========================================================
+   STORY CARD
+========================================================= */
+
+.story-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow-small);
+
+    transition: 0.35s ease;
+
+}
+
+
+.story-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+
+    border-color: var(--sky);
+
+}
+
+
+/* =========================================================
+   STORY ILLUSTRATION
+========================================================= */
+
+.story-visual {
+
+    position: relative;
+
+    height: 215px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+.learning-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #dceffa,
+            #b6dcf0
+        );
+
+}
+
+
+.emotional-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #faeae8,
+            #f5dcd8
+        );
+
+}
+
+
+.family-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8f3e5,
+            #dcebdc
+        );
+
+}
+
+
+.story-visual::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    transform: translate(-60px, 45px);
+
+}
+
+
+.story-visual::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.7);
+
+    transform: translate(100px, -70px);
+
+}
+
+
+.story-illustration {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 12px 35px rgba(6,61,104,0.10);
+
+    transition: 0.35s;
+
+}
+
+
+.story-illustration i {
+
+    font-size: 48px;
+
+    color: var(--navy);
+
+}
+
+
+.emotional-visual .story-illustration i {
+
+    color: #c67e89;
+
+}
+
+
+.family-visual .story-illustration i {
+
+    color: #639773;
+
+}
+
+
+.story-card:hover .story-illustration {
+
+    transform: scale(1.08);
+
+}
+
+
+.story-number {
+
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    font-size: 40px;
+
+    font-weight: 800;
+
+    color: rgba(6,61,104,0.12);
+
+}
+
+
+/* =========================================================
+   STORY CONTENT
+========================================================= */
+
+.story-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 30px 27px;
+
+}
+
+
+.story-category {
+
+    display: inline-block;
+
+    align-self: flex-start;
+
+    margin-bottom: 14px;
+
+    color: var(--blue-dark);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.story-content h3 {
+
+    margin-bottom: 20px;
+
+    color: var(--navy);
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.4;
+
+}
+
+
+.story-content > p {
+
+    margin-bottom: 18px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.95;
+
+}
+
+
+/* =========================================================
+   KEY MESSAGE
+========================================================= */
+
+.story-key-message {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin-top: auto;
+
+    padding: 19px 16px;
+
+    border-radius: 15px;
+
+    background: var(--light-blue);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.key-icon {
+
+    width: 33px;
+    height: 33px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--white);
+
+    color: var(--blue-dark);
+
+    font-size: 16px;
+
+}
+
+
+.story-key-message strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--navy);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+.story-key-message p {
+
+    color: var(--text);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+
+}
+
+
+.story-card:nth-child(2) .story-key-message {
+
+    background: #fff4f2;
+
+    border-color: #f3e3df;
+
+}
+
+
+.story-card:nth-child(2) .key-icon {
+
+    color: #c67e89;
+
+}
+
+
+.story-card:nth-child(3) .story-key-message {
+
+    background: #f0f8ee;
+
+    border-color: #e0ecdc;
+
+}
+
+
+.story-card:nth-child(3) .key-icon {
+
+    color: #639773;
+
+}
+
+
+/* =========================================================
+   PRIVACY SECTION
+========================================================= */
+
+.stories-privacy-section {
+
+    padding: 90px 0;
+
+    background: var(--off-white);
+
+}
+
+
+.stories-privacy-box {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    max-width: 1080px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--blue);
+
+    border-radius: 22px;
+
+    box-shadow: var(--shadow-small);
+
+}
+
+
+.privacy-icon {
+
+    width: 75px;
+    height: 75px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: var(--light-blue);
+
+    color: var(--navy);
+
+    font-size: 30px;
+
+}
+
+
+.privacy-content {
+
+    flex: 1;
+
+}
+
+
+.privacy-content .section-label {
+
+    margin-bottom: 10px;
+
+}
+
+
+.privacy-content h2 {
+
+    margin-bottom: 17px;
+
+    color: var(--navy);
+
+    font-size: 29px;
+
+    font-weight: 800;
+
+}
+
+
+.privacy-content p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 2;
+
+}
+
+
+/* =========================================================
+   ARABIC SUPPORT
+========================================================= */
+
+html[dir="rtl"] .stories-hero h1 {
+
+    letter-spacing: 0;
+
+    line-height: 1.5;
+
+}
+
+
+html[dir="rtl"] .stories-hero-label,
+html[dir="rtl"] .story-category {
+
+    letter-spacing: 0;
+
+}
+
+
+html[dir="rtl"] .stories-intro h2,
+html[dir="rtl"] .story-content h3 {
+
+    line-height: 1.6;
+
+}
+
+
+html[dir="rtl"] .stories-privacy-box {
+
+    border-left: 1px solid var(--border);
+
+    border-right: 5px solid var(--blue);
+
+}
+
+
+html[dir="rtl"] .story-number {
+
+    right: auto;
+    left: 25px;
+
+}
+
+
+/* =========================================================
+   HEADER INTERACTION SUPPORT
+   (Keeps Home page styling)
+========================================================= */
+
+.nav-dropdown.is-open .dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+.toast.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .stories-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .story-card:last-child {
+
+        grid-column: 1 / -1;
+
+        width: 100%;
+
+        max-width: 580px;
+
+        justify-self: center;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .main-nav.is-open {
+
+        display: flex;
+
+    }
+
+    .nav-dropdown .dropdown-menu {
+
+        display: none;
+
+    }
+
+    .nav-dropdown.is-open .dropdown-menu {
+
+        display: block;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLETS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .stories-hero {
+
+        padding: 80px 0;
+
+    }
+
+    .stories-hero h1 {
+
+        font-size: 45px;
+
+    }
+
+    .stories-hero-subtitle {
+
+        font-size: 18px;
+
+    }
+
+    .stories-hero-description {
+
+        font-size: 15px;
+
+    }
+
+    .stories-intro {
+
+        padding: 75px 0 35px;
+
+    }
+
+    .stories-section {
+
+        padding: 25px 0 80px;
+
+    }
+
+    .stories-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .story-card:last-child {
+
+        grid-column: auto;
+
+        max-width: none;
+
+    }
+
+    .story-visual {
+
+        height: 195px;
+
+    }
+
+    .stories-privacy-section {
+
+        padding: 65px 0;
+
+    }
+
+    .stories-privacy-box {
+
+        padding: 30px;
+
+        gap: 20px;
+
+    }
+
+    .privacy-icon {
+
+        width: 60px;
+        height: 60px;
+
+        font-size: 25px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .stories-hero {
+
+        padding: 65px 0;
+
+    }
+
+    .stories-hero-label {
+
+        padding: 8px 14px;
+
+        font-size: 11px;
+
+    }
+
+    .stories-hero h1 {
+
+        font-size: 35px;
+
+        letter-spacing: -1px;
+
+    }
+
+    .stories-hero-subtitle {
+
+        font-size: 17px;
+
+    }
+
+    .stories-hero-description {
+
+        font-size: 14px;
+
+        line-height: 1.9;
+
+    }
+
+    .stories-hero-note {
+
+        padding: 15px;
+
+        font-size: 12px;
+
+    }
+
+    .stories-intro {
+
+        padding: 60px 0 30px;
+
+    }
+
+    .stories-intro .section-heading h2 {
+
+        font-size: 29px;
+
+    }
+
+    .stories-section {
+
+        padding: 15px 0 65px;
+
+    }
+
+    .stories-grid {
+
+        gap: 25px;
+
+    }
+
+    .story-visual {
+
+        height: 175px;
+
+    }
+
+    .story-illustration {
+
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .story-illustration i {
+
+        font-size: 40px;
+
+    }
+
+    .story-content {
+
+        padding: 25px 20px;
+
+    }
+
+    .story-content h3 {
+
+        font-size: 21px;
+
+    }
+
+    .story-content > p {
+
+        font-size: 13px;
+
+    }
+
+    .story-key-message {
+
+        padding: 16px 14px;
+
+    }
+
+    .stories-privacy-box {
+
+        flex-direction: column;
+
+        padding: 25px 22px;
+
+    }
+
+    .privacy-content h2 {
+
+        font-size: 24px;
+
+    }
+
+    .privacy-content p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .story-card,
+    .story-illustration {
+
+        transition: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   FIXED RESPONSIVE NAVBAR - STORIES PAGE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    /* HEADER */
+    .site-header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    /* MOBILE NAVIGATION */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 15px 20px 25px;
+
+        background: var(--white);
+
+        box-shadow: 0 12px 25px rgba(6, 61, 104, 0.12);
+
+        border-top: 1px solid var(--border);
+
+        z-index: 1001;
+    }
+
+    /* SHOW MENU WHEN CLICKED */
+    .main-nav.is-open {
+        display: flex;
+    }
+
+    /* NAVIGATION LINKS */
+    .main-nav > .nav-link {
+        display: block;
+        width: 100%;
+
+        padding: 14px 12px;
+
+        border-bottom: 1px solid var(--border);
+
+        color: var(--navy);
+        font-size: 15px;
+
+        text-align: start;
+    }
+
+    .main-nav > .nav-link:hover,
+    .main-nav > .nav-link.active {
+        color: var(--blue-dark);
+    }
+
+    /* SERVICES DROPDOWN */
+    .nav-dropdown {
+        width: 100%;
+    }
+
+    .nav-dropdown .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 14px 12px;
+
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--border);
+
+        color: var(--navy);
+        font-size: 15px;
+        font-family: inherit;
+
+        cursor: pointer;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        display: none;
+
+        position: static;
+        width: 100%;
+
+        padding: 8px 15px;
+
+        background: var(--light-blue);
+
+        border-radius: 10px;
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .nav-dropdown.is-open .dropdown-menu {
+        display: block;
+    }
+
+    .nav-dropdown .dropdown-menu a {
+        display: block;
+        padding: 11px 10px;
+
+        color: var(--navy);
+        font-size: 14px;
+
+        border-bottom: 1px solid rgba(6, 61, 104, 0.08);
+    }
+
+    .nav-dropdown .dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* MOBILE LANGUAGE AND APPOINTMENT */
+    .mobile-nav-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+
+        padding: 20px 10px 5px;
+    }
+
+    .mobile-nav-actions .language-btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mobile-nav-actions .appointment-btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* MOBILE MENU BUTTON */
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    /* DESKTOP ACTIONS */
+    .header-actions {
+        display: none;
+    }
+
+    /* RTL SUPPORT */
+    html[dir="rtl"] .main-nav {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .nav-dropdown .dropdown-toggle {
+        text-align: right;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE SCREENS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .main-nav {
+        padding: 12px 15px 20px;
+    }
+
+    .main-nav > .nav-link,
+    .nav-dropdown .dropdown-toggle {
+        font-size: 14px;
+        padding: 13px 10px;
+    }
+
+    .nav-dropdown .dropdown-menu a {
+        font-size: 13px;
+    }
+
+}
