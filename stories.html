@@ -1264,7 +1264,9 @@ menuToggle.addEventListener("click", () => {
 const dropdown = document.querySelector(".nav-dropdown");
 const dropdownToggle = document.querySelector(".dropdown-toggle");
 
-dropdownToggle.addEventListener("click", () => {
+dropdownToggle.addEventListener("click", (event) => {
+
+    event.stopPropagation();
 
     const isOpen = dropdown.classList.toggle("is-open");
 
