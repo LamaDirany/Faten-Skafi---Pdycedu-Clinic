@@ -640,3 +640,343 @@ html[dir="rtl"] .appointment-submit i {
         box-sizing: border-box;
     }
 }
+
+
+/* =========================================================
+   RESPONSIVE NAVIGATION - APPOINTMENT PAGE
+   Consistent with all Psycedu Clinic pages
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .site-header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    /* MOBILE MENU BUTTON */
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    /* HIDE DESKTOP ACTIONS */
+    .header-actions {
+        display: none;
+    }
+
+    /* MOBILE NAVIGATION */
+    .site-header .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 15px 20px 25px;
+
+        background: #ffffff;
+        border-top: 1px solid #dcebf3;
+
+        box-shadow: 0 12px 25px rgba(6, 61, 104, 0.12);
+
+        z-index: 1001;
+        box-sizing: border-box;
+    }
+
+    /* SHOW MENU */
+    .site-header .main-nav.is-open {
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* NAVIGATION LINKS */
+    .site-header .main-nav > .nav-link {
+        display: block;
+        width: 100%;
+        padding: 14px 12px;
+
+        color: #063d68;
+        font-size: 15px;
+        text-align: start;
+
+        border-bottom: 1px solid #dcebf3;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .site-header .main-nav > .nav-link:hover,
+    .site-header .main-nav > .nav-link.active {
+        color: #3588bb;
+    }
+
+    /* SERVICES DROPDOWN */
+    .site-header .nav-dropdown {
+        display: block;
+        width: 100%;
+    }
+
+    .site-header .nav-dropdown .dropdown-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 14px 12px;
+
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #dcebf3;
+
+        color: #063d68;
+        font-family: inherit;
+        font-size: 15px;
+        text-align: start;
+
+        cursor: pointer;
+    }
+
+    .site-header .nav-dropdown .dropdown-menu {
+        display: none;
+
+        position: static;
+        width: 100%;
+
+        padding: 8px 15px;
+
+        background: #edf7fc;
+        border-radius: 10px;
+
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        box-sizing: border-box;
+    }
+
+    .site-header .nav-dropdown.is-open .dropdown-menu {
+        display: block;
+    }
+
+    .site-header .nav-dropdown .dropdown-menu a {
+        display: block;
+        width: 100%;
+
+        padding: 11px 10px;
+
+        color: #063d68;
+        font-size: 14px;
+
+        border-bottom: 1px solid rgba(6, 61, 104, 0.08);
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .site-header .nav-dropdown .dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* LANGUAGE AND APPOINTMENT BUTTONS */
+    .site-header .mobile-nav-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+
+        padding: 20px 10px 5px;
+    }
+
+    .site-header .mobile-nav-actions .language-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .site-header .mobile-nav-actions .appointment-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        text-align: center;
+    }
+
+    /* RTL SUPPORT */
+    html[dir="rtl"] .site-header .main-nav {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .site-header .main-nav > .nav-link {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .site-header .nav-dropdown .dropdown-toggle {
+        text-align: right;
+    }
+
+}
+
+/* SMALL MOBILE SCREENS */
+@media (max-width: 480px) {
+
+    .site-header .main-nav {
+        padding: 12px 15px 20px;
+    }
+
+    .site-header .main-nav > .nav-link,
+    .site-header .nav-dropdown .dropdown-toggle {
+        padding: 13px 10px;
+        font-size: 14px;
+    }
+
+    .site-header .nav-dropdown .dropdown-menu a {
+        font-size: 13px;
+    }
+
+}
+
+/* HEADER INTERACTION */
+.nav-dropdown.is-open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.share-menu.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+
+    .appointment-hero-button,
+    .appointment-submit {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   FIX MOBILE SERVICES DROPDOWN - APPOINTMENT PAGE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    /* Services container */
+    .site-header .main-nav .nav-dropdown {
+        display: block !important;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Services button */
+    .site-header .main-nav .nav-dropdown .dropdown-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 14px 12px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #dcebf3;
+        color: #063d68;
+        font-size: 15px;
+        font-family: inherit;
+        cursor: pointer;
+        text-align: start;
+    }
+
+    /* Dropdown hidden by default */
+    .site-header .main-nav .nav-dropdown .dropdown-menu {
+        display: none !important;
+        position: static !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        padding: 8px 12px !important;
+        margin: 0;
+        background: #edf7fc !important;
+        border-radius: 10px;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        overflow: visible !important;
+    }
+
+    /* SHOW SERVICES WHEN CLICKED */
+    .site-header .main-nav .nav-dropdown.is-open > .dropdown-menu {
+        display: block !important;
+    }
+
+    /* Individual service links */
+    .site-header .main-nav .nav-dropdown .dropdown-menu a {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 10px !important;
+        color: #063d68 !important;
+        font-size: 14px;
+        line-height: 1.7;
+        text-decoration: none;
+        white-space: normal;
+        overflow-wrap: break-word;
+        border-bottom: 1px solid rgba(6, 61, 104, 0.10);
+        box-sizing: border-box;
+    }
+
+    .site-header .main-nav .nav-dropdown .dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Hover effect */
+    .site-header .main-nav .nav-dropdown .dropdown-menu a:hover {
+        color: #3588bb !important;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Rotate arrow when dropdown opens */
+    .site-header .main-nav .nav-dropdown .dropdown-toggle i {
+        transition: transform 0.25s ease;
+    }
+
+    .site-header .main-nav .nav-dropdown.is-open .dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+
+    /* RTL support */
+    html[dir="rtl"] .site-header .main-nav .nav-dropdown .dropdown-menu {
+        text-align: right;
+    }
+
+    html[dir="rtl"] .site-header .main-nav .nav-dropdown .dropdown-menu a {
+        text-align: right;
+    }
+}
