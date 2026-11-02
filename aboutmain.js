@@ -598,7 +598,7 @@ document.addEventListener("DOMContentLoaded", function () {
         /* ---------- FOOTER (parts without data-i18n) ---------- */
 
         [".footer-logo strong", [
-            "فاتن سكافي"
+            "فاتن السكافي"
         ]],
 
         [".footer-logo small", [
@@ -606,7 +606,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]],
 
         [".footer-bottom-container > p", [
-            '© <span id="currentYear"></span> عيادة فاتن سكافي Psycedu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
+            '© <span id="currentYear"></span> عيادة فاتن السكافي Psycedu. <span data-i18n="rights">جميع الحقوق محفوظة.</span>'
         ]]
 
     ];
@@ -679,7 +679,7 @@ document.addEventListener("DOMContentLoaded", function () {
             metaDescription.setAttribute(
                 "content",
                 language === "ar"
-                    ? "تعرّف على د. فاتن سكافي، دكتوراه في علم النفس - علم النفس العيادي والتربوي، التعليم العالي، البحث العلمي، التقييم النفسي والدعم النفسي التربوي."
+                    ? "تعرّف على د. فاتن السكافي، دكتوراه في علم النفس - علم النفس العيادي والتربوي، التعليم العالي، البحث العلمي، التقييم النفسي والدعم النفسي التربوي."
                     : "Meet Dr. Faten Skafi, PhD - Clinical and Educational Psychology, higher education, research, psychological assessment and psychoeducational support."
             );
         }
