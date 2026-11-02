@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         /* Browser tab title */
         document.title = language === "ar"
-            ? "تواصل معنا | الدكتورة فاتن سكافي - عيادة Psycedu"
+            ? "تواصل معنا | الدكتورة فاتن السكافي - عيادة Psycedu"
             : "Contact | Dr. Faten Skafi - Psycedu Clinic";
 
         currentLanguage = language;
