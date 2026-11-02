@@ -312,7 +312,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]],
 
         [".about-hero-content h1", [
-            'د. فاتن <span>سكافي</span>'
+            'د. فاتن <span>السكافي</span>'
         ]],
 
         [".about-hero-content h2", [
@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]],
 
         [".story-lead", [
-            "على مدى أكثر من عقدين، تشكّلت مسيرة د. فاتن سكافي المهنية حول هدف واحد: مساعدة الناس على التعلّم والنمو وتحقيق قدر أكبر من الرفاه النفسي."
+            "على مدى أكثر من عقدين، تشكّلت مسيرة د. فاتن السكافي المهنية حول هدف واحد: مساعدة الناس على التعلّم والنمو وتحقيق قدر أكبر من الرفاه النفسي."
         ]],
 
         [".about-story-content > p:not(.story-lead)", [
@@ -663,7 +663,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (photo) {
             photo.alt =
-                language === "ar" ? "د. فاتن سكافي" : "Dr. Faten Skafi";
+                language === "ar" ? "د. فاتن السكافي" : "Dr. Faten Skafi";
         }
 
         /* page title + description */
